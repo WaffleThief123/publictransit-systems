@@ -1,0 +1,290 @@
+{
+  "generations": [
+    {
+      "id": "1000-series",
+      "systemId": "tokyo-metro",
+      "name": "1000 Series",
+      "manufacturer": "Nippon Sharyo",
+      "introduced": 2012,
+      "retired": null,
+      "status": "active",
+      "count": 240,
+      "lines": ["ginza"],
+      "specs": {
+        "length": "16.0 m",
+        "width": "2.55 m",
+        "capacity": 126,
+        "seatedCapacity": 36,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 6,
+        "traction": "600V DC third rail",
+        "formation": "6-car fixed"
+      },
+      "description": "The 1000 series replaced the 01 series on the Ginza Line starting in 2012. These trains feature PMSM (Permanent Magnet Synchronous Motor) traction and a retro-modern design inspired by the original 1927 trains."
+    },
+    {
+      "id": "2000-series",
+      "systemId": "tokyo-metro",
+      "name": "2000 Series",
+      "manufacturer": "Hitachi",
+      "introduced": 2019,
+      "retired": null,
+      "status": "active",
+      "count": 312,
+      "lines": ["marunouchi"],
+      "specs": {
+        "length": "16.0 m",
+        "width": "2.55 m",
+        "capacity": 126,
+        "seatedCapacity": 36,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 6,
+        "traction": "600V DC third rail",
+        "formation": "6-car fixed"
+      },
+      "description": "The 2000 series is the newest rolling stock for the Marunouchi Line, replacing the 02 series. It achieves 27% energy reduction compared to its predecessor and features a distinctive red livery."
+    },
+    {
+      "id": "05-series",
+      "systemId": "tokyo-metro",
+      "name": "05 Series",
+      "manufacturer": "Various",
+      "introduced": 1988,
+      "retired": null,
+      "status": "active",
+      "count": 430,
+      "lines": ["tozai"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.8 m",
+        "capacity": 156,
+        "seatedCapacity": 54,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 05 series has been the workhorse of the Tozai Line since 1988. It is gradually being replaced by the 15000 series but remains in active service on the busiest subway line in Japan."
+    },
+    {
+      "id": "07-series",
+      "systemId": "tokyo-metro",
+      "name": "07 Series",
+      "manufacturer": "Kawasaki/Nippon Sharyo",
+      "introduced": 1993,
+      "retired": null,
+      "status": "active",
+      "count": 60,
+      "lines": ["tozai"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.8 m",
+        "capacity": 156,
+        "seatedCapacity": 54,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 07 series was originally designed for the Yurakucho Line but was transferred to the Tozai Line. These trains feature stainless steel bodies and VVVF inverter control."
+    },
+    {
+      "id": "08-series",
+      "systemId": "tokyo-metro",
+      "name": "08 Series",
+      "manufacturer": "Nippon Sharyo",
+      "introduced": 2003,
+      "retired": null,
+      "status": "active",
+      "count": 60,
+      "lines": ["hanzomon"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.78 m",
+        "capacity": 152,
+        "seatedCapacity": 51,
+        "maxSpeed": "120 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 08 series operates on the Hanzomon Line, featuring a distinctive purple color scheme. These trains are compatible with through services to Tokyu and Tobu railways."
+    },
+    {
+      "id": "8000-series",
+      "systemId": "tokyo-metro",
+      "name": "8000 Series",
+      "manufacturer": "Kawasaki/Kinki Sharyo/Nippon Sharyo/Tokyu Car",
+      "introduced": 1981,
+      "retired": null,
+      "status": "active",
+      "count": 190,
+      "lines": ["hanzomon"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.78 m",
+        "capacity": 152,
+        "seatedCapacity": 51,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 8000 series is the original fleet for the Hanzomon Line. After over 40 years of service, these trains are being replaced by the new 18000 series."
+    },
+    {
+      "id": "9000-series",
+      "systemId": "tokyo-metro",
+      "name": "9000 Series",
+      "manufacturer": "Kawasaki/Nippon Sharyo/Tokyu Car",
+      "introduced": 1991,
+      "retired": null,
+      "status": "active",
+      "count": 220,
+      "lines": ["namboku"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.83 m",
+        "capacity": 154,
+        "seatedCapacity": 51,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 6,
+        "traction": "1500V DC overhead",
+        "formation": "6-car fixed"
+      },
+      "description": "The 9000 series operates exclusively on the Namboku Line. It was one of the first subway trains in Tokyo to feature VVVF traction and works with platform screen doors."
+    },
+    {
+      "id": "10000-series",
+      "systemId": "tokyo-metro",
+      "name": "10000 Series",
+      "manufacturer": "Hitachi",
+      "introduced": 2006,
+      "retired": null,
+      "status": "active",
+      "count": 360,
+      "lines": ["yurakucho", "fukutoshin"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.8 m",
+        "capacity": 156,
+        "seatedCapacity": 51,
+        "maxSpeed": "120 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 10000 series operates on both the Yurakucho and Fukutoshin Lines. Based on Hitachi's A-Train design, these trains feature regenerative braking and through-service capability."
+    },
+    {
+      "id": "13000-series",
+      "systemId": "tokyo-metro",
+      "name": "13000 Series",
+      "manufacturer": "Kinki Sharyo",
+      "introduced": 2017,
+      "retired": null,
+      "status": "active",
+      "count": 308,
+      "lines": ["hibiya"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.78 m",
+        "capacity": 154,
+        "seatedCapacity": 49,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 7,
+        "traction": "1500V DC overhead",
+        "formation": "7-car fixed"
+      },
+      "description": "The 13000 series replaced the 03 series on the Hibiya Line. These trains feature 7-car formations (up from 5) to increase capacity and reduce crowding."
+    },
+    {
+      "id": "15000-series",
+      "systemId": "tokyo-metro",
+      "name": "15000 Series",
+      "manufacturer": "Kawasaki/Nippon Sharyo/Kinki Sharyo",
+      "introduced": 2010,
+      "retired": null,
+      "status": "active",
+      "count": 150,
+      "lines": ["tozai"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.8 m",
+        "capacity": 156,
+        "seatedCapacity": 54,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 15000 series was introduced to replace aging 05 series trains on the Tozai Line. It features extra-wide doors (1,800mm) to speed up boarding and reduce dwell times during rush hour."
+    },
+    {
+      "id": "16000-series",
+      "systemId": "tokyo-metro",
+      "name": "16000 Series",
+      "manufacturer": "Kawasaki/Hitachi",
+      "introduced": 2010,
+      "retired": null,
+      "status": "active",
+      "count": 370,
+      "lines": ["chiyoda"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.78 m",
+        "capacity": 152,
+        "seatedCapacity": 51,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 16000 series replaced the legendary 6000 series on the Chiyoda Line. These modern trains feature improved passenger information displays and energy-efficient operation."
+    },
+    {
+      "id": "17000-series",
+      "systemId": "tokyo-metro",
+      "name": "17000 Series",
+      "manufacturer": "Hitachi/Kinki Sharyo",
+      "introduced": 2021,
+      "retired": null,
+      "status": "active",
+      "count": 210,
+      "lines": ["yurakucho", "fukutoshin"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.8 m",
+        "capacity": 156,
+        "seatedCapacity": 51,
+        "maxSpeed": "120 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 17000 series is replacing the 7000 series on the Yurakucho and Fukutoshin Lines. These trains feature the latest IGBT-VVVF inverters and improved passenger amenities."
+    },
+    {
+      "id": "18000-series",
+      "systemId": "tokyo-metro",
+      "name": "18000 Series",
+      "manufacturer": "Hitachi",
+      "introduced": 2021,
+      "retired": null,
+      "status": "active",
+      "count": 190,
+      "lines": ["hanzomon"],
+      "specs": {
+        "length": "20.0 m",
+        "width": "2.78 m",
+        "capacity": 152,
+        "seatedCapacity": 51,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 10,
+        "traction": "1500V DC overhead",
+        "formation": "10-car fixed"
+      },
+      "description": "The 18000 series is the newest rolling stock for the Hanzomon Line, replacing the aging 8000 series. It features modern styling and improved energy efficiency."
+    }
+  ]
+}

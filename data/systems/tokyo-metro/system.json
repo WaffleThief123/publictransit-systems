@@ -1,0 +1,111 @@
+{
+  "id": "tokyo-metro",
+  "name": "Tokyo Metro Co., Ltd.",
+  "shortName": "Tokyo Metro",
+  "localName": "東京メトロ",
+  "location": "Tokyo",
+  "region": "Greater Tokyo Area",
+  "country": "Japan",
+  "opened": "1927-12-30",
+  "website": "https://www.tokyometro.jp",
+  "overview": "Tokyo Metro is one of two rapid transit operators in Tokyo, Japan (the other being Toei Subway). Originally opened in 1927 as Asia's first subway, it was privatized in 2004 from the Teito Rapid Transit Authority (TRTA/Eidan). Tokyo Metro is the busiest metro system in the world by annual ridership.",
+  "stats": {
+    "totalStations": 180,
+    "totalLines": 9,
+    "annualRidership": "2.5 billion",
+    "trackKm": 195,
+    "trackMiles": 121.2,
+    "dailyRidership": "6.84 million"
+  },
+  "colors": {
+    "primary": "#00A7DB",
+    "secondary": "#F39700"
+  },
+  "history": [
+    {
+      "date": "1920-08-29",
+      "title": "Company Founded",
+      "description": "Tokyo Underground Railway Co., Ltd. founded to build Japan's first subway."
+    },
+    {
+      "date": "1925-09-27",
+      "title": "Construction Begins",
+      "description": "Construction begins on the first subway section between Asakusa and Ueno."
+    },
+    {
+      "date": "1927-12-30",
+      "title": "First Subway in Asia Opens",
+      "description": "The Ginza Line opens between Asakusa and Ueno, becoming the first subway in Asia. The 2.2 km line with 5 stations begins operations."
+    },
+    {
+      "date": "1939-09-01",
+      "title": "Ginza Line Completed",
+      "description": "After merging Tokyo Rapid Railway and Tokyo Underground Railway, the complete Ginza Line from Shibuya to Asakusa begins unified operation."
+    },
+    {
+      "date": "1941-07-04",
+      "title": "TRTA Established",
+      "description": "Teito Rapid Transit Authority (TRTA/Eidan) established to consolidate and expand Tokyo's subway network."
+    },
+    {
+      "date": "1954-01-20",
+      "title": "Marunouchi Line Opens",
+      "description": "The Marunouchi Line opens between Ikebukuro and Ochanomizu, becoming the second subway line in Tokyo."
+    },
+    {
+      "date": "1962-05-31",
+      "title": "Hibiya Line Opens",
+      "description": "The Hibiya Line opens its first section, designed to serve the 1964 Tokyo Olympics."
+    },
+    {
+      "date": "1964-08-29",
+      "title": "Olympics Preparation Complete",
+      "description": "Hibiya Line completed from Naka-Meguro to Kita-Senju in time for the 1964 Tokyo Olympics."
+    },
+    {
+      "date": "1964-12-23",
+      "title": "Tozai Line Opens",
+      "description": "The Tozai Line opens between Takadanobaba and Kudanshita, eventually becoming the busiest line."
+    },
+    {
+      "date": "1969-12-20",
+      "title": "Chiyoda Line Opens",
+      "description": "The Chiyoda Line opens between Kita-Senju and Otemachi."
+    },
+    {
+      "date": "1974-10-30",
+      "title": "Yurakucho Line Opens",
+      "description": "The Yurakucho Line opens between Ikebukuro and Ginza-itchome."
+    },
+    {
+      "date": "1978-08-01",
+      "title": "Hanzomon Line Opens",
+      "description": "The Hanzomon Line opens between Shibuya and Aoyama-itchome."
+    },
+    {
+      "date": "1991-11-29",
+      "title": "Namboku Line Opens",
+      "description": "The Namboku Line opens between Komagome and Akabane-Iwabuchi."
+    },
+    {
+      "date": "2004-04-01",
+      "title": "Privatization",
+      "description": "TRTA is privatized and rebranded as Tokyo Metro Co., Ltd., ending decades of public ownership."
+    },
+    {
+      "date": "2008-06-14",
+      "title": "Fukutoshin Line Opens",
+      "description": "The Fukutoshin Line opens between Ikebukuro and Shibuya, becoming the ninth and newest Tokyo Metro line."
+    },
+    {
+      "date": "2013-03-16",
+      "title": "Through Service Expansion",
+      "description": "Fukutoshin Line begins through service with Tokyu Toyoko Line, creating a continuous route from Saitama to Yokohama."
+    },
+    {
+      "date": "2024-10-23",
+      "title": "Historic IPO",
+      "description": "Tokyo Metro conducts Japan's largest IPO since 2018, raising $2.3 billion and valuing the company at approximately $5.3 billion."
+    }
+  ]
+}
