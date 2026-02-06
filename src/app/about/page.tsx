@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Terminal, TerminalLine, TerminalOutput } from "@/components/ui/Terminal";
-import { Badge } from "@/components/ui/Badge";
 
 export default function AboutPage() {
   return (
@@ -14,7 +13,7 @@ export default function AboutPage() {
         </Terminal>
 
         <h1 className="text-4xl font-mono font-bold text-text-primary">
-          About <span className="text-accent-primary">Transit.Systems</span>
+          About <span className="text-accent-primary">PublicTransit.Systems</span>
         </h1>
       </section>
 
@@ -25,7 +24,7 @@ export default function AboutPage() {
         </CardHeader>
         <CardContent>
           <p className="text-text-secondary leading-relaxed mb-4">
-            Transit.Systems is a comprehensive information platform for public transit systems worldwide.
+            PublicTransit.Systems is a comprehensive information platform for public transit systems worldwide.
             Built with a terminal-inspired aesthetic, it provides detailed data about metro systems,
             light rail, and rapid transit networks including stations, lines, railcars, and historical information.
           </p>
@@ -34,43 +33,6 @@ export default function AboutPage() {
             appeals to transit enthusiasts, urban planners, developers, and anyone interested in
             public transportation infrastructure.
           </p>
-        </CardContent>
-      </Card>
-
-      {/* Tech Stack */}
-      <Card elevated>
-        <CardHeader>
-          <CardTitle>Technology Stack</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            <div>
-              <h4 className="font-mono text-sm text-accent-primary mb-2">Frontend Framework</h4>
-              <div className="flex flex-wrap gap-2">
-                <Badge>Next.js 16</Badge>
-                <Badge>React</Badge>
-                <Badge>TypeScript</Badge>
-                <Badge>Tailwind CSS 4</Badge>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-mono text-sm text-accent-primary mb-2">UI Libraries</h4>
-              <div className="flex flex-wrap gap-2">
-                <Badge>Framer Motion</Badge>
-                <Badge>CMDK</Badge>
-                <Badge>Lucide Icons</Badge>
-                <Badge>Radix UI</Badge>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-mono text-sm text-accent-primary mb-2">Data & Visualization</h4>
-              <div className="flex flex-wrap gap-2">
-                <Badge>Fuse.js</Badge>
-                <Badge>Recharts</Badge>
-                <Badge>Static JSON</Badge>
-              </div>
-            </div>
-          </div>
         </CardContent>
       </Card>
 
@@ -114,7 +76,7 @@ export default function AboutPage() {
         <CardContent>
           <div className="space-y-4">
             <p className="text-text-secondary">
-              Help improve Transit.Systems by contributing data, corrections, or code:
+              Help improve PublicTransit.Systems by contributing data, corrections, or code:
             </p>
 
             <div>
@@ -187,7 +149,7 @@ export default function AboutPage() {
       <Card>
         <CardContent>
           <p className="text-sm text-text-muted font-mono">
-            © 2026 Transit.Systems • Data compiled from public sources •
+            © 2026 PublicTransit.Systems • Data compiled from public sources •
             Built with Next.js and TypeScript
           </p>
         </CardContent>
