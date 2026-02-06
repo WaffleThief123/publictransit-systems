@@ -1,18 +1,18 @@
 #!/usr/bin/env npx tsx
 /**
  * Merge Beijing Subway station data from multiple sources:
- * - bjsubway.com scraper (official Chinese data)
+ * - line-mappings.json (authoritative station list from bjsubway.com XML)
  * - OpenStreetMap (crowd-sourced entrance/elevator coordinates)
- * - Existing stations.json (base data)
+ * - Existing stations.json (enrichment data)
  *
  * Usage:
  *   npx tsx scripts/merge-beijing-data.ts
  *
  * Options:
  *   --output, -o      Output file (default: data/systems/beijing-subway/stations.json)
- *   --bjsubway, -b    Path to bjsubway scraped data
+ *   --mappings        Path to line-mappings.json (authoritative)
  *   --osm, -m         Path to OSM data
- *   --base            Path to base stations.json
+ *   --base            Path to existing stations.json for enrichment
  *   --dry-run, -n     Don't write output
  */
 
@@ -61,6 +61,21 @@ interface Station {
 
 interface StationsFile {
   stations: Station[];
+}
+
+interface StationMapping {
+  id: string;
+  name: string;
+  localName: string;
+  lines: string[];
+  isTransfer: boolean;
+}
+
+interface MappingsFile {
+  generated: string;
+  source: string;
+  lines: Array<{ id: string; name: string; localName: string; stations: string[] }>;
+  stations: StationMapping[];
 }
 
 function loadJson<T>(filePath: string): T | null {
@@ -269,16 +284,26 @@ function mergeStations(
   return merged;
 }
 
+// Normalize line IDs to match our lines.json schema
+function normalizeLineId(lineId: string): string {
+  // Handle combined lines
+  if (lineId === "line-1-batong") {
+    return "line-1"; // Batong is now part of Line 1
+  }
+  // Handle duplicate line-1 entries
+  if (lineId === "line-1") {
+    return "line-1";
+  }
+  return lineId;
+}
+
 function parseArgs() {
   const args = process.argv.slice(2);
   const projectRoot = path.resolve(__dirname, "..");
 
   const result = {
     output: path.join(projectRoot, "data/systems/beijing-subway/stations.json"),
-    bjsubway: path.join(
-      projectRoot,
-      "data/systems/beijing-subway/stations-scraped.json"
-    ),
+    mappings: path.join(projectRoot, "data/systems/beijing-subway/line-mappings.json"),
     osm: path.join(projectRoot, "data/systems/beijing-subway/stations-osm.json"),
     base: path.join(projectRoot, "data/systems/beijing-subway/stations.json"),
     dryRun: false,
@@ -288,8 +313,8 @@ function parseArgs() {
     const arg = args[i];
     if (arg === "--output" || arg === "-o") {
       result.output = args[++i];
-    } else if (arg === "--bjsubway" || arg === "-b") {
-      result.bjsubway = args[++i];
+    } else if (arg === "--mappings") {
+      result.mappings = args[++i];
     } else if (arg === "--osm" || arg === "-m") {
       result.osm = args[++i];
     } else if (arg === "--base") {
@@ -307,27 +332,140 @@ async function main() {
 
   console.log("Loading data sources...");
 
-  const baseData = loadJson<StationsFile>(args.base);
-  const bjsubwayData = loadJson<StationsFile>(args.bjsubway);
-  const osmData = loadJson<StationsFile>(args.osm);
-
-  if (!baseData) {
-    console.error("Base stations.json not found!");
+  // Load authoritative line-station mappings
+  const mappingsData = loadJson<MappingsFile>(args.mappings);
+  if (!mappingsData) {
+    console.error("line-mappings.json not found! Run fetch-beijing-xml.ts first.");
     process.exit(1);
   }
 
-  console.log(`  Base: ${baseData.stations.length} stations`);
-  console.log(`  Bjsubway: ${bjsubwayData?.stations.length || 0} stations`);
+  // Load enrichment data
+  const osmData = loadJson<StationsFile>(args.osm);
+  const baseData = loadJson<StationsFile>(args.base);
+
+  console.log(`  Mappings: ${mappingsData.stations.length} stations (authoritative)`);
   console.log(`  OSM: ${osmData?.stations.length || 0} stations`);
+  console.log(`  Base: ${baseData?.stations.length || 0} stations`);
 
-  console.log("\nMerging data...");
-  const merged = mergeStations(
-    baseData.stations,
-    bjsubwayData?.stations || [],
-    osmData?.stations || []
-  );
+  // Build lookup maps for enrichment
+  const osmByName = new Map<string, Station>();
+  for (const s of osmData?.stations || []) {
+    const key = normalizeStationName(s.localName || s.name);
+    osmByName.set(key, s);
+  }
 
-  // Sort
+  const baseByName = new Map<string, Station>();
+  for (const s of baseData?.stations || []) {
+    const key = normalizeStationName(s.localName || s.name);
+    baseByName.set(key, s);
+  }
+
+  console.log("\nBuilding station list from mappings...");
+
+  const merged: Station[] = [];
+  let enrichedFromOsm = 0;
+  let enrichedFromBase = 0;
+
+  for (const mapping of mappingsData.stations) {
+    const normalizedName = normalizeStationName(mapping.localName);
+
+    // Normalize line IDs
+    const lines = [...new Set(mapping.lines.map(normalizeLineId))].sort();
+
+    // Create base station
+    const station: Station = {
+      id: mapping.localName.toLowerCase().replace(/\s+/g, "-").replace(/[()（）]/g, ""),
+      systemId: "beijing-subway",
+      name: mapping.name,
+      localName: mapping.localName,
+      lines,
+      status: "active",
+      features: ["fare-vending"],
+    };
+
+    // Add transfer feature if multiple lines
+    if (lines.length > 1) {
+      station.features.push("transfer");
+    }
+
+    // Enrich from OSM data (coordinates, entrances, elevators)
+    const osmStation = osmByName.get(normalizedName);
+    if (osmStation) {
+      enrichedFromOsm++;
+
+      if (osmStation.coordinates) {
+        station.coordinates = osmStation.coordinates;
+      }
+
+      if (osmStation.entrances && osmStation.entrances.length > 0) {
+        station.entrances = osmStation.entrances;
+        station.features.push("escalator"); // Assume entrances have escalators
+      }
+
+      if (osmStation.elevators && osmStation.elevators.length > 0) {
+        station.elevators = osmStation.elevators;
+        station.features.push("elevator");
+      }
+
+      if (osmStation.osmId) {
+        station.osmId = osmStation.osmId;
+      }
+
+      if (osmStation.wikidata) {
+        station.wikidata = osmStation.wikidata;
+      }
+
+      // Merge features
+      if (osmStation.features) {
+        station.features = [...new Set([...station.features, ...osmStation.features])];
+      }
+    }
+
+    // Enrich from base data (may have additional entrance info)
+    const baseStation = baseByName.get(normalizedName);
+    if (baseStation) {
+      enrichedFromBase++;
+
+      // Use base coordinates if OSM didn't have them
+      if (!station.coordinates && baseStation.coordinates) {
+        station.coordinates = baseStation.coordinates;
+      }
+
+      // Merge entrances
+      if (baseStation.entrances && baseStation.entrances.length > 0) {
+        station.entrances = mergeEntrances(
+          station.entrances || [],
+          baseStation.entrances
+        );
+      }
+
+      // Merge elevators
+      if (baseStation.elevators && baseStation.elevators.length > 0) {
+        station.elevators = mergeElevators(
+          station.elevators || [],
+          baseStation.elevators
+        );
+      }
+
+      // Merge escalator locations
+      if (baseStation.escalatorLocations) {
+        station.escalatorLocations = baseStation.escalatorLocations;
+      }
+
+      // Merge features
+      station.features = [...new Set([...station.features, ...baseStation.features])];
+    }
+
+    // Sort and dedupe features
+    station.features = [...new Set(station.features)].sort();
+
+    merged.push(station);
+  }
+
+  console.log(`  Enriched from OSM: ${enrichedFromOsm}`);
+  console.log(`  Enriched from base: ${enrichedFromBase}`);
+
+  // Sort by Chinese name
   merged.sort((a, b) => (a.localName || a.name).localeCompare(b.localName || b.name));
 
   // Stats
@@ -347,14 +485,30 @@ async function main() {
     (sum, s) => sum + (s.elevators?.length || 0),
     0
   );
+  const transfers = merged.filter((s) => s.features.includes("transfer")).length;
+
+  // Lines breakdown
+  const lineStationCount = new Map<string, number>();
+  for (const station of merged) {
+    for (const line of station.lines) {
+      lineStationCount.set(line, (lineStationCount.get(line) || 0) + 1);
+    }
+  }
 
   console.log("\nResults:");
   console.log(`  Total stations: ${merged.length}`);
   console.log(`  With coordinates: ${withCoords}`);
+  console.log(`  Transfer stations: ${transfers}`);
   console.log(`  With entrances: ${withEntrances}`);
   console.log(`  Total entrances: ${totalEntrances} (${entrancesWithCoords} with coordinates)`);
   console.log(`  With elevators: ${withElevators}`);
   console.log(`  Total elevators: ${totalElevators}`);
+
+  console.log("\nLines coverage:");
+  const sortedLines = [...lineStationCount.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  for (const [line, count] of sortedLines) {
+    console.log(`  ${line}: ${count} stations`);
+  }
 
   if (args.dryRun) {
     console.log("\nDry run - not writing output");
