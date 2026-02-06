@@ -1,0 +1,54 @@
+{
+  "id": "sound-transit",
+  "name": "Sound Transit",
+  "shortName": "Sound Transit",
+  "location": "Seattle, WA",
+  "region": "Puget Sound Region",
+  "country": "United States",
+  "opened": "2003-07-19",
+  "website": "https://www.soundtransit.org",
+  "overview": "Sound Transit operates regional express bus, light rail, and commuter rail services in the central Puget Sound region of Washington state. The Link light rail system connects Seattle, Bellevue, and surrounding communities.",
+  "stats": {
+    "totalStations": 25,
+    "totalLines": 3,
+    "annualRidership": "48.2 million",
+    "trackMiles": 33,
+    "dailyRidership": "142,000"
+  },
+  "colors": {
+    "primary": "#00A651",
+    "secondary": "#0072CE"
+  },
+  "history": [
+    {
+      "date": "2003-07-19",
+      "title": "Sounder Commuter Rail Opens",
+      "description": "Sounder commuter rail service begins operation between Seattle and Tacoma."
+    },
+    {
+      "date": "2009-07-18",
+      "title": "Link Light Rail Opens",
+      "description": "Central Link light rail opens between Westlake and Tukwila International Boulevard."
+    },
+    {
+      "date": "2009-12-19",
+      "title": "Airport Link Extension",
+      "description": "Link light rail extends to Sea-Tac Airport, providing direct rail access to the region's major airport."
+    },
+    {
+      "date": "2016-03-19",
+      "title": "University Link Opens",
+      "description": "University Link extension opens, connecting downtown Seattle to the University of Washington."
+    },
+    {
+      "date": "2021-10-02",
+      "title": "Northgate Link Extension",
+      "description": "Northgate Link extension opens, extending service to Northgate and Roosevelt neighborhoods."
+    },
+    {
+      "date": "2024-03-30",
+      "title": "East Link Opens",
+      "description": "2 Line (East Link) opens, connecting Seattle to Bellevue and Redmond across Lake Washington."
+    }
+  ]
+}

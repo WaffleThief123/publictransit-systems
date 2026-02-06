@@ -1,0 +1,144 @@
+{
+  "generations": [
+    {
+      "id": "1000-series",
+      "systemId": "wmata",
+      "name": "1000 Series",
+      "manufacturer": "Rohr Industries",
+      "introduced": 1976,
+      "retired": 2017,
+      "status": "retired",
+      "count": 300,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 80,
+        "maxSpeed": "75 mph",
+        "weight": "77,000 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The 1000 Series was the original fleet of Metrorail cars that opened with the system in 1976. These cars featured carpeted floors and cushioned seats, which were unique among American transit systems at the time. They were completely retired by 2017."
+    },
+    {
+      "id": "2000-series",
+      "systemId": "wmata",
+      "name": "2000 Series",
+      "manufacturer": "Breda",
+      "introduced": 1983,
+      "retired": 2018,
+      "status": "retired",
+      "count": 76,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 80,
+        "maxSpeed": "75 mph",
+        "weight": "78,000 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The 2000 Series were purchased to expand the fleet for the extension of the Orange Line. They were similar in design to the 1000 Series and were the first cars built by Breda for WMATA."
+    },
+    {
+      "id": "3000-series",
+      "systemId": "wmata",
+      "name": "3000 Series",
+      "manufacturer": "Breda",
+      "introduced": 1984,
+      "retired": 2019,
+      "status": "retired",
+      "count": 290,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 80,
+        "maxSpeed": "75 mph",
+        "weight": "78,500 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The 3000 Series continued the expansion of the Metrorail fleet and introduced minor improvements over earlier series. These cars served until 2019 and were among the last pre-rehabilitation cars."
+    },
+    {
+      "id": "4000-series",
+      "systemId": "wmata",
+      "name": "4000 Series",
+      "manufacturer": "Breda",
+      "introduced": 1992,
+      "retired": null,
+      "status": "retired",
+      "count": 100,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 80,
+        "maxSpeed": "75 mph",
+        "weight": "79,000 lbs",
+        "traction": "AC propulsion"
+      },
+      "description": "The 4000 Series were the first Metrorail cars to use AC propulsion systems. Only 100 were built as WMATA moved toward rehabilitating existing cars."
+    },
+    {
+      "id": "5000-series",
+      "systemId": "wmata",
+      "name": "5000 Series",
+      "manufacturer": "CAF USA",
+      "introduced": 2001,
+      "retired": null,
+      "status": "active",
+      "count": 192,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 64,
+        "maxSpeed": "75 mph",
+        "weight": "80,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The 5000 Series represented a significant upgrade with modern electronics and improved reliability. They feature fabric-covered seats and improved lighting."
+    },
+    {
+      "id": "6000-series",
+      "systemId": "wmata",
+      "name": "6000 Series",
+      "manufacturer": "Alstom",
+      "introduced": 2006,
+      "retired": null,
+      "status": "active",
+      "count": 184,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 64,
+        "maxSpeed": "75 mph",
+        "weight": "81,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The 6000 Series continued the modernization of the fleet with improved passenger amenities and environmental controls. They are currently in active service."
+    },
+    {
+      "id": "7000-series",
+      "systemId": "wmata",
+      "name": "7000 Series",
+      "manufacturer": "Kawasaki",
+      "introduced": 2014,
+      "retired": null,
+      "status": "active",
+      "count": 748,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft 1 in",
+        "capacity": 175,
+        "seatedCapacity": 64,
+        "maxSpeed": "75 mph",
+        "weight": "82,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The 7000 Series is the newest generation of Metrorail cars, featuring digital displays, LED lighting, and improved accessibility. They are designed to eventually replace all older railcar series and are the largest single order in WMATA history."
+    }
+  ]
+}

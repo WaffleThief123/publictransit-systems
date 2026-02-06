@@ -1,0 +1,18 @@
+name = "wmata-incidents"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+account_id = "980848d7b4694e0fa4034bc45954e11a"
+
+# Cron trigger - runs every 8 hours (0:00, 8:00, 16:00 UTC)
+[triggers]
+crons = ["0 0,8,16 * * *"]
+
+# KV namespace for storing incident data
+[[kv_namespaces]]
+binding = "INCIDENTS_KV"
+id = "e15af4b72fd64edd85e62dbda1f92765"  # Replace after creating: wrangler kv:namespace create INCIDENTS_KV
+
+# Environment variables (set via wrangler secret)
+
+[vars]
+CORS_ORIGIN = "*"  # Or set to your domain

@@ -1,0 +1,54 @@
+{
+  "id": "bart",
+  "name": "Bay Area Rapid Transit",
+  "shortName": "BART",
+  "location": "San Francisco Bay Area, CA",
+  "region": "San Francisco Bay Area",
+  "country": "United States",
+  "opened": "1972-09-11",
+  "website": "https://www.bart.gov",
+  "overview": "BART is a heavy rail rapid transit system serving the San Francisco Bay Area in California. It connects San Francisco, Oakland, Berkeley, and surrounding East Bay cities with lines extending to San Francisco International Airport and the Silicon Valley.",
+  "stats": {
+    "totalStations": 50,
+    "totalLines": 6,
+    "annualRidership": "97.4 million",
+    "trackMiles": 131,
+    "dailyRidership": "323,000"
+  },
+  "colors": {
+    "primary": "#009CDE",
+    "secondary": "#ED1C24"
+  },
+  "history": [
+    {
+      "date": "1972-09-11",
+      "title": "System Opens",
+      "description": "BART opens with the first segment between Oakland and Fremont, becoming the first new rapid transit system in the United States since 1907."
+    },
+    {
+      "date": "1974-09-16",
+      "title": "Transbay Tube Opens",
+      "description": "The Transbay Tube opens, connecting San Francisco to the East Bay through a tunnel beneath San Francisco Bay."
+    },
+    {
+      "date": "2003-06-22",
+      "title": "SFO Extension Opens",
+      "description": "BART extends to San Francisco International Airport, providing direct rail access to the major regional airport."
+    },
+    {
+      "date": "2014-02-15",
+      "title": "Oakland Airport Connector",
+      "description": "The Oakland Airport Connector opens, providing automated people mover service from Coliseum station to Oakland International Airport."
+    },
+    {
+      "date": "2017-03-25",
+      "title": "Warm Springs Extension",
+      "description": "BART opens the Warm Springs/South Fremont station, the first phase of the Silicon Valley extension."
+    },
+    {
+      "date": "2020-06-13",
+      "title": "Milpitas and Berryessa Open",
+      "description": "BART extends into Santa Clara County with new stations at Milpitas and Berryessa/North San Jose."
+    }
+  ]
+}

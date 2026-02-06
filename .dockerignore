@@ -1,0 +1,18 @@
+Dockerfile
+.dockerignore
+node_modules
+.next
+.git
+.github
+*.md
+.env*
+.eslintrc*
+
+# Deployment configs (not needed in image)
+nginx/
+docker-compose.yml
+
+# Cloudflare worker (separate deployment)
+workers/
+.wrangler/
+wrangler.toml

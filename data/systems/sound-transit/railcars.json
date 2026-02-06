@@ -1,0 +1,64 @@
+{
+  "generations": [
+    {
+      "id": "kinkisharyo-lrv",
+      "systemId": "sound-transit",
+      "name": "Kinkisharyo LRV",
+      "manufacturer": "Kinkisharyo",
+      "introduced": 2008,
+      "retired": null,
+      "status": "active",
+      "count": 62,
+      "specs": {
+        "length": "95 ft",
+        "width": "8 ft 8 in",
+        "capacity": 200,
+        "seatedCapacity": 74,
+        "maxSpeed": "55 mph",
+        "weight": "103,600 lbs",
+        "traction": "AC propulsion"
+      },
+      "description": "The original Link light rail vehicles built by Kinkisharyo in Japan. These low-floor articulated vehicles feature a distinctive blue and white livery and serve as the backbone of the Link system."
+    },
+    {
+      "id": "siemens-s70",
+      "systemId": "sound-transit",
+      "name": "Siemens S70",
+      "manufacturer": "Siemens",
+      "introduced": 2019,
+      "retired": null,
+      "status": "active",
+      "count": 122,
+      "specs": {
+        "length": "95 ft",
+        "width": "8 ft 8 in",
+        "capacity": 200,
+        "seatedCapacity": 74,
+        "maxSpeed": "55 mph",
+        "weight": "106,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The Siemens S70 light rail vehicles were ordered to expand the fleet for the Northgate and East Link extensions. They feature an updated interior design and improved accessibility features."
+    },
+    {
+      "id": "brookville-streetcar",
+      "systemId": "sound-transit",
+      "name": "Brookville Liberty",
+      "manufacturer": "Brookville Equipment",
+      "introduced": 2016,
+      "retired": null,
+      "status": "active",
+      "count": 6,
+      "specs": {
+        "length": "66 ft",
+        "width": "8 ft",
+        "capacity": 120,
+        "seatedCapacity": 32,
+        "maxSpeed": "35 mph",
+        "weight": "72,000 lbs",
+        "traction": "Battery-electric hybrid"
+      },
+      "description": "The Brookville Liberty streetcars operate on the T Line (Tacoma Link). These modern streetcars feature a battery-electric hybrid system that allows wire-free operation in portions of the route."
+    }
+  ]
+}

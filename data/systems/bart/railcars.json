@@ -1,0 +1,104 @@
+{
+  "generations": [
+    {
+      "id": "a-car",
+      "systemId": "bart",
+      "name": "A Car (Original Fleet)",
+      "manufacturer": "Rohr Industries",
+      "introduced": 1972,
+      "retired": 2023,
+      "status": "retired",
+      "count": 439,
+      "specs": {
+        "length": "70 ft",
+        "width": "10 ft 6 in",
+        "capacity": 200,
+        "seatedCapacity": 72,
+        "maxSpeed": "80 mph",
+        "weight": "57,000 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The original A Cars were the first fleet of BART vehicles, featuring a distinctive space-age design. They served the system for over 50 years before being replaced by the Fleet of the Future."
+    },
+    {
+      "id": "b-car",
+      "systemId": "bart",
+      "name": "B Car (Expansion Fleet)",
+      "manufacturer": "Alstom",
+      "introduced": 1995,
+      "retired": 2023,
+      "status": "retired",
+      "count": 150,
+      "specs": {
+        "length": "70 ft",
+        "width": "10 ft 6 in",
+        "capacity": 200,
+        "seatedCapacity": 72,
+        "maxSpeed": "80 mph",
+        "weight": "58,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The B Cars were ordered in the 1990s to expand the fleet for increased ridership. They featured updated electronics and improved climate control systems."
+    },
+    {
+      "id": "c-car",
+      "systemId": "bart",
+      "name": "C Car (C1/C2)",
+      "manufacturer": "Bombardier",
+      "introduced": 2002,
+      "retired": null,
+      "status": "active",
+      "count": 104,
+      "specs": {
+        "length": "70 ft",
+        "width": "10 ft 6 in",
+        "capacity": 200,
+        "seatedCapacity": 72,
+        "maxSpeed": "80 mph",
+        "weight": "58,500 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The C Cars were the last vehicles to use the original BART car design. They introduced improved accessibility features and updated passenger information displays."
+    },
+    {
+      "id": "fleet-of-the-future",
+      "systemId": "bart",
+      "name": "Fleet of the Future",
+      "manufacturer": "Bombardier Transportation",
+      "introduced": 2018,
+      "retired": null,
+      "status": "active",
+      "count": 775,
+      "specs": {
+        "length": "71 ft",
+        "width": "10 ft 6 in",
+        "capacity": 186,
+        "seatedCapacity": 54,
+        "maxSpeed": "80 mph",
+        "weight": "64,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The Fleet of the Future represents a complete modernization of BART's rolling stock. These cars feature a new interior design with wider aisles, digital displays, LED lighting, and improved ventilation. The entire legacy fleet is being replaced by these new vehicles."
+    },
+    {
+      "id": "oac-car",
+      "systemId": "bart",
+      "name": "Oakland Airport Connector",
+      "manufacturer": "Doppelmayr Cable Car",
+      "introduced": 2014,
+      "retired": null,
+      "status": "active",
+      "count": 4,
+      "specs": {
+        "length": "45 ft",
+        "width": "8 ft 6 in",
+        "capacity": 38,
+        "seatedCapacity": 16,
+        "maxSpeed": "50 mph",
+        "weight": "25,000 lbs",
+        "traction": "Cable-driven"
+      },
+      "description": "The Oakland Airport Connector uses automated cable-driven vehicles to connect the Coliseum BART station to Oakland International Airport. The system operates without on-board operators."
+    }
+  ]
+}

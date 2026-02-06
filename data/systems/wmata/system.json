@@ -1,0 +1,59 @@
+{
+  "id": "wmata",
+  "name": "Washington Metropolitan Area Transit Authority",
+  "shortName": "WMATA",
+  "location": "Washington, D.C.",
+  "region": "Washington Metropolitan Area",
+  "country": "United States",
+  "opened": "1976-03-27",
+  "website": "https://wmata.com",
+  "overview": "The Washington Metro, operated by WMATA, is the rapid transit system serving the Washington metropolitan area. It is the second-busiest rapid transit system in the United States and serves the District of Columbia, along with portions of Maryland and Virginia.",
+  "stats": {
+    "totalStations": 98,
+    "totalLines": 6,
+    "annualRidership": "186.5 million",
+    "trackMiles": 129,
+    "dailyRidership": "626,000"
+  },
+  "colors": {
+    "primary": "#004B87",
+    "secondary": "#00B140"
+  },
+  "history": [
+    {
+      "date": "1976-03-27",
+      "title": "System Opens",
+      "description": "Metro opens with the first segment of the Red Line between Rhode Island Avenue and Farragut North, comprising 4.6 miles and 5 stations."
+    },
+    {
+      "date": "1977-07-01",
+      "title": "Blue Line Opens",
+      "description": "Blue Line service begins between National Airport and Stadium-Armory."
+    },
+    {
+      "date": "1978-02-06",
+      "title": "Orange Line Opens",
+      "description": "Orange Line begins service between New Carrollton and Ballston."
+    },
+    {
+      "date": "1991-12-28",
+      "title": "Green Line Opens",
+      "description": "Green Line opens between U Street and Anacostia."
+    },
+    {
+      "date": "2001-01-13",
+      "title": "System Completed",
+      "description": "The original 103-mile Adopted Regional System is completed with the opening of the Green Line to Branch Avenue."
+    },
+    {
+      "date": "2014-07-26",
+      "title": "Silver Line Phase 1",
+      "description": "Silver Line Phase 1 opens, extending service to Tysons Corner and Reston."
+    },
+    {
+      "date": "2022-11-15",
+      "title": "Silver Line Phase 2",
+      "description": "Silver Line Phase 2 opens, extending service to Dulles International Airport and Loudoun County."
+    }
+  ]
+}

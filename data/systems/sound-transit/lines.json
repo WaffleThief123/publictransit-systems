@@ -1,0 +1,43 @@
+{
+  "lines": [
+    {
+      "id": "1-line",
+      "systemId": "sound-transit",
+      "name": "1 Line",
+      "color": "blue",
+      "colorHex": "#0072CE",
+      "opened": "2009-07-18",
+      "status": "active",
+      "termini": ["Lynnwood", "Angle Lake"],
+      "length": 23.4,
+      "stationCount": 22,
+      "description": "The 1 Line (formerly Central Link) is the primary light rail line serving Seattle, running from Lynnwood in the north through downtown Seattle and the University District to Angle Lake near Sea-Tac Airport."
+    },
+    {
+      "id": "2-line",
+      "systemId": "sound-transit",
+      "name": "2 Line",
+      "color": "green",
+      "colorHex": "#00A651",
+      "opened": "2024-03-30",
+      "status": "active",
+      "termini": ["South Bellevue", "Redmond Technology"],
+      "length": 14.5,
+      "stationCount": 10,
+      "description": "The 2 Line (formerly East Link) connects Seattle to Bellevue and Redmond, crossing Lake Washington on the I-90 floating bridge. It serves the Eastside tech corridor."
+    },
+    {
+      "id": "t-line",
+      "systemId": "sound-transit",
+      "name": "T Line (Tacoma Link)",
+      "color": "purple",
+      "colorHex": "#522398",
+      "opened": "2003-08-22",
+      "status": "active",
+      "termini": ["Theater District", "Stadium District"],
+      "length": 5.5,
+      "stationCount": 6,
+      "description": "The T Line (Tacoma Link) provides free streetcar service through downtown Tacoma, connecting the Theater District to the Stadium District and Hilltop neighborhood."
+    }
+  ]
+}
