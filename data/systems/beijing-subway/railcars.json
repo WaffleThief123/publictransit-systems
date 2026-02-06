@@ -1,0 +1,244 @@
+{
+  "generations": [
+    {
+      "id": "dk-series",
+      "systemId": "beijing-subway",
+      "name": "DK Series",
+      "manufacturer": "CNR Changchun",
+      "introduced": 1969,
+      "retired": 2008,
+      "status": "retired",
+      "count": 120,
+      "specs": {
+        "length": "19 m",
+        "width": "2.6 m",
+        "capacity": 200,
+        "seatedCapacity": 54,
+        "maxSpeed": "70 km/h",
+        "carsPerTrain": 6,
+        "traction": "750V DC third rail"
+      },
+      "description": "The original DK series (DK2, DK3) were China's first domestically produced metro cars, serving Lines 1 and 2 from the system's opening. They featured basic amenities and were gradually replaced starting in the 1990s."
+    },
+    {
+      "id": "dkz4",
+      "systemId": "beijing-subway",
+      "name": "DKZ4 Series",
+      "manufacturer": "CNR Changchun",
+      "introduced": 1995,
+      "retired": null,
+      "status": "retired",
+      "count": 96,
+      "specs": {
+        "length": "19.52 m",
+        "width": "2.8 m",
+        "capacity": 245,
+        "seatedCapacity": 60,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 6,
+        "traction": "750V DC third rail"
+      },
+      "description": "The DKZ4 series represented a significant modernization of Beijing's fleet, featuring improved passenger amenities and air conditioning. They primarily served Line 1."
+    },
+    {
+      "id": "dkz5",
+      "systemId": "beijing-subway",
+      "name": "DKZ5 Series",
+      "manufacturer": "CNR Changchun",
+      "introduced": 2002,
+      "retired": null,
+      "status": "active",
+      "count": 64,
+      "specs": {
+        "length": "19.52 m",
+        "width": "2.8 m",
+        "capacity": 245,
+        "seatedCapacity": 60,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 4,
+        "traction": "750V DC third rail"
+      },
+      "description": "The DKZ5 series was introduced for Line 13 when it opened in 2002. These Type B cars feature a 4-car configuration suitable for the suburban line's ridership levels."
+    },
+    {
+      "id": "sfm04",
+      "systemId": "beijing-subway",
+      "name": "SFM04 Series",
+      "manufacturer": "CRRC Qingdao Sifang",
+      "introduced": 2011,
+      "retired": null,
+      "status": "active",
+      "count": 360,
+      "specs": {
+        "length": "19.52 m",
+        "width": "2.8 m",
+        "capacity": 245,
+        "seatedCapacity": 60,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 6,
+        "traction": "750V DC third rail"
+      },
+      "description": "The SFM04 series are modern Type B cars serving Line 1. They feature LED displays, improved HVAC systems, and regenerative braking."
+    },
+    {
+      "id": "sfm14",
+      "systemId": "beijing-subway",
+      "name": "SFM14 Series",
+      "manufacturer": "CRRC Qingdao Sifang",
+      "introduced": 2009,
+      "retired": null,
+      "status": "active",
+      "count": 420,
+      "specs": {
+        "length": "19.52 m",
+        "width": "2.8 m",
+        "capacity": 245,
+        "seatedCapacity": 60,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 6,
+        "traction": "750V DC third rail"
+      },
+      "description": "The SFM14 series serves multiple lines including Lines 4, 8, and Batong Line. These Type B cars are operated by Beijing MTR and feature modern passenger amenities."
+    },
+    {
+      "id": "type-a-line6",
+      "systemId": "beijing-subway",
+      "name": "Type A (Line 6/14)",
+      "manufacturer": "CRRC Changchun",
+      "introduced": 2012,
+      "retired": null,
+      "status": "active",
+      "count": 520,
+      "specs": {
+        "length": "22.8 m",
+        "width": "3.0 m",
+        "capacity": 310,
+        "seatedCapacity": 56,
+        "maxSpeed": "100 km/h",
+        "carsPerTrain": 8,
+        "traction": "1500V DC overhead"
+      },
+      "description": "Type A cars on Lines 6 and 14 are larger-capacity vehicles designed for high-volume routes. They feature 8-car consists with a capacity of nearly 2,500 passengers per train."
+    },
+    {
+      "id": "type-a-line16",
+      "systemId": "beijing-subway",
+      "name": "Type A (Line 16/17/19)",
+      "manufacturer": "CRRC Changchun/Sifang",
+      "introduced": 2016,
+      "retired": null,
+      "status": "active",
+      "count": 380,
+      "specs": {
+        "length": "22.8 m",
+        "width": "3.0 m",
+        "capacity": 310,
+        "seatedCapacity": 56,
+        "maxSpeed": "100 km/h",
+        "carsPerTrain": 8,
+        "traction": "1500V DC overhead"
+      },
+      "description": "The newest Type A cars serve Lines 16, 17, and 19. These high-capacity trains feature modern passenger information systems and energy-efficient propulsion."
+    },
+    {
+      "id": "sfm16-automated",
+      "systemId": "beijing-subway",
+      "name": "SFM16 Automated",
+      "manufacturer": "CRRC Qingdao Sifang",
+      "introduced": 2017,
+      "retired": null,
+      "status": "active",
+      "count": 32,
+      "specs": {
+        "length": "19.52 m",
+        "width": "2.8 m",
+        "capacity": 245,
+        "seatedCapacity": 60,
+        "maxSpeed": "80 km/h",
+        "carsPerTrain": 4,
+        "traction": "750V DC third rail"
+      },
+      "description": "The SFM16 series operates on the Yanfang Line as China's first fully automated (GoA4) domestically-developed metro trains, requiring no on-board staff."
+    },
+    {
+      "id": "airport-express-art200",
+      "systemId": "beijing-subway",
+      "name": "ART 200",
+      "manufacturer": "CRRC Changchun/Bombardier",
+      "introduced": 2008,
+      "retired": null,
+      "status": "active",
+      "count": 16,
+      "specs": {
+        "length": "21.4 m",
+        "width": "3.0 m",
+        "capacity": 238,
+        "seatedCapacity": 66,
+        "maxSpeed": "110 km/h",
+        "carsPerTrain": 4,
+        "traction": "750V DC third rail"
+      },
+      "description": "The ART 200 series was jointly developed for the Capital Airport Express. These premium trains feature luggage storage, comfortable seating, and real-time flight information displays."
+    },
+    {
+      "id": "daxing-airport-type-d",
+      "systemId": "beijing-subway",
+      "name": "Type D Airport Express",
+      "manufacturer": "CRRC",
+      "introduced": 2019,
+      "retired": null,
+      "status": "active",
+      "count": 24,
+      "specs": {
+        "length": "25 m",
+        "width": "3.3 m",
+        "capacity": 448,
+        "seatedCapacity": 88,
+        "maxSpeed": "160 km/h",
+        "carsPerTrain": 8,
+        "traction": "25kV AC overhead"
+      },
+      "description": "The Type D trains on the Daxing Airport Express are the fastest metro trains in Beijing, operating at 160 km/h. They are fully automated and feature airport-style amenities."
+    },
+    {
+      "id": "s1-maglev",
+      "systemId": "beijing-subway",
+      "name": "S1 Maglev",
+      "manufacturer": "CRRC",
+      "introduced": 2017,
+      "retired": null,
+      "status": "active",
+      "count": 18,
+      "specs": {
+        "length": "15 m",
+        "width": "3.0 m",
+        "capacity": 240,
+        "seatedCapacity": 60,
+        "maxSpeed": "105 km/h",
+        "carsPerTrain": 6,
+        "traction": "Medium-low speed maglev"
+      },
+      "description": "The S1 maglev trains use electromagnetic levitation technology, providing a smooth and quiet ride. This was Beijing's first maglev line and demonstrates Chinese maglev capabilities."
+    },
+    {
+      "id": "xijiao-tram",
+      "systemId": "beijing-subway",
+      "name": "Xijiao Tram",
+      "manufacturer": "CRRC",
+      "introduced": 2017,
+      "retired": null,
+      "status": "active",
+      "count": 12,
+      "specs": {
+        "length": "32 m",
+        "width": "2.65 m",
+        "capacity": 300,
+        "seatedCapacity": 58,
+        "maxSpeed": "70 km/h",
+        "carsPerTrain": 5,
+        "traction": "750V AC overhead"
+      },
+      "description": "Modern low-floor trams serving the Xijiao Line to Fragrant Hills. These articulated trams provide scenic views along the route to the western hills."
+    }
+  ]
+}

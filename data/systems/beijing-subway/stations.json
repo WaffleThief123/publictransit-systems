@@ -1,0 +1,7145 @@
+{
+  "stations": [
+    {
+      "id": "10����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "10���� | ���������ٷ���վ",
+      "localName": "10���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.293357,
+        "lat": 39.974414
+      },
+      "entrances": []
+    },
+    {
+      "id": "11����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "11���� | ���������ٷ���վ",
+      "localName": "11���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.156032,
+        "lat": 39.93349
+      },
+      "entrances": []
+    },
+    {
+      "id": "12����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "12���� | ���������ٷ���վ",
+      "localName": "12���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.274193,
+        "lat": 39.942414
+      },
+      "entrances": []
+    },
+    {
+      "id": "13����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "13���� | ���������ٷ���վ",
+      "localName": "13���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.355426,
+        "lat": 39.940474
+      },
+      "entrances": []
+    },
+    {
+      "id": "15����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "15���� | ���������ٷ���վ",
+      "localName": "15���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.684732,
+        "lat": 40.132573
+      },
+      "entrances": []
+    },
+    {
+      "id": "18����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "18���� | ���������ٷ���վ",
+      "localName": "18���� | ���������ٷ���վ",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.27252,
+        "lat": 40.032637
+      },
+      "entrances": []
+    },
+    {
+      "id": "1����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "1���� | ���������ٷ���վ",
+      "localName": "1���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.190337,
+        "lat": 39.90745
+      },
+      "entrances": []
+    },
+    {
+      "id": "2����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "2���� | ���������ٷ���վ",
+      "localName": "2���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.355426,
+        "lat": 39.940474
+      },
+      "entrances": []
+    },
+    {
+      "id": "3����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "3���� | ���������ٷ���վ",
+      "localName": "3���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.434133,
+        "lat": 39.933801
+      },
+      "entrances": []
+    },
+    {
+      "id": "5����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "5���� | ���������ٷ���վ",
+      "localName": "5���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.428368,
+        "lat": 39.845849
+      },
+      "entrances": []
+    },
+    {
+      "id": "6����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "6���� | ���������ٷ���վ",
+      "localName": "6���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.162586,
+        "lat": 39.923298
+      },
+      "entrances": []
+    },
+    {
+      "id": "7����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "7���� | ���������ٷ���վ",
+      "localName": "7���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.321262,
+        "lat": 39.894763
+      },
+      "entrances": []
+    },
+    {
+      "id": "8����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "8���� | ���������ٷ���վ",
+      "localName": "8���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.313698,
+        "lat": 40.104297
+      },
+      "entrances": []
+    },
+    {
+      "id": "9����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "9���� | ���������ٷ���վ",
+      "localName": "9���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.301889,
+        "lat": 39.814322
+      },
+      "entrances": []
+    },
+    {
+      "id": "s1��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "S1�� | ���������ٷ���վ",
+      "localName": "S1�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.178401,
+        "lat": 39.925789
+      },
+      "entrances": []
+    },
+    {
+      "id": "wanshoulu",
+      "systemId": "beijing-subway",
+      "name": "Wanshoulu",
+      "localName": "万寿路",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9079,
+        "lng": 116.2785
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on Chang'an Avenue serving the Wanshoulu area in Haidian District.",
+      "entrances": [
+        {
+          "id": "osm-1298050521",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9060951,
+            "lng": 116.2897446
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050530",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9064238,
+            "lng": 116.2882123
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050531",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9060949,
+            "lng": 116.2878071
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050552",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9064279,
+            "lng": 116.2892996
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050562",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9064279,
+            "lng": 116.289764
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050571",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9060798,
+            "lng": 116.2882332
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050572",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9060963,
+            "lng": 116.289302
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050577",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.9064274,
+            "lng": 116.2878195
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849504,
+      "wikidata": "Q6123642"
+    },
+    {
+      "id": "sanyuanqiao",
+      "systemId": "beijing-subway",
+      "name": "Sanyuanqiao",
+      "localName": "三元桥",
+      "lines": [
+        "line-10",
+        "airport-express"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.959,
+        "lng": 116.4585
+      },
+      "features": [
+        "airport-connection",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station with Airport Express near the Third Ring Road.",
+      "entrances": [
+        {
+          "id": "osm-10298415729",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9600401,
+            "lng": 116.45039
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1974915217",
+          "name": "C3",
+          "coordinates": {
+            "lat": 39.9598275,
+            "lng": 116.4507081
+          },
+          "ref": "C3",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1974915214",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.959683,
+            "lng": 116.4505489
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1765144965",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9595194,
+            "lng": 116.4512751
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5690603188",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.959292,
+            "lng": 116.4517874
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5441521553,
+      "wikidata": "Q847757"
+    },
+    {
+      "id": "dongdan",
+      "systemId": "beijing-subway",
+      "name": "Dongdan",
+      "localName": "东单",
+      "lines": [
+        "line-1",
+        "line-5"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.913,
+        "lng": 116.4167
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station between Lines 1 and 5 at the Dongdan intersection.",
+      "entrances": [
+        {
+          "id": "osm-1654257557",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.907138,
+            "lng": 116.4126582
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7825512449",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.907141,
+            "lng": 116.4131074
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7825512462",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.907165,
+            "lng": 116.4149093
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1654257562",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9066033,
+            "lng": 116.4125494
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1654257560",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9070544,
+            "lng": 116.4109871
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1654257552",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9065699,
+            "lng": 116.4111565
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4716204515",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.906638,
+            "lng": 116.4145286
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7592090661",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9075452,
+            "lng": 116.4127752
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430429324,
+      "wikidata": "Q843279"
+    },
+    {
+      "id": "dongsi-shitiao",
+      "systemId": "beijing-subway",
+      "name": "Dongsi Shitiao",
+      "localName": "东四十条",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9325,
+        "lng": 116.4325
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on Line 2 serving the Dongsi Shitiao area.",
+      "entrances": [
+        {
+          "id": "osm-1114100905",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9327602,
+            "lng": 116.4270835
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6095096837",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9328936,
+            "lng": 116.4285199
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-922948491",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9319734,
+            "lng": 116.4290011
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1114100902",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9319539,
+            "lng": 116.4268918
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8283682614",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9325691,
+            "lng": 116.4290738
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6497754454,
+      "wikidata": "Q5296031"
+    },
+    {
+      "id": "dongzhimen",
+      "systemId": "beijing-subway",
+      "name": "Dongzhimen",
+      "localName": "东直门",
+      "lines": [
+        "line-2",
+        "line-13",
+        "airport-express"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.94,
+        "lng": 116.428
+      },
+      "features": [
+        "accessible",
+        "airport-connection",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major interchange station with Airport Express service and long-distance bus terminal.",
+      "entrances": [
+        {
+          "id": "osm-1195696997",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9405574,
+            "lng": 116.4269333
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4917775894",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.9399647,
+            "lng": 116.4290147
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4917776043",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.9399665,
+            "lng": 116.4286917
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3562647527",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9394825,
+            "lng": 116.4288791
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8283682608",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9394766,
+            "lng": 116.4286925
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696962",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9388359,
+            "lng": 116.4270844
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1354470995",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9399623,
+            "lng": 116.4288698
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4116335545",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9399608,
+            "lng": 116.429155
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10655378371",
+          "name": "Entrance 9",
+          "coordinates": {
+            "lat": 39.9392026,
+            "lng": 116.4267694
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-10655378372",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9419034,
+            "lng": 116.4282524
+          },
+          "ref": "G",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 10655378374,
+      "wikidata": "Q847850"
+    },
+    {
+      "id": "zhongguancun",
+      "systemId": "beijing-subway",
+      "name": "Zhongguancun",
+      "localName": "中关村",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.984,
+        "lng": 116.3165
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving Beijing's technology hub and Zhongguancun Science Park.",
+      "entrances": [
+        {
+          "id": "osm-1362276452",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9836353,
+            "lng": 116.3108364
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1420940400",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9820359,
+            "lng": 116.3099226
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1559643067",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9817326,
+            "lng": 116.3109701
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10796572021",
+          "name": "Exit A1 lift of Zhongguancun Station",
+          "coordinates": {
+            "lat": 39.983228,
+            "lng": 116.3096435
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1362276450",
+          "name": "中關村站A1口",
+          "coordinates": {
+            "lat": 39.9836414,
+            "lng": 116.3097217
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046851,
+      "wikidata": "Q5937882"
+    },
+    {
+      "id": "fengtai-station",
+      "systemId": "beijing-subway",
+      "name": "Fengtai Station",
+      "localName": "丰台站",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8445,
+        "lng": 116.3165
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "rail-connection"
+      ],
+      "description": "Station serving Fengtai Railway Station.",
+      "osmId": 5453410797,
+      "wikidata": "Q105072002"
+    },
+    {
+      "id": "wukesong",
+      "systemId": "beijing-subway",
+      "name": "Wukesong",
+      "localName": "五棵松",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9079,
+        "lng": 116.2627
+      },
+      "features": [
+        "bus-connection",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Major station serving the Wukesong area, Cadillac Arena, and shopping centers.",
+      "entrances": [
+        {
+          "id": "osm-1298050591",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9064407,
+            "lng": 116.267029
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050597",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9060383,
+            "lng": 116.2670097
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050519",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9064424,
+            "lng": 116.26744
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050528",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9064325,
+            "lng": 116.2689917
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050555",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9060249,
+            "lng": 116.2689945
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050568",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9064325,
+            "lng": 116.2685273
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050575",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9060371,
+            "lng": 116.2674335
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298050586",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.9060235,
+            "lng": 116.2685234
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849505,
+      "wikidata": "Q842090"
+    },
+    {
+      "id": "liangmaqiao",
+      "systemId": "beijing-subway",
+      "name": "Liangmaqiao",
+      "localName": "亮马桥",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9495,
+        "lng": 116.461
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the embassy district and Liangma River area.",
+      "entrances": [
+        {
+          "id": "osm-1918652190",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9482326,
+            "lng": 116.455156
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1918652192",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9486535,
+            "lng": 116.4573111
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1918652188",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9471367,
+            "lng": 116.4564827
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1918652189",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9474069,
+            "lng": 116.4551243
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448569279,
+      "wikidata": "Q5937256"
+    },
+    {
+      "id": "renmin-university",
+      "systemId": "beijing-subway",
+      "name": "Renmin University",
+      "localName": "人民大学",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.967,
+        "lng": 116.3235
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving Renmin University of China.",
+      "entrances": [
+        {
+          "id": "osm-1364282697",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.9666746,
+            "lng": 116.3144006
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282698",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.9667262,
+            "lng": 116.3152317
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1767257015",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9661948,
+            "lng": 116.3158678
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-586467392",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9652633,
+            "lng": 116.3164109
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282690",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9645763,
+            "lng": 116.3152619
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-12453018013",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9662541,
+            "lng": 116.3169435
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-12453018014",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9654013,
+            "lng": 116.3171805
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046852,
+      "wikidata": "Q5938338"
+    },
+    {
+      "id": "jiandemen",
+      "systemId": "beijing-subway",
+      "name": "Jiandemen",
+      "localName": "健德门",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9735,
+        "lng": 116.3885
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station at the historic Jiandemen gate site.",
+      "osmId": 5447625351,
+      "wikidata": "Q6119375"
+    },
+    {
+      "id": "babaoshan",
+      "systemId": "beijing-subway",
+      "name": "Babaoshan",
+      "localName": "八宝山",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9045,
+        "lng": 116.2175
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Babaoshan Revolutionary Cemetery.",
+      "entrances": [
+        {
+          "id": "osm-1296102332",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9063941,
+            "lng": 116.2306601
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102340",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9059894,
+            "lng": 116.2306839
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102379",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.906382,
+            "lng": 116.2291752
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102415",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9059817,
+            "lng": 116.2291819
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849507,
+      "wikidata": "Q842136"
+    },
+    {
+      "id": "bajiao-amusement-park",
+      "systemId": "beijing-subway",
+      "name": "Bajiao Amusement Park",
+      "localName": "八角游乐园",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9052,
+        "lng": 116.1983
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the Bajiao area and nearby Shijingshan Amusement Park."
+    },
+    {
+      "id": "gongzhufen",
+      "systemId": "beijing-subway",
+      "name": "Gongzhufen",
+      "localName": "公主坟",
+      "lines": [
+        "line-1",
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9079,
+        "lng": 116.3003
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station between Lines 1 and 10, serving the Gongzhufen commercial area.",
+      "entrances": [
+        {
+          "id": "osm-1298076031",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9070556,
+            "lng": 116.3028648
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430421400,
+      "wikidata": "Q5581824"
+    },
+    {
+      "id": "gongyixiqiao",
+      "systemId": "beijing-subway",
+      "name": "Gongyixiqiao",
+      "localName": "公益西桥",
+      "lines": [
+        "line-4",
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8235,
+        "lng": 116.3595
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 4 and 10, southern terminus of Line 4.",
+      "entrances": [
+        {
+          "id": "osm-1674674639",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.8340246,
+            "lng": 116.3649673
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674674644",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.8346146,
+            "lng": 116.3649715
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674674645",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.8346582,
+            "lng": 116.3643213
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674675752",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.8332178,
+            "lng": 116.3642778
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674675754",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.8336279,
+            "lng": 116.3652236
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674674656",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.8362887,
+            "lng": 116.3643697
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1674674657",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.8364308,
+            "lng": 116.3650187
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430444271,
+      "wikidata": "Q5581810"
+    },
+    {
+      "id": "liuliqiao",
+      "systemId": "beijing-subway",
+      "name": "Liuliqiao",
+      "localName": "六里桥",
+      "lines": [
+        "line-10",
+        "line-9"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8715,
+        "lng": 116.298
+      },
+      "features": [
+        "bus-connection",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 9, major bus terminal.",
+      "entrances": [
+        {
+          "id": "osm-8345368892",
+          "name": "六里桥地铁站A口",
+          "coordinates": {
+            "lat": 39.8788895,
+            "lng": 116.295808
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8664623778",
+          "name": "六里桥地铁站B1口",
+          "coordinates": {
+            "lat": 39.879523,
+            "lng": 116.297591
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10203953347",
+          "name": "六里桥地铁站B2口",
+          "coordinates": {
+            "lat": 39.8807263,
+            "lng": 116.296409
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8345368881",
+          "name": "六里桥地铁站C口",
+          "coordinates": {
+            "lat": 39.8791905,
+            "lng": 116.2983637
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8345368888",
+          "name": "六里桥地铁站D口",
+          "coordinates": {
+            "lat": 39.8786139,
+            "lng": 116.2982328
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8345368890",
+          "name": "六里桥地铁站E口",
+          "coordinates": {
+            "lat": 39.8776127,
+            "lng": 116.2971728
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8345368891",
+          "name": "六里桥地铁站F口",
+          "coordinates": {
+            "lat": 39.8778433,
+            "lng": 116.2966878
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430454140,
+      "wikidata": "Q4392236"
+    },
+    {
+      "id": "military-museum",
+      "systemId": "beijing-subway",
+      "name": "Military Museum",
+      "localName": "军事博物馆",
+      "lines": [
+        "line-1",
+        "line-9"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9079,
+        "lng": 116.3167
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station serving the Military Museum of the Chinese People's Revolution."
+    },
+    {
+      "id": "agricultural-exhibition-center",
+      "systemId": "beijing-subway",
+      "name": "Agricultural Exhibition Center",
+      "localName": "农业展览馆",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9385,
+        "lng": 116.4615
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the China Agricultural Exhibition Center.",
+      "entrances": [
+        {
+          "id": "osm-1762059681",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9407441,
+            "lng": 116.4561791
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1762059571",
+          "name": "D1",
+          "coordinates": {
+            "lat": 39.9392537,
+            "lng": 116.4561768
+          },
+          "ref": "D1",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448567458
+    },
+    {
+      "id": "fenzhongsi",
+      "systemId": "beijing-subway",
+      "name": "Fenzhongsi",
+      "localName": "分钟寺",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8555,
+        "lng": 116.4475
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in southeastern Chaoyang District.",
+      "entrances": [
+        {
+          "id": "osm-13290916659",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8516834,
+            "lng": 116.4470065
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-13290916656",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8511188,
+            "lng": 116.4485527
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-13290916665",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8500921,
+            "lng": 116.4483465
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-13290916662",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.849942,
+            "lng": 116.4475027
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5372350033,
+      "wikidata": "Q5443701"
+    },
+    {
+      "id": "qianmen",
+      "systemId": "beijing-subway",
+      "name": "Qianmen",
+      "localName": "前门",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8986,
+        "lng": 116.3917
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving Qianmen Gate and the southern end of Tiananmen Square.",
+      "entrances": [
+        {
+          "id": "osm-1195696762",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8990173,
+            "lng": 116.3928151
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696865",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8985538,
+            "lng": 116.3928476
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696786",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8984876,
+            "lng": 116.3905252
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9327480046",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8989819,
+            "lng": 116.390484
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2048053087",
+          "name": "E1",
+          "coordinates": {
+            "lat": 39.8982197,
+            "lng": 116.393189
+          },
+          "ref": "E1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2048053088",
+          "name": "E1",
+          "coordinates": {
+            "lat": 39.8982669,
+            "lng": 116.3937242
+          },
+          "ref": "E1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2048053079",
+          "name": "E3",
+          "coordinates": {
+            "lat": 39.8980262,
+            "lng": 116.3929908
+          },
+          "ref": "E3",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9634711061",
+          "name": "I",
+          "coordinates": {
+            "lat": 39.8972171,
+            "lng": 116.3925596
+          },
+          "ref": "I",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6724644886,
+      "wikidata": "Q847934"
+    },
+    {
+      "id": "beijing-zoo",
+      "systemId": "beijing-subway",
+      "name": "Beijing Zoo",
+      "localName": "动物园",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9365,
+        "lng": 116.3333
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the Beijing Zoo and Xizhimen clothing market.",
+      "entrances": [
+        {
+          "id": "osm-910168396",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9373094,
+            "lng": 116.3320146
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1364282700",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9364954,
+            "lng": 116.3315745
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1364282616",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9373663,
+            "lng": 116.3337975
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282701",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9366015,
+            "lng": 116.3340034
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1364282702",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9373773,
+            "lng": 116.3340989
+          },
+          "wheelchair": true
+        }
+      ],
+      "osmId": 5429399341,
+      "wikidata": "Q4881220"
+    },
+    {
+      "id": "jinsong",
+      "systemId": "beijing-subway",
+      "name": "Jinsong",
+      "localName": "劲松",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.888,
+        "lng": 116.462
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the Jinsong residential area.",
+      "entrances": [
+        {
+          "id": "osm-385074709",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.8832783,
+            "lng": 116.4537852
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-385074712",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.8832849,
+            "lng": 116.4569609
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-385074714",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.8826262,
+            "lng": 116.455725
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-385074716",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.8824945,
+            "lng": 116.454695
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430390389,
+      "wikidata": "Q847852"
+    },
+    {
+      "id": "beijing-south-railway-station",
+      "systemId": "beijing-subway",
+      "name": "Beijing South Railway Station",
+      "localName": "北京南站",
+      "lines": [
+        "line-4",
+        "line-14"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8595,
+        "lng": 116.3725
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "rail-connection",
+        "transfer"
+      ],
+      "description": "Major station serving Beijing South Railway Station, terminus for high-speed rail.",
+      "osmId": 8658952312
+    },
+    {
+      "id": "east-gate-peking-university",
+      "systemId": "beijing-subway",
+      "name": "East Gate of Peking University",
+      "localName": "北京大学东门",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.991,
+        "lng": 116.3095
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving Peking University's east entrance.",
+      "entrances": [
+        {
+          "id": "osm-1362276505",
+          "name": "北京大学东门站A口",
+          "coordinates": {
+            "lat": 39.9913161,
+            "lng": 116.3093009
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362276495",
+          "name": "北京大学东门站B口",
+          "coordinates": {
+            "lat": 39.9910798,
+            "lng": 116.3101708
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362276494",
+          "name": "北京大学东门站C口",
+          "coordinates": {
+            "lat": 39.990626,
+            "lng": 116.3103723
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362276488",
+          "name": "北京大学东门站D口",
+          "coordinates": {
+            "lat": 39.9897469,
+            "lng": 116.3094669
+          },
+          "wheelchair": true
+        }
+      ],
+      "osmId": 7861046850,
+      "wikidata": "Q5328414"
+    },
+    {
+      "id": "beijing-railway-station",
+      "systemId": "beijing-subway",
+      "name": "Beijing Railway Station",
+      "localName": "北京站",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9013,
+        "lng": 116.4193
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "rail-connection"
+      ],
+      "description": "Station serving Beijing Railway Station, one of the city's major rail terminals.",
+      "entrances": [
+        {
+          "id": "osm-1189531093",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9038125,
+            "lng": 116.4203187
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696838",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9038293,
+            "lng": 116.4214672
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6058359595",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9032694,
+            "lng": 116.4221931
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1189531292",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9033166,
+            "lng": 116.4198967
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 4846712797
+    },
+    {
+      "id": "beijing-west-railway-station",
+      "systemId": "beijing-subway",
+      "name": "Beijing West Railway Station",
+      "localName": "北京西站",
+      "lines": [
+        "line-7",
+        "line-9"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8945,
+        "lng": 116.3205
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "rail-connection"
+      ],
+      "description": "Station serving Beijing West Railway Station, a major rail terminus.",
+      "osmId": 5463450278,
+      "wikidata": "Q105062204"
+    },
+    {
+      "id": "beitucheng",
+      "systemId": "beijing-subway",
+      "name": "Beitucheng",
+      "localName": "北土城",
+      "lines": [
+        "line-10",
+        "line-8"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9735,
+        "lng": 116.398
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station near the northern Yuan Dynasty city wall ruins.",
+      "entrances": [
+        {
+          "id": "osm-1718889802",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9768073,
+            "lng": 116.3870386
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1718889804",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9768112,
+            "lng": 116.3888632
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1718889800",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9759589,
+            "lng": 116.3895141
+          },
+          "ref": "C",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1718889798",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9752469,
+            "lng": 116.3891466
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1718889797",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9752273,
+            "lng": 116.3867224
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1718889799",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9759362,
+            "lng": 116.3867044
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5305505997,
+      "wikidata": "Q847653"
+    },
+    {
+      "id": "beigongmen",
+      "systemId": "beijing-subway",
+      "name": "Beigongmen",
+      "localName": "北宫门",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 40.006,
+        "lng": 116.276
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the northern entrance of the Summer Palace.",
+      "entrances": [
+        {
+          "id": "osm-1423042876",
+          "name": "A1",
+          "coordinates": {
+            "lat": 40.0015989,
+            "lng": 116.2706439
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1423042662",
+          "name": "C",
+          "coordinates": {
+            "lat": 40.0008255,
+            "lng": 116.2722267
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362259058",
+          "name": "D",
+          "coordinates": {
+            "lat": 40.0009484,
+            "lng": 116.2713639
+          },
+          "ref": "D",
+          "wheelchair": true
+        }
+      ],
+      "osmId": 6497814374,
+      "wikidata": "Q4881073"
+    },
+    {
+      "id": "shilihe",
+      "systemId": "beijing-subway",
+      "name": "Shilihe",
+      "localName": "十里河",
+      "lines": [
+        "line-10",
+        "line-14"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8655,
+        "lng": 116.465
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 14.",
+      "entrances": [
+        {
+          "id": "osm-9147328735",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8649729,
+            "lng": 116.4534175
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9147328736",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8643098,
+            "lng": 116.4535955
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9147328734",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8638092,
+            "lng": 116.4520187
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9147328745",
+          "name": "J",
+          "coordinates": {
+            "lat": 39.8637023,
+            "lng": 116.4548505
+          },
+          "ref": "J",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9147328747",
+          "name": "K1",
+          "coordinates": {
+            "lat": 39.8626683,
+            "lng": 116.4555189
+          },
+          "ref": "K1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10817156731",
+          "name": "K2",
+          "coordinates": {
+            "lat": 39.863253,
+            "lng": 116.4545926
+          },
+          "ref": "K2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9147328746",
+          "name": "L",
+          "coordinates": {
+            "lat": 39.8634982,
+            "lng": 116.4538892
+          },
+          "ref": "L",
+          "wheelchair": true
+        }
+      ],
+      "osmId": 9147328748
+    },
+    {
+      "id": "nanlishilu",
+      "systemId": "beijing-subway",
+      "name": "Nanlishilu",
+      "localName": "南礼士路",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9085,
+        "lng": 116.3438
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on the western section of Chang'an Avenue.",
+      "entrances": [
+        {
+          "id": "osm-1298143246",
+          "name": "南礼士路站A口",
+          "coordinates": {
+            "lat": 39.9060963,
+            "lng": 116.3461501
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1673265528",
+          "name": "南礼士路站B口",
+          "coordinates": {
+            "lat": 39.9064091,
+            "lng": 116.3467814
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298143225",
+          "name": "南礼士路站C口",
+          "coordinates": {
+            "lat": 39.9056093,
+            "lng": 116.3471163
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298143238",
+          "name": "南礼士路站D1口",
+          "coordinates": {
+            "lat": 39.9056797,
+            "lng": 116.345569
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298143253",
+          "name": "南礼士路站D2口",
+          "coordinates": {
+            "lat": 39.905669,
+            "lng": 116.3460282
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849502
+    },
+    {
+      "id": "shuangjing",
+      "systemId": "beijing-subway",
+      "name": "Shuangjing",
+      "localName": "双井",
+      "lines": [
+        "line-10",
+        "line-7"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8995,
+        "lng": 116.4615
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 7.",
+      "entrances": [
+        {
+          "id": "osm-6780237716",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8924404,
+            "lng": 116.4543676
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6780237778",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.8923745,
+            "lng": 116.4568352
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6780237774",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8918221,
+            "lng": 116.4545554
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 3369459833,
+      "wikidata": "Q5936021"
+    },
+    {
+      "id": "gucheng",
+      "systemId": "beijing-subway",
+      "name": "Gucheng",
+      "localName": "古城",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9081,
+        "lng": 116.1844
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Shijingshan District serving the Gucheng residential area.",
+      "entrances": [
+        {
+          "id": "osm-1296102355",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9063208,
+            "lng": 116.1837312
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102421",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9063174,
+            "lng": 116.1847992
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102342",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9059549,
+            "lng": 116.1848164
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102377",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9059555,
+            "lng": 116.1837269
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448550393,
+      "wikidata": "Q5614482"
+    },
+    {
+      "id": "hujialou",
+      "systemId": "beijing-subway",
+      "name": "Hujialou",
+      "localName": "呼家楼",
+      "lines": [
+        "line-10",
+        "line-6"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9215,
+        "lng": 116.4615
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 6.",
+      "entrances": [
+        {
+          "id": "osm-3450796160",
+          "name": "A 出口",
+          "coordinates": {
+            "lat": 39.9224814,
+            "lng": 116.4544091
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796161",
+          "name": "B 出口",
+          "coordinates": {
+            "lat": 39.9229669,
+            "lng": 116.455836
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796157",
+          "name": "C1 出口",
+          "coordinates": {
+            "lat": 39.921636,
+            "lng": 116.4558843
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796158",
+          "name": "C2 出口",
+          "coordinates": {
+            "lat": 39.9205107,
+            "lng": 116.4560131
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796156",
+          "name": "D 出口",
+          "coordinates": {
+            "lat": 39.9207391,
+            "lng": 116.4549938
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1840733228",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9218323,
+            "lng": 116.4543424
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796155",
+          "name": "G 出口",
+          "coordinates": {
+            "lat": 39.9218334,
+            "lng": 116.4543796
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796154",
+          "name": "H 出口",
+          "coordinates": {
+            "lat": 39.9218149,
+            "lng": 116.4531055
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450796159",
+          "name": "Hujialou Station Line 6 & 10 E 出口",
+          "coordinates": {
+            "lat": 39.922216,
+            "lng": 116.4536661
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430443221,
+      "wikidata": "Q5935355"
+    },
+    {
+      "id": "hepingmen",
+      "systemId": "beijing-subway",
+      "name": "Hepingmen",
+      "localName": "和平门",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.898,
+        "lng": 116.392
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Hepingmen, close to Liulichang antique street.",
+      "entrances": [
+        {
+          "id": "osm-1195696887",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.8988286,
+            "lng": 116.3770206
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696793",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.898836,
+            "lng": 116.3774448
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696938",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.8988909,
+            "lng": 116.3789236
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696783",
+          "name": "B2;C2",
+          "coordinates": {
+            "lat": 39.8991185,
+            "lng": 116.3784354
+          },
+          "ref": "B2;C2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696913",
+          "name": "C1",
+          "coordinates": {
+            "lat": 39.8985522,
+            "lng": 116.3789496
+          },
+          "ref": "C1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696977",
+          "name": "D1",
+          "coordinates": {
+            "lat": 39.8985067,
+            "lng": 116.3774666
+          },
+          "ref": "D1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696959",
+          "name": "D2",
+          "coordinates": {
+            "lat": 39.8985042,
+            "lng": 116.3770409
+          },
+          "ref": "D2",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5428312892,
+      "wikidata": "Q5731938"
+    },
+    {
+      "id": "sihui",
+      "systemId": "beijing-subway",
+      "name": "Sihui",
+      "localName": "四惠",
+      "lines": [
+        "line-1",
+        "line-batong"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9029,
+        "lng": 116.491
+      },
+      "features": [
+        "bus-connection",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station with major bus interchange serving the Sihui area.",
+      "entrances": [
+        {
+          "id": "osm-1303502769",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9078221,
+            "lng": 116.4887172
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1303502778",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.907766,
+            "lng": 116.4900645
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1303502783",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9074058,
+            "lng": 116.4886725
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1303502771",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9073528,
+            "lng": 116.4902803
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430493577,
+      "wikidata": "Q1039435"
+    },
+    {
+      "id": "sihuidong",
+      "systemId": "beijing-subway",
+      "name": "Sihuidong",
+      "localName": "四惠东",
+      "lines": [
+        "line-1",
+        "line-batong"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9055,
+        "lng": 116.501
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station connecting Line 1 with the Batong Line.",
+      "entrances": [
+        {
+          "id": "osm-1303502776",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9070613,
+            "lng": 116.5094961
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2801043100",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9075472,
+            "lng": 116.5101781
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5442860530",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9070622,
+            "lng": 116.5093437
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430491074,
+      "wikidata": "Q1039422"
+    },
+    {
+      "id": "tuanjiehu",
+      "systemId": "beijing-subway",
+      "name": "Tuanjiehu",
+      "localName": "团结湖",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9295,
+        "lng": 116.4615
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Tuanjiehu Park.",
+      "entrances": [
+        {
+          "id": "osm-4398519340",
+          "name": "A 出口",
+          "coordinates": {
+            "lat": 39.9335092,
+            "lng": 116.4551116
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1765106519",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9332339,
+            "lng": 116.456003
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1765106500",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9321234,
+            "lng": 116.4564941
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4398519339",
+          "name": "D 出口",
+          "coordinates": {
+            "lat": 39.9314282,
+            "lng": 116.4551395
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-12433719332",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.93267,
+            "lng": 116.45299
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-12433719331",
+          "name": "团结湖F口垂直电梯",
+          "coordinates": {
+            "lat": 39.93266,
+            "lng": 116.45429
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-12433719330",
+          "name": "团结湖H口垂直电梯",
+          "coordinates": {
+            "lat": 39.93209,
+            "lng": 116.45311
+          },
+          "wheelchair": true
+        }
+      ],
+      "osmId": 5448561568,
+      "wikidata": "Q5935750"
+    },
+    {
+      "id": "national-library",
+      "systemId": "beijing-subway",
+      "name": "National Library",
+      "localName": "国家图书馆",
+      "lines": [
+        "line-4",
+        "line-9"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9475,
+        "lng": 116.331
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station serving the National Library of China.",
+      "entrances": [
+        {
+          "id": "osm-1364282654",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.942483,
+            "lng": 116.3184605
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11176862584",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9424918,
+            "lng": 116.3193116
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282649",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9412736,
+            "lng": 116.3194659
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282641",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.941089,
+            "lng": 116.3186802
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8285491031",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9405651,
+            "lng": 116.3186278
+          },
+          "ref": "E",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5429413631,
+      "wikidata": "Q5937216"
+    },
+    {
+      "id": "guomao",
+      "systemId": "beijing-subway",
+      "name": "Guomao",
+      "localName": "国贸",
+      "lines": [
+        "line-1",
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9091,
+        "lng": 116.4618
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station serving the China World Trade Center and CBD area.",
+      "entrances": [
+        {
+          "id": "osm-10695100926",
+          "name": "2",
+          "coordinates": {
+            "lat": 39.9055377,
+            "lng": 116.4552217
+          },
+          "ref": "2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10680371602",
+          "name": "3",
+          "coordinates": {
+            "lat": 39.9064159,
+            "lng": 116.4565704
+          },
+          "ref": "3",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739378",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9075196,
+            "lng": 116.452999
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739381",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9075423,
+            "lng": 116.4545439
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739380",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9062912,
+            "lng": 116.4544957
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739382",
+          "name": "E1",
+          "coordinates": {
+            "lat": 39.9078858,
+            "lng": 116.4546217
+          },
+          "ref": "E1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739383",
+          "name": "E2",
+          "coordinates": {
+            "lat": 39.9086681,
+            "lng": 116.4547671
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-3450739385",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9084598,
+            "lng": 116.4568262
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450739384",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9074945,
+            "lng": 116.457688
+          },
+          "ref": "G",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430522453,
+      "wikidata": "Q843217"
+    },
+    {
+      "id": "yuanmingyuan-park",
+      "systemId": "beijing-subway",
+      "name": "Yuanmingyuan Park",
+      "localName": "圆明园",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9935,
+        "lng": 116.2985
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the historic Old Summer Palace (Yuanmingyuan).",
+      "entrances": [
+        {
+          "id": "osm-1362259050",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.998177,
+            "lng": 116.3039607
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362259051",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9982571,
+            "lng": 116.3027499
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1362259055",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.998663,
+            "lng": 116.3046052
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046849,
+      "wikidata": "Q5938257"
+    },
+    {
+      "id": "fuxingmen",
+      "systemId": "beijing-subway",
+      "name": "Fuxingmen",
+      "localName": "复兴门",
+      "lines": [
+        "line-1",
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.906,
+        "lng": 116.3505
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station between Lines 1 and 2 at Fuxingmen, one of the city gates.",
+      "entrances": [
+        {
+          "id": "osm-4916794978",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9064295,
+            "lng": 116.3511394
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4916795672",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9059604,
+            "lng": 116.3513214
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4916796327",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9056815,
+            "lng": 116.351316
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4916796666",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9056136,
+            "lng": 116.3511229
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430395013,
+      "wikidata": "Q1037957"
+    },
+    {
+      "id": "dawanglu",
+      "systemId": "beijing-subway",
+      "name": "Dawanglu",
+      "localName": "大望路",
+      "lines": [
+        "line-1",
+        "line-14"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9085,
+        "lng": 116.4765
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 1 and 14 in the eastern CBD area.",
+      "entrances": [
+        {
+          "id": "osm-1303500882",
+          "name": "A 出口",
+          "coordinates": {
+            "lat": 39.9073896,
+            "lng": 116.470911
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116898",
+          "name": "B 出口",
+          "coordinates": {
+            "lat": 39.9062156,
+            "lng": 116.4703935
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2299602091",
+          "name": "C 出口",
+          "coordinates": {
+            "lat": 39.9066988,
+            "lng": 116.4700024
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116899",
+          "name": "D 出口",
+          "coordinates": {
+            "lat": 39.9073126,
+            "lng": 116.46912
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116901",
+          "name": "E 出口",
+          "coordinates": {
+            "lat": 39.9092111,
+            "lng": 116.4713675
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116903",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9073722,
+            "lng": 116.4726846
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116902",
+          "name": "F 出口",
+          "coordinates": {
+            "lat": 39.9091335,
+            "lng": 116.4720078
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4832116900",
+          "name": "H 出口",
+          "coordinates": {
+            "lat": 39.9075383,
+            "lng": 116.4714256
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 3369001431,
+      "wikidata": "Q5242277"
+    },
+    {
+      "id": "dahongmen",
+      "systemId": "beijing-subway",
+      "name": "Dahongmen",
+      "localName": "大红门",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8355,
+        "lng": 116.4095
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near the Dahongmen clothing wholesale district.",
+      "entrances": [
+        {
+          "id": "osm-10794414389",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.8442456,
+            "lng": 116.3929812
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10794414390",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.8442732,
+            "lng": 116.392121
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10794414391",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.843809,
+            "lng": 116.3929032
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-13288528524",
+          "name": "大红门站C1口",
+          "coordinates": {
+            "lat": 39.8436684,
+            "lng": 116.3939603
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2866091101",
+          "name": "大红门站C2口",
+          "coordinates": {
+            "lat": 39.8438919,
+            "lng": 116.3951784
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-13288528529",
+          "name": "大红门站E口",
+          "coordinates": {
+            "lat": 39.8414688,
+            "lng": 116.395031
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 13288528515,
+      "wikidata": "Q75258"
+    },
+    {
+      "id": "tiananmen-east",
+      "systemId": "beijing-subway",
+      "name": "Tiananmen East",
+      "localName": "天安门东",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.908,
+        "lng": 116.402
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the eastern entrance of Tiananmen Square and the National Museum of China.",
+      "entrances": [
+        {
+          "id": "osm-1024947212",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9065822,
+            "lng": 116.3937637
+          },
+          "ref": "A",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1301959254",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9067457,
+            "lng": 116.3961232
+          },
+          "ref": "B",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-2359088026",
+          "name": "天安门东",
+          "coordinates": {
+            "lat": 39.9054649,
+            "lng": 116.3944869
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4710638759",
+          "name": "天安门东",
+          "coordinates": {
+            "lat": 39.9054978,
+            "lng": 116.3957693
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5441520625,
+      "wikidata": "Q6125611"
+    },
+    {
+      "id": "tiananmen-west",
+      "systemId": "beijing-subway",
+      "name": "Tiananmen West",
+      "localName": "天安门西",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.908,
+        "lng": 116.3893
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the western entrance of Tiananmen Square and the Great Hall of the People.",
+      "entrances": [
+        {
+          "id": "osm-1301959251",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.906431,
+            "lng": 116.3843337
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10152163325",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9064683,
+            "lng": 116.3860193
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1301959208",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9056607,
+            "lng": 116.3844231
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1301959175",
+          "name": "天安门西",
+          "coordinates": {
+            "lat": 39.9063798,
+            "lng": 116.386552
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6447754030,
+      "wikidata": "Q842095"
+    },
+    {
+      "id": "taiyanggong",
+      "systemId": "beijing-subway",
+      "name": "Taiyanggong",
+      "localName": "太阳宫",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.968,
+        "lng": 116.4485
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in the Taiyanggong area of Chaoyang District.",
+      "entrances": [
+        {
+          "id": "osm-2000746624",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9717105,
+            "lng": 116.4412513
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2000746621",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9715694,
+            "lng": 116.4418742
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3384384425",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9703593,
+            "lng": 116.4419839
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2000746633",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.97121,
+            "lng": 116.4407239
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 11496710264,
+      "wikidata": "Q5937094"
+    },
+    {
+      "id": "andingmen",
+      "systemId": "beijing-subway",
+      "name": "Andingmen",
+      "localName": "安定门",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9495,
+        "lng": 116.4065
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station at the historic Andingmen gate site.",
+      "entrances": [
+        {
+          "id": "osm-1195696868",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9485025,
+            "lng": 116.4013262
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696769",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.948445,
+            "lng": 116.4025204
+          },
+          "ref": "B",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6724644889,
+      "wikidata": "Q4754482"
+    },
+    {
+      "id": "anheqiao-north",
+      "systemId": "beijing-subway",
+      "name": "Anheqiao North",
+      "localName": "安河桥北",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 40.033,
+        "lng": 116.279
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Northern terminus of Line 4 in the Haidian District.",
+      "entrances": [
+        {
+          "id": "osm-10781912996",
+          "name": "B",
+          "coordinates": {
+            "lat": 40.0115205,
+            "lng": 116.2640794
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10781912995",
+          "name": "C",
+          "coordinates": {
+            "lat": 40.0105612,
+            "lng": 116.264019
+          },
+          "ref": "C",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5441503035
+    },
+    {
+      "id": "anzhenmen",
+      "systemId": "beijing-subway",
+      "name": "Anzhenmen",
+      "localName": "安贞门",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.97,
+        "lng": 116.408
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Anzhen Hospital.",
+      "entrances": [
+        {
+          "id": "osm-10147044464",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.97596,
+            "lng": 116.39883
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7902446518",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9761008,
+            "lng": 116.4004628
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10147044463",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9753185,
+            "lng": 116.400758
+          },
+          "ref": "C",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-10147044465",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9753144,
+            "lng": 116.3990454
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448580676,
+      "wikidata": "Q4778457"
+    },
+    {
+      "id": "songjiazhuang",
+      "systemId": "beijing-subway",
+      "name": "Songjiazhuang",
+      "localName": "宋家庄",
+      "lines": [
+        "line-10",
+        "line-5",
+        "line-yizhuang"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8375,
+        "lng": 116.427
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station connecting Lines 10, 5, and Yizhuang Line.",
+      "entrances": [
+        {
+          "id": "osm-6781735198",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8452021,
+            "lng": 116.4218646
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6781735208",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8452472,
+            "lng": 116.4224708
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6781735185",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.8422693,
+            "lng": 116.4224547
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6781735194",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.8422849,
+            "lng": 116.4218231
+          },
+          "ref": "G",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10618731553",
+          "name": "H",
+          "coordinates": {
+            "lat": 39.8441781,
+            "lng": 116.4213701
+          },
+          "ref": "H",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5441491000,
+      "wikidata": "Q898095"
+    },
+    {
+      "id": "xuanwumen",
+      "systemId": "beijing-subway",
+      "name": "Xuanwumen",
+      "localName": "宣武门",
+      "lines": [
+        "line-2",
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8943,
+        "lng": 116.3783
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 2 and 4 at the historic Xuanwumen gate.",
+      "entrances": [
+        {
+          "id": "osm-1195696822",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.8985999,
+            "lng": 116.3690346
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195697008",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.8985849,
+            "lng": 116.3686187
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696888",
+          "name": "C1",
+          "coordinates": {
+            "lat": 39.8982432,
+            "lng": 116.3690706
+          },
+          "ref": "C1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696803",
+          "name": "C2",
+          "coordinates": {
+            "lat": 39.8982257,
+            "lng": 116.3686253
+          },
+          "ref": "C2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10816367472",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.8991979,
+            "lng": 116.3675241
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9119424772",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.8969728,
+            "lng": 116.3686125
+          },
+          "ref": "G",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696984",
+          "name": "H",
+          "coordinates": {
+            "lat": 39.897726,
+            "lng": 116.3677423
+          },
+          "ref": "H",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10816367471",
+          "name": "宣武门站电梯",
+          "coordinates": {
+            "lat": 39.8988594,
+            "lng": 116.3676314
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430419547,
+      "wikidata": "Q5976401"
+    },
+    {
+      "id": "chongwenmen",
+      "systemId": "beijing-subway",
+      "name": "Chongwenmen",
+      "localName": "崇文门",
+      "lines": [
+        "line-2",
+        "line-5"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.899,
+        "lng": 116.418
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 2 and 5 at the historic Chongwenmen gate.",
+      "entrances": [
+        {
+          "id": "osm-1300399186",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8998755,
+            "lng": 116.4112593
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7591781042",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9003192,
+            "lng": 116.4117737
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1300399159",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.8994361,
+            "lng": 116.4097673
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1300399166",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.8998449,
+            "lng": 116.4097008
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1300399201",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.8998514,
+            "lng": 116.410102
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1300399127",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.8994702,
+            "lng": 116.4116531
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1300399137",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.8998845,
+            "lng": 116.4116529
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1359090010",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9001656,
+            "lng": 116.4131529
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1429554241",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.8983398,
+            "lng": 116.4125776
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1429554243",
+          "name": "Entrance 9",
+          "coordinates": {
+            "lat": 39.8986748,
+            "lng": 116.4125737
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430420858,
+      "wikidata": "Q848288"
+    },
+    {
+      "id": "bagou",
+      "systemId": "beijing-subway",
+      "name": "Bagou",
+      "localName": "巴沟",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9795,
+        "lng": 116.3015
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on Line 10 in the western Haidian District.",
+      "entrances": [
+        {
+          "id": "osm-1350120248",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.973084,
+            "lng": 116.2869226
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350120239",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9731745,
+            "lng": 116.288331
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350120292",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9726292,
+            "lng": 116.287813
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2013438856",
+          "name": "C3",
+          "coordinates": {
+            "lat": 39.9726356,
+            "lng": 116.2885818
+          },
+          "ref": "C3",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2013438858",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9725127,
+            "lng": 116.2884045
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430448102
+    },
+    {
+      "id": "pinganli",
+      "systemId": "beijing-subway",
+      "name": "Ping'anli",
+      "localName": "平安里",
+      "lines": [
+        "line-4",
+        "line-6"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.933,
+        "lng": 116.368
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 4 and 6 in Xicheng District.",
+      "entrances": [
+        {
+          "id": "osm-1742845280",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9332331,
+            "lng": 116.3662761
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1742845277",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9331509,
+            "lng": 116.3669996
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1742845270",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.931872,
+            "lng": 116.3670593
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1742845268",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9318178,
+            "lng": 116.3663306
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10727046918",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9316564,
+            "lng": 116.3658088
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4917790491",
+          "name": "G1",
+          "coordinates": {
+            "lat": 39.9309717,
+            "lng": 116.365077
+          },
+          "ref": "G1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11992333190",
+          "name": "H",
+          "coordinates": {
+            "lat": 39.9309557,
+            "lng": 116.3640303
+          },
+          "ref": "H",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430502371,
+      "wikidata": "Q5959534"
+    },
+    {
+      "id": "jianguomen",
+      "systemId": "beijing-subway",
+      "name": "Jianguomen",
+      "localName": "建国门",
+      "lines": [
+        "line-1",
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9081,
+        "lng": 116.4329
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station between Lines 1 and 2 at the historic Jianguomen gate site.",
+      "entrances": [
+        {
+          "id": "osm-1189531268",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9077677,
+            "lng": 116.4279738
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696945",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9076538,
+            "lng": 116.4307333
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696804",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9065972,
+            "lng": 116.4282856
+          },
+          "ref": "C",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430497283,
+      "wikidata": "Q843282"
+    },
+    {
+      "id": "huixinxijie-beikou",
+      "systemId": "beijing-subway",
+      "name": "Huixinxijie Beikou",
+      "localName": "惠新西街北口",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9715,
+        "lng": 116.4215
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in northern Chaoyang District.",
+      "entrances": [
+        {
+          "id": "osm-11034313798",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9869287,
+            "lng": 116.4097477
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10207414551",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9868321,
+            "lng": 116.411621
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10207414550",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9858056,
+            "lng": 116.4111945
+          },
+          "ref": "C",
+          "wheelchair": true
+        }
+      ],
+      "osmId": 5305505984,
+      "wikidata": "Q5972925"
+    },
+    {
+      "id": "huixinxijie-nankou",
+      "systemId": "beijing-subway",
+      "name": "Huixinxijie Nankou",
+      "localName": "惠新西街南口",
+      "lines": [
+        "line-10",
+        "line-5"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.965,
+        "lng": 116.4215
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 5.",
+      "entrances": [
+        {
+          "id": "osm-2575677046",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9753815,
+            "lng": 116.4105403
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5719179211",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9759538,
+            "lng": 116.4106259
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1359135056",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9754126,
+            "lng": 116.4120463
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4289827668",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9765253,
+            "lng": 116.41178
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5305505985,
+      "wikidata": "Q5966161"
+    },
+    {
+      "id": "chengshoutusi",
+      "systemId": "beijing-subway",
+      "name": "Chengshoutusi",
+      "localName": "成寿寺",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8455,
+        "lng": 116.4325
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Fengtai District.",
+      "osmId": 5448554757,
+      "wikidata": "Q75393"
+    },
+    {
+      "id": "xinjiekou",
+      "systemId": "beijing-subway",
+      "name": "Xinjiekou",
+      "localName": "新街口",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9375,
+        "lng": 116.3645
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Xicheng District serving the Xinjiekou commercial area.",
+      "entrances": [
+        {
+          "id": "osm-10605269480",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9396388,
+            "lng": 116.3605642
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2504963303",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9395358,
+            "lng": 116.3626613
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10605269482",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9385075,
+            "lng": 116.3620734
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10605269483",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9391062,
+            "lng": 116.3610849
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5441512445,
+      "wikidata": "Q5959491"
+    },
+    {
+      "id": "chaoyangmen",
+      "systemId": "beijing-subway",
+      "name": "Chaoyangmen",
+      "localName": "朝阳门",
+      "lines": [
+        "line-2",
+        "line-6"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9245,
+        "lng": 116.435
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 2 and 6 at the historic Chaoyangmen gate.",
+      "entrances": [
+        {
+          "id": "osm-1195697035",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9234877,
+            "lng": 116.4295123
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6694898270",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9232665,
+            "lng": 116.4263436
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7893337710",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9242088,
+            "lng": 116.4271732
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6694898271",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9228098,
+            "lng": 116.426349
+          },
+          "ref": "G",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5994862291",
+          "name": "H",
+          "coordinates": {
+            "lat": 39.9227339,
+            "lng": 116.4251962
+          },
+          "ref": "H",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430525703,
+      "wikidata": "Q5976481"
+    },
+    {
+      "id": "muxidi",
+      "systemId": "beijing-subway",
+      "name": "Muxidi",
+      "localName": "木樨地",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9079,
+        "lng": 116.3325
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on Chang'an Avenue in Xicheng District.",
+      "entrances": [
+        {
+          "id": "osm-1298058529",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9064396,
+            "lng": 116.3319853
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058539",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.905787,
+            "lng": 116.3320216
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058556",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9064396,
+            "lng": 116.3325164
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058567",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9058124,
+            "lng": 116.330414
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058575",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9064649,
+            "lng": 116.3304392
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058590",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9057824,
+            "lng": 116.3324608
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058603",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9058031,
+            "lng": 116.3309719
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1298058633",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.9064577,
+            "lng": 116.3309843
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849501,
+      "wikidata": "Q842107"
+    },
+    {
+      "id": "yonganli",
+      "systemId": "beijing-subway",
+      "name": "Yonganli",
+      "localName": "永安里",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9097,
+        "lng": 116.4436
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Chaoyang District near the diplomatic quarter.",
+      "entrances": [
+        {
+          "id": "osm-9116005228",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.9072408,
+            "lng": 116.4438884
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1647463797",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.9069499,
+            "lng": 116.4438805
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10299687569",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9075518,
+            "lng": 116.4452411
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11097391063",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.9072262,
+            "lng": 116.4455603
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11097391060",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.9069227,
+            "lng": 116.4456367
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1303500733",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9068314,
+            "lng": 116.4449714
+          },
+          "ref": "C",
+          "wheelchair": true
+        }
+      ],
+      "osmId": 13417518490,
+      "wikidata": "Q843202"
+    },
+    {
+      "id": "niwa",
+      "systemId": "beijing-subway",
+      "name": "Niwa",
+      "localName": "泥洼",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8475,
+        "lng": 116.3035
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in western Fengtai District.",
+      "osmId": 5453382713,
+      "wikidata": "Q7041866"
+    },
+    {
+      "id": "haidianhuangzhuang",
+      "systemId": "beijing-subway",
+      "name": "Haidianhuangzhuang",
+      "localName": "海淀黄庄",
+      "lines": [
+        "line-4",
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9745,
+        "lng": 116.3255
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major transfer station between Lines 4 and 10 in Haidian District.",
+      "entrances": [
+        {
+          "id": "osm-1350216465",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.9749738,
+            "lng": 116.3108398
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216512",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.9769667,
+            "lng": 116.310283
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216485",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9750642,
+            "lng": 116.3117316
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216363",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9744719,
+            "lng": 116.3125219
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216356",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9744836,
+            "lng": 116.3108914
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6606270273,
+      "wikidata": "Q5639035"
+    },
+    {
+      "id": "panjiayuan",
+      "systemId": "beijing-subway",
+      "name": "Panjiayuan",
+      "localName": "潘家园",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.876,
+        "lng": 116.462
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near the famous Panjiayuan Antique Market.",
+      "entrances": [
+        {
+          "id": "osm-1423628507",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8747073,
+            "lng": 116.4545353
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2492158965",
+          "name": "C1",
+          "coordinates": {
+            "lat": 39.8732398,
+            "lng": 116.4544051
+          },
+          "ref": "C1",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5372350032,
+      "wikidata": "Q7131255"
+    },
+    {
+      "id": "lingjing-hutong",
+      "systemId": "beijing-subway",
+      "name": "Lingjing Hutong",
+      "localName": "灵境胡同",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.916,
+        "lng": 116.3705
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the Lingjing Hutong area in Xicheng District.",
+      "entrances": [
+        {
+          "id": "osm-533643227",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9162195,
+            "lng": 116.3670031
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10763621391",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9148189,
+            "lng": 116.3677494
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-533643087",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.914212,
+            "lng": 116.3677411
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-533643092",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9141523,
+            "lng": 116.3670674
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10763621390",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9143817,
+            "lng": 116.3678245
+          },
+          "wheelchair": true
+        }
+      ],
+      "osmId": 5444439979,
+      "wikidata": "Q5959844"
+    },
+    {
+      "id": "mudanyuan",
+      "systemId": "beijing-subway",
+      "name": "Mudanyuan",
+      "localName": "牡丹园",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.975,
+        "lng": 116.3755
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in northern Haidian District.",
+      "osmId": 9385101461,
+      "wikidata": "Q6124616"
+    },
+    {
+      "id": "yuquanlu",
+      "systemId": "beijing-subway",
+      "name": "Yuquanlu",
+      "localName": "玉泉路",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9018,
+        "lng": 116.2365
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Shijingshan District along Fushi Road.",
+      "entrances": [
+        {
+          "id": "osm-1296155049",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9060332,
+            "lng": 116.246235
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155053",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9064012,
+            "lng": 116.2474143
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155060",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9064012,
+            "lng": 116.2458768
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155062",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9060332,
+            "lng": 116.2474247
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155066",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9060316,
+            "lng": 116.2458789
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155075",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9063947,
+            "lng": 116.2462308
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155071",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9064012,
+            "lng": 116.2477683
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296155084",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.9060412,
+            "lng": 116.2477704
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849508
+    },
+    {
+      "id": "wangfujing",
+      "systemId": "beijing-subway",
+      "name": "Wangfujing",
+      "localName": "王府井",
+      "lines": [
+        "line-1",
+        "line-8"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9112,
+        "lng": 116.4053
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Station serving Beijing's famous Wangfujing pedestrian shopping street.",
+      "entrances": [
+        {
+          "id": "osm-1302986771",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.906977,
+            "lng": 116.4058262
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1302986794",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.9064647,
+            "lng": 116.4061439
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1302986772",
+          "name": "B3",
+          "coordinates": {
+            "lat": 39.9064537,
+            "lng": 116.4058287
+          },
+          "ref": "B3",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1302986764",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9068842,
+            "lng": 116.404642
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1302986800",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9063978,
+            "lng": 116.4046594
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1302986770",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9078407,
+            "lng": 116.4054314
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6617849503,
+      "wikidata": "Q843213"
+    },
+    {
+      "id": "zhichunlu",
+      "systemId": "beijing-subway",
+      "name": "Zhichunlu",
+      "localName": "知春路",
+      "lines": [
+        "line-10",
+        "line-13"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9775,
+        "lng": 116.3525
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 13.",
+      "entrances": [
+        {
+          "id": "osm-1350216506",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9753243,
+            "lng": 116.3338492
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216434",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9747969,
+            "lng": 116.3339456
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216511",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9754734,
+            "lng": 116.3362946
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216371",
+          "name": "G1",
+          "coordinates": {
+            "lat": 39.9745839,
+            "lng": 116.3363023
+          },
+          "ref": "G1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216367",
+          "name": "G2",
+          "coordinates": {
+            "lat": 39.9745721,
+            "lng": 116.3354926
+          },
+          "ref": "G2",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430403863
+    },
+    {
+      "id": "zhichunli",
+      "systemId": "beijing-subway",
+      "name": "Zhichunli",
+      "localName": "知春里",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.975,
+        "lng": 116.3385
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in the Zhongguancun area.",
+      "entrances": [
+        {
+          "id": "osm-1350216401",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9747801,
+            "lng": 116.3219682
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216498",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9752549,
+            "lng": 116.3217654
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216500",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9753297,
+            "lng": 116.3241987
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7896877681,
+      "wikidata": "Q5936478"
+    },
+    {
+      "id": "jishuitan",
+      "systemId": "beijing-subway",
+      "name": "Jishuitan",
+      "localName": "积水潭",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.947,
+        "lng": 116.3665
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Jishuitan, close to the historic city moat.",
+      "entrances": [
+        {
+          "id": "osm-1190962239",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9476078,
+            "lng": 116.3663414
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8018444449",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9478302,
+            "lng": 116.3681014
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10137874029",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.9477681,
+            "lng": 116.3671741
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10727013837",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9467623,
+            "lng": 116.3662455
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10150958828",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9447042,
+            "lng": 116.3656975
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10150958829",
+          "name": "G1",
+          "coordinates": {
+            "lat": 39.9466602,
+            "lng": 116.3645899
+          },
+          "ref": "G1",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 9385085643,
+      "wikidata": "Q5976575"
+    },
+    {
+      "id": "shaoyaoju",
+      "systemId": "beijing-subway",
+      "name": "Shaoyaoju",
+      "localName": "芍药居",
+      "lines": [
+        "line-10",
+        "line-13"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9665,
+        "lng": 116.4355
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 10 and 13.",
+      "entrances": [
+        {
+          "id": "osm-1306482850",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9763027,
+            "lng": 116.4295609
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-862672246",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9762128,
+            "lng": 116.4297994
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430392913,
+      "wikidata": "Q6124150"
+    },
+    {
+      "id": "suzhoujie",
+      "systemId": "beijing-subway",
+      "name": "Suzhoujie",
+      "localName": "苏州街",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.978,
+        "lng": 116.3105
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the Suzhou Street area in Haidian.",
+      "entrances": [
+        {
+          "id": "osm-1350216358",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9745582,
+            "lng": 116.2991621
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216389",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.974633,
+            "lng": 116.3014376
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216321",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9739725,
+            "lng": 116.3004688
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216317",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9734704,
+            "lng": 116.3000107
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11471883334",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9745868,
+            "lng": 116.3008498
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11471883327",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.974687,
+            "lng": 116.299744
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-11694477732",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9735663,
+            "lng": 116.3004843
+          },
+          "wheelchair": true
+        },
+        {
+          "id": "osm-11471883333",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9742579,
+            "lng": 116.3010405
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11471883328",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9726479,
+            "lng": 116.3001417
+          },
+          "ref": "G",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448587388,
+      "wikidata": "Q5936074"
+    },
+    {
+      "id": "pingguoyuan",
+      "systemId": "beijing-subway",
+      "name": "Pingguoyuan",
+      "localName": "苹果园",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9256,
+        "lng": 116.1762
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Western terminus of Line 1, located in Shijingshan District near the Pingguoyuan Transportation Hub.",
+      "entrances": [
+        {
+          "id": "osm-10285742570",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9242267,
+            "lng": 116.1706612
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-280446928",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9246574,
+            "lng": 116.1718456
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102329",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.924852,
+            "lng": 116.1721808
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102397",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9250827,
+            "lng": 116.1714538
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1296102423",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9252509,
+            "lng": 116.1717722
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10285742566",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9250394,
+            "lng": 116.173603
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10285742567",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9246382,
+            "lng": 116.1740874
+          },
+          "ref": "G",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10285742569",
+          "name": "H",
+          "coordinates": {
+            "lat": 39.9240019,
+            "lng": 116.1707111
+          },
+          "ref": "H",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10285742568",
+          "name": "J",
+          "coordinates": {
+            "lat": 39.9238519,
+            "lng": 116.1725051
+          },
+          "ref": "J",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 9380332412,
+      "wikidata": "Q1039443"
+    },
+    {
+      "id": "lianhuaqiao",
+      "systemId": "beijing-subway",
+      "name": "Lianhuaqiao",
+      "localName": "莲花桥",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8925,
+        "lng": 116.3
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Lianhuachi Park.",
+      "entrances": [
+        {
+          "id": "osm-11065310492",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8975347,
+            "lng": 116.3050226
+          },
+          "ref": "B",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-11065310493",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.89605,
+            "lng": 116.30462
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-11065310494",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8960445,
+            "lng": 116.3037997
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5453394777,
+      "wikidata": "Q75398"
+    },
+    {
+      "id": "caishikou",
+      "systemId": "beijing-subway",
+      "name": "Caishikou",
+      "localName": "菜市口",
+      "lines": [
+        "line-4",
+        "line-7"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.887,
+        "lng": 116.3765
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 4 and 7 at a historic intersection.",
+      "entrances": [
+        {
+          "id": "osm-8830757618",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8887405,
+            "lng": 116.367753
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8830757646",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8871569,
+            "lng": 116.3688371
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8830757637",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8874385,
+            "lng": 116.3674799
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8830757627",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.8883437,
+            "lng": 116.3673055
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8830757651",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.8883574,
+            "lng": 116.3692585
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8830757632",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.8875258,
+            "lng": 116.3675852
+          },
+          "ref": "G",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 3369459847,
+      "wikidata": "Q5017826"
+    },
+    {
+      "id": "xidan",
+      "systemId": "beijing-subway",
+      "name": "Xidan",
+      "localName": "西单",
+      "lines": [
+        "line-1",
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9083,
+        "lng": 116.3742
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Major commercial hub and transfer station in the heart of Beijing's shopping district.",
+      "entrances": [
+        {
+          "id": "osm-1301959258",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9061752,
+            "lng": 116.3687318
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1301959252",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.906566,
+            "lng": 116.3702379
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1301959280",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9060806,
+            "lng": 116.3710554
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1301959229",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9054167,
+            "lng": 116.3688683
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5077273852",
+          "name": "Entrance 5",
+          "coordinates": {
+            "lat": 39.9065932,
+            "lng": 116.367471
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5077273885",
+          "name": "Entrance 6",
+          "coordinates": {
+            "lat": 39.9049896,
+            "lng": 116.3674772
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-5077273896",
+          "name": "Entrance 7",
+          "coordinates": {
+            "lat": 39.9061048,
+            "lng": 116.366936
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8500051831",
+          "name": "Entrance 8",
+          "coordinates": {
+            "lat": 39.9054638,
+            "lng": 116.3669418
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430540736,
+      "wikidata": "Q842064"
+    },
+    {
+      "id": "xisi",
+      "systemId": "beijing-subway",
+      "name": "Xisi",
+      "localName": "西四",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.925,
+        "lng": 116.369
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving the historic Xisi neighborhood.",
+      "entrances": [
+        {
+          "id": "osm-533640060",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9237897,
+            "lng": 116.3669087
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-533640038",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9236909,
+            "lng": 116.367604
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-533640293",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9218283,
+            "lng": 116.3665111
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10735103649",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9221032,
+            "lng": 116.3665035
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046854,
+      "wikidata": "Q6122274"
+    },
+    {
+      "id": "xitucheng",
+      "systemId": "beijing-subway",
+      "name": "Xitucheng",
+      "localName": "西土城",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.976,
+        "lng": 116.3635
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near the western section of the Yuan Dynasty city wall.",
+      "entrances": [
+        {
+          "id": "osm-1350216508",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9754267,
+            "lng": 116.3467174
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216510",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9754663,
+            "lng": 116.3483415
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216395",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9747577,
+            "lng": 116.3485011
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1350216338",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9743368,
+            "lng": 116.3465719
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10610542847",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9742794,
+            "lng": 116.3485432
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10610542848",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9735152,
+            "lng": 116.3484797
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5448585739,
+      "wikidata": "Q5937841"
+    },
+    {
+      "id": "xijuzhuang",
+      "systemId": "beijing-subway",
+      "name": "Xijuzhuang",
+      "localName": "西局",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8585,
+        "lng": 116.298
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Fengtai District.",
+      "osmId": 3367044891,
+      "wikidata": "Q75387"
+    },
+    {
+      "id": "xizhimen",
+      "systemId": "beijing-subway",
+      "name": "Xizhimen",
+      "localName": "西直门",
+      "lines": [
+        "line-2",
+        "line-4",
+        "line-13"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9405,
+        "lng": 116.355
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "rail-connection",
+        "transfer"
+      ],
+      "description": "Major interchange station connecting Lines 2, 4, and 13, adjacent to Beijing North Railway Station.",
+      "entrances": [
+        {
+          "id": "osm-1253535195",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.9396128,
+            "lng": 116.3479094
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1253535293",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.9400602,
+            "lng": 116.3485268
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1349005708",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9396642,
+            "lng": 116.3506179
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1349005738",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9378225,
+            "lng": 116.3500661
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1349005636",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9381857,
+            "lng": 116.3486939
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1253535267",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9396538,
+            "lng": 116.3470226
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430462574,
+      "wikidata": "Q847791"
+    },
+    {
+      "id": "xiyuan",
+      "systemId": "beijing-subway",
+      "name": "Xiyuan",
+      "localName": "西苑",
+      "lines": [
+        "line-4",
+        "line-16"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9975,
+        "lng": 116.2785
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station near the Summer Palace and Old Summer Palace.",
+      "entrances": [
+        {
+          "id": "osm-1362259044",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.9975252,
+            "lng": 116.2852239
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1421547756",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9979402,
+            "lng": 116.2844948
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1423966915",
+          "name": "Entrance 3",
+          "coordinates": {
+            "lat": 39.9965527,
+            "lng": 116.2851117
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1423966920",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9968522,
+            "lng": 116.284284
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6580603898
+    },
+    {
+      "id": "jiaomen-east",
+      "systemId": "beijing-subway",
+      "name": "Jiaomen East",
+      "localName": "角门东",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.834,
+        "lng": 116.3925
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Fengtai District.",
+      "entrances": [
+        {
+          "id": "osm-3337810728",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.8439087,
+            "lng": 116.3782577
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430391236,
+      "wikidata": "Q75262"
+    },
+    {
+      "id": "jiaomen-west",
+      "systemId": "beijing-subway",
+      "name": "Jiaomen West",
+      "localName": "角门西",
+      "lines": [
+        "line-4",
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.833,
+        "lng": 116.378
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 4 and 10.",
+      "entrances": [
+        {
+          "id": "osm-10875741672",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.8452907,
+            "lng": 116.3646314
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-10875741673",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8453118,
+            "lng": 116.3653227
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3337810729",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8435949,
+            "lng": 116.365252
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-9124096496",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.8446723,
+            "lng": 116.3656322
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430507192,
+      "wikidata": "Q5960800"
+    },
+    {
+      "id": "chegongzhuang",
+      "systemId": "beijing-subway",
+      "name": "Chegongzhuang",
+      "localName": "车公庄",
+      "lines": [
+        "line-2",
+        "line-6"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9378,
+        "lng": 116.3498
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station between Lines 2 and 6 in Xicheng District.",
+      "entrances": [
+        {
+          "id": "osm-1195696935",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9316056,
+            "lng": 116.3490962
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195697020",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9306301,
+            "lng": 116.3502585
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1767304556",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9318656,
+            "lng": 116.3501991
+          },
+          "ref": "B",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5430505472,
+      "wikidata": "Q5089563"
+    },
+    {
+      "id": "jintaixizhao",
+      "systemId": "beijing-subway",
+      "name": "Jintaixizhao",
+      "localName": "金台夕照",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9145,
+        "lng": 116.4615
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near China Central Television headquarters.",
+      "entrances": [
+        {
+          "id": "osm-3450695694",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9154325,
+            "lng": 116.4545869
+          },
+          "ref": "A",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-3450695695",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.916278,
+            "lng": 116.4560139
+          },
+          "ref": "B",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-3450695696",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9145973,
+            "lng": 116.4560943
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3450695693",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9147144,
+            "lng": 116.4549252
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5687481931,
+      "wikidata": "Q5956448"
+    },
+    {
+      "id": "changchunjie",
+      "systemId": "beijing-subway",
+      "name": "Changchunjie",
+      "localName": "长椿街",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8968,
+        "lng": 116.3627
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on the southern section of Line 2's loop.",
+      "entrances": [
+        {
+          "id": "osm-1195696789",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.8981987,
+            "lng": 116.3562518
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696908",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.8982018,
+            "lng": 116.356619
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195697032",
+          "name": "B1",
+          "coordinates": {
+            "lat": 39.8982508,
+            "lng": 116.3581566
+          },
+          "ref": "B1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696915",
+          "name": "B2",
+          "coordinates": {
+            "lat": 39.8982452,
+            "lng": 116.3577753
+          },
+          "ref": "B2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696817",
+          "name": "C1",
+          "coordinates": {
+            "lat": 39.8979199,
+            "lng": 116.3581726
+          },
+          "ref": "C1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696992",
+          "name": "C2",
+          "coordinates": {
+            "lat": 39.8979107,
+            "lng": 116.3577892
+          },
+          "ref": "C2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195696840",
+          "name": "D1",
+          "coordinates": {
+            "lat": 39.8978739,
+            "lng": 116.356647
+          },
+          "ref": "D1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1195697026",
+          "name": "D2",
+          "coordinates": {
+            "lat": 39.8978586,
+            "lng": 116.3562676
+          },
+          "ref": "D2",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6724644888
+    },
+    {
+      "id": "fuchengmen",
+      "systemId": "beijing-subway",
+      "name": "Fuchengmen",
+      "localName": "阜成门",
+      "lines": [
+        "line-2"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9295,
+        "lng": 116.352
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station on Line 2 at the historic Fuchengmen gate site.",
+      "entrances": [
+        {
+          "id": "osm-1357572463",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9226588,
+            "lng": 116.3487709
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1349005694",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9228958,
+            "lng": 116.3514256
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1349005728",
+          "name": "Entrance 2",
+          "coordinates": {
+            "lat": 39.9218283,
+            "lng": 116.3511306
+          },
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1501674085",
+          "name": "Entrance 4",
+          "coordinates": {
+            "lat": 39.9217152,
+            "lng": 116.3484862
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 6724644887
+    },
+    {
+      "id": "taoranting",
+      "systemId": "beijing-subway",
+      "name": "Taoranting",
+      "localName": "陶然亭",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.874,
+        "lng": 116.3765
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station near Taoranting Park.",
+      "entrances": [
+        {
+          "id": "osm-7164710656",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.8773672,
+            "lng": 116.3675982
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7164710655",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8766484,
+            "lng": 116.3686295
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-7164710657",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8769186,
+            "lng": 116.3675465
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046855,
+      "wikidata": "Q5960410"
+    },
+    {
+      "id": "yonghegong",
+      "systemId": "beijing-subway",
+      "name": "Yonghegong Lama Temple",
+      "localName": "雍和宫",
+      "lines": [
+        "line-2",
+        "line-5"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.947,
+        "lng": 116.417
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station serving the famous Yonghegong Lama Temple.",
+      "entrances": [
+        {
+          "id": "osm-1195696910",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.948202,
+            "lng": 116.4106272
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1363488717",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9475512,
+            "lng": 116.4122738
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1363488715",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.9476519,
+            "lng": 116.4107869
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-2000101264",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9474114,
+            "lng": 116.4091265
+          },
+          "ref": "D",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-3832049259",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9461007,
+            "lng": 116.4104872
+          },
+          "ref": "F",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5305505988,
+      "wikidata": "Q5976347"
+    },
+    {
+      "id": "shoujingmao",
+      "systemId": "beijing-subway",
+      "name": "Shoujingmao",
+      "localName": "首经贸",
+      "lines": [
+        "line-10"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.8235,
+        "lng": 116.3455
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station serving Capital University of Economics and Business.",
+      "entrances": [
+        {
+          "id": "osm-6295454964",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.8437757,
+            "lng": 116.3144947
+          },
+          "ref": "B",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-6295446317",
+          "name": "C",
+          "coordinates": {
+            "lat": 39.8426817,
+            "lng": 116.3143306
+          },
+          "ref": "C",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-6296910869",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.8430197,
+            "lng": 116.3134604
+          },
+          "ref": "D",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-11744202995",
+          "name": "Entrance 1",
+          "coordinates": {
+            "lat": 39.8429604,
+            "lng": 116.3115082
+          },
+          "wheelchair": false
+        }
+      ],
+      "osmId": 8277164621
+    },
+    {
+      "id": "majiapu",
+      "systemId": "beijing-subway",
+      "name": "Majiapu",
+      "localName": "马家堡",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.842,
+        "lng": 116.3835
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Fengtai District serving the Majiapu residential area.",
+      "osmId": 7861046856,
+      "wikidata": "Q5959373"
+    },
+    {
+      "id": "weigongcun",
+      "systemId": "beijing-subway",
+      "name": "Weigongcun",
+      "localName": "魏公村",
+      "lines": [
+        "line-4"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.957,
+        "lng": 116.329
+      },
+      "features": [
+        "accessible",
+        "elevator",
+        "escalator",
+        "fare-vending"
+      ],
+      "description": "Station in Haidian District near several universities.",
+      "entrances": [
+        {
+          "id": "osm-1364282678",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9568928,
+            "lng": 116.3167203
+          },
+          "ref": "A",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-8587100688",
+          "name": "A",
+          "coordinates": {
+            "lat": 39.9565946,
+            "lng": 116.3167807
+          },
+          "ref": "A",
+          "wheelchair": true
+        },
+        {
+          "id": "osm-1364282682",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9570378,
+            "lng": 116.3174162
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-1364282677",
+          "name": "D",
+          "coordinates": {
+            "lat": 39.9558292,
+            "lng": 116.3167138
+          },
+          "ref": "D",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 7861046853,
+      "wikidata": "Q5938302"
+    },
+    {
+      "id": "gulou",
+      "systemId": "beijing-subway",
+      "name": "Gulou Dajie",
+      "localName": "鼓楼大街",
+      "lines": [
+        "line-2",
+        "line-8"
+      ],
+      "status": "active",
+      "coordinates": {
+        "lat": 39.9522,
+        "lng": 116.387
+      },
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "transfer"
+      ],
+      "description": "Transfer station near the historic Drum Tower and Bell Tower.",
+      "entrances": [
+        {
+          "id": "osm-4253043924",
+          "name": "A1",
+          "coordinates": {
+            "lat": 39.9478445,
+            "lng": 116.3863617
+          },
+          "ref": "A1",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4253043920",
+          "name": "A2",
+          "coordinates": {
+            "lat": 39.9478519,
+            "lng": 116.3873099
+          },
+          "ref": "A2",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4253043921",
+          "name": "B",
+          "coordinates": {
+            "lat": 39.9478423,
+            "lng": 116.3887168
+          },
+          "ref": "B",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4253043925",
+          "name": "E",
+          "coordinates": {
+            "lat": 39.9472665,
+            "lng": 116.3870718
+          },
+          "ref": "E",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4253043929",
+          "name": "F",
+          "coordinates": {
+            "lat": 39.9472561,
+            "lng": 116.3886701
+          },
+          "ref": "F",
+          "wheelchair": false
+        },
+        {
+          "id": "osm-4253043927",
+          "name": "G",
+          "coordinates": {
+            "lat": 39.9454601,
+            "lng": 116.3879146
+          },
+          "ref": "G",
+          "wheelchair": false
+        }
+      ],
+      "osmId": 5305505994
+    },
+    {
+      "id": "�׶�������-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "�׶������� | ���������ٷ���վ",
+      "localName": "�׶������� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.416884,
+        "lat": 39.940782
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ͨ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ͨ�� | ���������ٷ���վ",
+      "localName": "��ͨ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.531421,
+        "lat": 39.909448
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ɽ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ɽ�� | ���������ٷ���վ",
+      "localName": "��ɽ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.323108,
+        "lat": 39.855462
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ƽ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ƽ�� | ���������ٷ���վ",
+      "localName": "��ƽ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.195369,
+        "lat": 40.244629
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ׯ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ׯ�� | ���������ٷ���վ",
+      "localName": "��ׯ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.428368,
+        "lat": 39.845849
+      },
+      "entrances": []
+    }
+  ]
+}

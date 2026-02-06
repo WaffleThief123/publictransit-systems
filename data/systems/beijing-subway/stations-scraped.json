@@ -1,0 +1,614 @@
+{
+  "stations": [
+    {
+      "id": "10����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "10���� | ���������ٷ���վ",
+      "localName": "10���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.293357,
+        "lat": 39.974414
+      },
+      "entrances": []
+    },
+    {
+      "id": "11����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "11���� | ���������ٷ���վ",
+      "localName": "11���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.156032,
+        "lat": 39.93349
+      },
+      "entrances": []
+    },
+    {
+      "id": "12����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "12���� | ���������ٷ���վ",
+      "localName": "12���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.274193,
+        "lat": 39.942414
+      },
+      "entrances": []
+    },
+    {
+      "id": "13����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "13���� | ���������ٷ���վ",
+      "localName": "13���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.355426,
+        "lat": 39.940474
+      },
+      "entrances": []
+    },
+    {
+      "id": "15����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "15���� | ���������ٷ���վ",
+      "localName": "15���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.684732,
+        "lat": 40.132573
+      },
+      "entrances": []
+    },
+    {
+      "id": "18����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "18���� | ���������ٷ���վ",
+      "localName": "18���� | ���������ٷ���վ",
+      "lines": [
+        "line-1"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.27252,
+        "lat": 40.032637
+      },
+      "entrances": []
+    },
+    {
+      "id": "1����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "1���� | ���������ٷ���վ",
+      "localName": "1���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.190337,
+        "lat": 39.90745
+      },
+      "entrances": []
+    },
+    {
+      "id": "2����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "2���� | ���������ٷ���վ",
+      "localName": "2���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.355426,
+        "lat": 39.940474
+      },
+      "entrances": []
+    },
+    {
+      "id": "3����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "3���� | ���������ٷ���վ",
+      "localName": "3���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.434133,
+        "lat": 39.933801
+      },
+      "entrances": []
+    },
+    {
+      "id": "5����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "5���� | ���������ٷ���վ",
+      "localName": "5���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.428368,
+        "lat": 39.845849
+      },
+      "entrances": []
+    },
+    {
+      "id": "6����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "6���� | ���������ٷ���վ",
+      "localName": "6���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.162586,
+        "lat": 39.923298
+      },
+      "entrances": []
+    },
+    {
+      "id": "7����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "7���� | ���������ٷ���վ",
+      "localName": "7���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.321262,
+        "lat": 39.894763
+      },
+      "entrances": []
+    },
+    {
+      "id": "8����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "8���� | ���������ٷ���վ",
+      "localName": "8���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.313698,
+        "lat": 40.104297
+      },
+      "entrances": []
+    },
+    {
+      "id": "9����-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "9���� | ���������ٷ���վ",
+      "localName": "9���� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.301889,
+        "lat": 39.814322
+      },
+      "entrances": []
+    },
+    {
+      "id": "s1��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "S1�� | ���������ٷ���վ",
+      "localName": "S1�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.178401,
+        "lat": 39.925789
+      },
+      "entrances": []
+    },
+    {
+      "id": "�׶�������-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "�׶������� | ���������ٷ���վ",
+      "localName": "�׶������� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.416884,
+        "lat": 39.940782
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ͨ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ͨ�� | ���������ٷ���վ",
+      "localName": "��ͨ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.531421,
+        "lat": 39.909448
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ɽ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ɽ�� | ���������ٷ���վ",
+      "localName": "��ɽ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.323108,
+        "lat": 39.855462
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ƽ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ƽ�� | ���������ٷ���վ",
+      "localName": "��ƽ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.195369,
+        "lat": 40.244629
+      },
+      "entrances": []
+    },
+    {
+      "id": "��ׯ��-|-���������ٷ���վ",
+      "systemId": "beijing-subway",
+      "name": "��ׯ�� | ���������ٷ���վ",
+      "localName": "��ׯ�� | ���������ٷ���վ",
+      "lines": [
+        "line-1",
+        "line-10",
+        "line-13",
+        "line-14",
+        "line-15",
+        "line-2",
+        "line-4",
+        "line-5",
+        "line-6",
+        "line-8",
+        "line-9"
+      ],
+      "status": "active",
+      "features": [
+        "aed",
+        "elevator",
+        "fare-vending",
+        "transfer"
+      ],
+      "coordinates": {
+        "lng": 116.428368,
+        "lat": 39.845849
+      },
+      "entrances": []
+    }
+  ]
+}

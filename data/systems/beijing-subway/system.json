@@ -1,0 +1,106 @@
+{
+  "id": "beijing-subway",
+  "name": "Beijing Subway",
+  "shortName": "Beijing Metro",
+  "localName": "北京地铁",
+  "location": "Beijing",
+  "region": "Beijing Municipality",
+  "country": "China",
+  "opened": "1969-10-01",
+  "website": "https://www.bjsubway.com",
+  "overview": "The Beijing Subway is a rapid transit system serving Beijing, China. It is the world's busiest and one of the longest metro systems, having surpassed Shanghai in total length in 2023. Originally opened in 1969 as China's first subway, it has undergone massive expansion, particularly after Beijing won the 2008 Olympics bid.",
+  "stats": {
+    "totalStations": 522,
+    "totalLines": 27,
+    "annualRidership": "3.62 billion",
+    "trackKm": 879,
+    "trackMiles": 546.2,
+    "dailyRidership": "9.9 million"
+  },
+  "colors": {
+    "primary": "#004B87",
+    "secondary": "#A4343A"
+  },
+  "history": [
+    {
+      "date": "1965-07-01",
+      "title": "Construction Begins",
+      "description": "Construction begins on China's first subway system, designed primarily for civil defense and government transportation purposes."
+    },
+    {
+      "date": "1969-10-01",
+      "title": "First Line Opens",
+      "description": "The first section opens from Beijing Railway Station to Pingguoyuan. Premier Zhou Enlai boards the first train. Initially restricted to officials only."
+    },
+    {
+      "date": "1977-01-01",
+      "title": "Opens to Public",
+      "description": "After years of restricted operation, the subway fully opens to the general public."
+    },
+    {
+      "date": "1984-09-20",
+      "title": "Line 2 Opens",
+      "description": "Line 2 opens as a loop line following the path of the old Beijing city walls, connecting major railway stations."
+    },
+    {
+      "date": "2001-07-13",
+      "title": "Olympics Bid Won",
+      "description": "Beijing wins the bid to host the 2008 Summer Olympics, triggering massive subway expansion plans."
+    },
+    {
+      "date": "2002-09-28",
+      "title": "Line 13 Opens",
+      "description": "Line 13 opens as a northern suburban commuter line connecting Xizhimen and Dongzhimen."
+    },
+    {
+      "date": "2007-10-07",
+      "title": "Line 5 Opens",
+      "description": "Line 5 opens as the first north-south line through central Beijing, greatly improving network connectivity."
+    },
+    {
+      "date": "2008-07-19",
+      "title": "Olympics Expansion",
+      "description": "Lines 8, 10 (Phase 1), and Capital Airport Express open simultaneously for the 2008 Beijing Olympics."
+    },
+    {
+      "date": "2009-09-28",
+      "title": "Line 4 Opens",
+      "description": "Line 4 opens as the first Beijing MTR-operated line, serving major attractions including the Summer Palace."
+    },
+    {
+      "date": "2010-12-30",
+      "title": "Massive Expansion",
+      "description": "Five lines open in a single day: Lines 15, Changping, Fangshan, Yizhuang, and Daxing, expanding the network by 50%."
+    },
+    {
+      "date": "2013-05-05",
+      "title": "Line 10 Loop Completed",
+      "description": "Line 10 becomes a complete loop, at the time the world's longest single metro loop line at 57 km."
+    },
+    {
+      "date": "2017-12-30",
+      "title": "Automated and Maglev Lines",
+      "description": "Yanfang Line opens as China's first fully automated domestic subway. S1 maglev line also opens."
+    },
+    {
+      "date": "2019-07-12",
+      "title": "Record Ridership",
+      "description": "Beijing Subway sets all-time daily ridership record of 13.75 million passengers."
+    },
+    {
+      "date": "2019-09-26",
+      "title": "Daxing Airport Express",
+      "description": "Daxing Airport Express opens connecting to Beijing's new mega-airport, operating at 160 km/h."
+    },
+    {
+      "date": "2023-12-01",
+      "title": "World's Longest Metro",
+      "description": "Beijing Subway surpasses Shanghai Metro to become the world's longest metro system by route length."
+    },
+    {
+      "date": "2024-12-15",
+      "title": "Lines 3 and 12 Open",
+      "description": "Lines 3 and 12 open, further expanding the network in central and eastern Beijing."
+    }
+  ]
+}
