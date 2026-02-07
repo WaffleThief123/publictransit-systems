@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { StatBlock } from "@/components/ui/StatBlock";
+import { useDistanceUnit } from "@/components/layout/DistanceUnitProvider";
+import { convertDistance } from "@/lib/distance";
 import type { TransitSystem } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +14,13 @@ interface SystemCardProps {
 }
 
 export function SystemCard({ system, className }: SystemCardProps) {
+  const { unit: displayUnit } = useDistanceUnit();
+  const trackLength = convertDistance(
+    system.stats.trackLength,
+    system.stats.distanceUnit,
+    displayUnit
+  );
+
   return (
     <Link href={`/${system.id}`}>
       <Card hover className={cn("h-full", className)}>
@@ -40,8 +51,9 @@ export function SystemCard({ system, className }: SystemCardProps) {
             value={system.stats.totalLines}
           />
           <StatBlock
-            label="Track Miles"
-            value={system.stats.trackMiles}
+            label="Track Length"
+            value={Math.round(trackLength)}
+            unit={displayUnit}
           />
           <StatBlock
             label="Daily Riders"

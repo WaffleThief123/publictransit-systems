@@ -4,6 +4,7 @@ import { getSystem, getLines } from "@/lib/data";
 import { Card } from "@/components/ui/Card";
 import { LineIndicator } from "@/components/transit/LineIndicator";
 import { StatusBadge } from "@/components/ui/Badge";
+import { LineLength } from "@/components/transit/LineLength";
 
 interface PageProps {
   params: Promise<{ system: string }>;
@@ -60,7 +61,9 @@ export default async function LinesPage({ params }: PageProps) {
                   <div className="hidden sm:flex items-center gap-6 text-sm font-mono">
                     <div className="text-center">
                       <p className="text-text-muted text-xs">Length</p>
-                      <p className="text-accent-primary">{line.length} mi</p>
+                      <p className="text-accent-primary">
+                        <LineLength length={line.length} sourceUnit={system.stats.distanceUnit} />
+                      </p>
                     </div>
                     <div className="text-center">
                       <p className="text-text-muted text-xs">Stations</p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { DistanceUnitProvider } from "@/components/layout/DistanceUnitProvider";
 import { Header } from "@/components/layout/Header";
 import "./globals.css";
 
@@ -31,17 +32,19 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <ThemeProvider>
-          <Header />
-          <main className="max-w-7xl mx-auto px-4 py-6">
-            {children}
-          </main>
-          <footer className="border-t border-border-primary bg-bg-secondary mt-auto">
-            <div className="max-w-7xl mx-auto px-4 py-6 text-center">
-              <p className="text-sm text-text-muted font-mono">
-                Made with ❤️ in Redmond Washington, by 📧 Cyra at <a href="https://blog.slowest.network" className="text-accent-primary hover:underline">Slowest.Network</a>
-              </p>
-            </div>
-          </footer>
+          <DistanceUnitProvider>
+            <Header />
+            <main className="max-w-7xl mx-auto px-4 py-6">
+              {children}
+            </main>
+            <footer className="border-t border-border-primary bg-bg-secondary mt-auto">
+              <div className="max-w-7xl mx-auto px-4 py-6 text-center">
+                <p className="text-sm text-text-muted font-mono">
+                  Made with ❤️ in Redmond Washington, by 📧 Cyra at <a href="https://blog.slowest.network" className="text-accent-primary hover:underline">Slowest.Network</a>
+                </p>
+              </div>
+            </footer>
+          </DistanceUnitProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -3,6 +3,7 @@
 export type StationStatus = "active" | "closed" | "under-construction";
 export type RailcarStatus = "active" | "retired" | "testing";
 export type EntranceAccessibility = "elevator" | "escalator" | "stairs-only";
+export type DistanceUnit = "km" | "mi";
 
 export interface StationEntrance {
   id: string;
@@ -40,8 +41,10 @@ export interface SystemStats {
   totalStations: number;
   totalLines: number;
   annualRidership: string;
-  trackMiles: number;
+  trackLength: number;
+  trackMiles?: number; // deprecated, use trackLength
   dailyRidership: string;
+  distanceUnit: DistanceUnit;
 }
 
 export interface Line {

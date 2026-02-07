@@ -1,17 +1,12 @@
 import Link from "next/link";
 import { getAllSystems } from "@/lib/data";
 import { SystemCard } from "@/components/transit/SystemCard";
+import { GlobalStats } from "@/components/transit/GlobalStats";
 import { Terminal, TerminalLine, TerminalOutput } from "@/components/ui/Terminal";
 import { Card } from "@/components/ui/Card";
-import { StatBlock, StatGrid } from "@/components/ui/StatBlock";
-import { MapPin, Train, Route, Layers } from "lucide-react";
 
 export default async function HomePage() {
   const systems = await getAllSystems();
-
-  const totalStations = systems.reduce((sum, s) => sum + s.stats.totalStations, 0);
-  const totalLines = systems.reduce((sum, s) => sum + s.stats.totalLines, 0);
-  const totalTrackMiles = systems.reduce((sum, s) => sum + s.stats.trackMiles, 0);
 
   return (
     <div className="space-y-8">
@@ -42,34 +37,14 @@ export default async function HomePage() {
       {/* Global Stats */}
       {systems.length > 0 && (
         <section>
-          <Card elevated glow>
-            <h2 className="text-xl font-mono font-semibold text-text-primary mb-6 flex items-center gap-2">
-              <span className="text-accent-primary">$</span> Global Network Statistics
-            </h2>
-            <StatGrid columns={4}>
-              <StatBlock
-                label="Total Stations"
-                value={totalStations}
-                icon={<MapPin className="w-4 h-4" />}
-              />
-              <StatBlock
-                label="Total Lines"
-                value={totalLines}
-                icon={<Train className="w-4 h-4" />}
-              />
-              <StatBlock
-                label="Track Miles"
-                value={totalTrackMiles}
-                unit="mi"
-                icon={<Route className="w-4 h-4" />}
-              />
-              <StatBlock
-                label="Systems"
-                value={systems.length}
-                icon={<Layers className="w-4 h-4" />}
-              />
-            </StatGrid>
-          </Card>
+          <GlobalStats
+            systems={systems.map((s) => ({
+              totalStations: s.stats.totalStations,
+              totalLines: s.stats.totalLines,
+              trackLength: s.stats.trackLength,
+              distanceUnit: s.stats.distanceUnit,
+            }))}
+          />
         </section>
       )}
 

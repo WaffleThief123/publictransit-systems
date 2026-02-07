@@ -2,9 +2,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getSystem, getLine, getStationsByLine, formatDate } from "@/lib/data";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
-import { StatBlock, StatGrid } from "@/components/ui/StatBlock";
 import { StatusBadge } from "@/components/ui/Badge";
 import { StationCard } from "@/components/transit/StationCard";
+import { LineStats } from "@/components/transit/LineStats";
 
 interface PageProps {
   params: Promise<{ system: string; line: string }>;
@@ -67,14 +67,13 @@ export default async function LineDetailPage({ params }: PageProps) {
         </div>
 
         {/* Stats */}
-        <Card>
-          <StatGrid columns={4}>
-            <StatBlock label="Length" value={line.length} unit="miles" />
-            <StatBlock label="Stations" value={stations.length} />
-            <StatBlock label="Status" value={line.status.toUpperCase()} />
-            <StatBlock label="Color Code" value={line.colorHex} />
-          </StatGrid>
-        </Card>
+        <LineStats
+          length={line.length}
+          sourceUnit={system.stats.distanceUnit}
+          stationCount={stations.length}
+          status={line.status}
+          colorHex={line.colorHex}
+        />
 
         {/* Description */}
         <Card>

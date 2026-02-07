@@ -13,7 +13,9 @@
     "totalLines": 3,
     "annualRidership": "48.2 million",
     "trackMiles": 33,
-    "dailyRidership": "142,000"
+    "dailyRidership": "142,000",
+    "trackLength": 33,
+    "distanceUnit": "mi"
   },
   "colors": {
     "primary": "#00A651",

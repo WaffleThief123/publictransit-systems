@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Search } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { DistanceUnitToggle } from "./DistanceUnitToggle";
 import { CommandPalette } from "../search/CommandPalette";
 import { cn } from "@/lib/utils";
 
@@ -67,6 +68,7 @@ export function Header() {
                 ⌘K
               </kbd>
             </button>
+            <DistanceUnitToggle />
             <ThemeToggle />
           </div>
         </div>

@@ -2,12 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getSystem, getLines, getStations, getRailcars, getIncidents, formatDate } from "@/lib/data";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
-import { StatBlock, StatGrid } from "@/components/ui/StatBlock";
 import { Terminal, TerminalLine, TerminalOutput } from "@/components/ui/Terminal";
 import { Badge } from "@/components/ui/Badge";
 import { LineIndicator } from "@/components/transit/LineIndicator";
 import { StationCard } from "@/components/transit/StationCard";
 import { RailcarCard } from "@/components/transit/RailcarCard";
+import { SystemStats } from "@/components/transit/SystemStats";
+import { LineLength } from "@/components/transit/LineLength";
 
 interface PageProps {
   params: Promise<{ system: string }>;
@@ -59,14 +60,13 @@ export default async function SystemPage({ params }: PageProps) {
 
         {/* Stats */}
         <section>
-          <Card>
-            <StatGrid columns={4}>
-              <StatBlock label="Stations" value={system.stats.totalStations} />
-              <StatBlock label="Lines" value={system.stats.totalLines} />
-              <StatBlock label="Track Miles" value={system.stats.trackMiles} unit="mi" />
-              <StatBlock label="Daily Ridership" value={system.stats.dailyRidership} />
-            </StatGrid>
-          </Card>
+          <SystemStats
+            totalStations={system.stats.totalStations}
+            totalLines={system.stats.totalLines}
+            trackLength={system.stats.trackLength}
+            sourceUnit={system.stats.distanceUnit}
+            dailyRidership={system.stats.dailyRidership}
+          />
         </section>
 
         {/* Service Alerts */}
@@ -196,7 +196,7 @@ export default async function SystemPage({ params }: PageProps) {
                     </p>
                   </div>
                   <span className="text-xs font-mono text-text-muted shrink-0">
-                    {line.length} mi
+                    <LineLength length={line.length} sourceUnit={system.stats.distanceUnit} />
                   </span>
                 </Card>
               </Link>

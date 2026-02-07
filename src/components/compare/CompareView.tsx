@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { cn } from "@/lib/utils";
+import { useDistanceUnit } from "@/components/layout/DistanceUnitProvider";
+import { convertDistance } from "@/lib/distance";
 import type { TransitSystem } from "@/lib/types";
 
 interface CompareViewProps {
@@ -27,13 +29,19 @@ export function CompareView({ systems }: CompareViewProps) {
   };
 
   const selectedSystems = systems.filter((s) => selected.includes(s.id));
+  const { unit: displayUnit } = useDistanceUnit();
 
   const comparisonFields = [
     { key: "location", label: "Location", getValue: (s: TransitSystem) => s.location },
     { key: "opened", label: "Opened", getValue: (s: TransitSystem) => new Date(s.opened).getFullYear().toString() },
     { key: "stations", label: "Stations", getValue: (s: TransitSystem) => s.stats.totalStations.toString() },
     { key: "lines", label: "Lines", getValue: (s: TransitSystem) => s.stats.totalLines.toString() },
-    { key: "trackMiles", label: "Track Miles", getValue: (s: TransitSystem) => s.stats.trackMiles.toString() },
+    {
+      key: "trackLength",
+      label: `Track Length (${displayUnit})`,
+      getValue: (s: TransitSystem) =>
+        convertDistance(s.stats.trackLength, s.stats.distanceUnit, displayUnit).toFixed(1),
+    },
     { key: "dailyRidership", label: "Daily Ridership", getValue: (s: TransitSystem) => s.stats.dailyRidership },
     { key: "annualRidership", label: "Annual Ridership", getValue: (s: TransitSystem) => s.stats.annualRidership },
   ];
