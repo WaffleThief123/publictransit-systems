@@ -80,10 +80,10 @@
       "colorHex": "#D29B00",
       "opened": "2012-12-30",
       "status": "active",
-      "termini": ["Jin'anqiao", "Lucheng"],
-      "length": 53.0,
-      "stationCount": 35,
-      "description": "Line 6 is one of the longest lines in the system, running east-west across northern Beijing and serving as a parallel route to Line 1."
+      "termini": ["Jin'anqiao", "Luyang"],
+      "length": 55.0,
+      "stationCount": 36,
+      "description": "Line 6 is one of the longest lines in the system, running east-west across northern Beijing and serving as a parallel route to Line 1. Extended to Luyang in December 2025."
     },
     {
       "id": "line-7",
@@ -166,9 +166,9 @@
       "opened": "2024-12-15",
       "status": "active",
       "termini": ["Sijiqing Qiao", "Dongbabei"],
-      "length": 30.0,
-      "stationCount": 21,
-      "description": "Line 12 is a new east-west line running through northern Beijing, parallel to Line 10's northern section."
+      "length": 27.5,
+      "stationCount": 20,
+      "description": "Line 12 is a new east-west line running through northern Beijing, parallel to Line 10's northern section and connecting to Line 3 at Dongbabei."
     },
     {
       "id": "line-13",
@@ -236,9 +236,23 @@
       "opened": "2021-12-31",
       "status": "active",
       "termini": ["Weilaikexuechengbei", "Jiahuihu"],
-      "length": 49.97,
-      "stationCount": 21,
-      "description": "Line 17 is a high-capacity line serving the eastern suburbs, designed to relieve congestion on Line 10."
+      "length": 58.2,
+      "stationCount": 25,
+      "description": "Line 17 is a high-capacity north-south express line. The central section opened in December 2025, connecting Workers' Stadium to Shilihe and completing the full line."
+    },
+    {
+      "id": "line-18",
+      "systemId": "beijing-subway",
+      "name": "Line 18",
+      "localName": "18号线",
+      "color": "maroon",
+      "colorHex": "#8B0000",
+      "opened": "2025-12-27",
+      "status": "active",
+      "termini": ["Malianwa", "Tiantongyuandong"],
+      "length": 19.8,
+      "stationCount": 11,
+      "description": "Line 18 serves northern Beijing through Haidian and Changping districts, part of the Line 13 capacity expansion project. It connects to Lines 16, 8, 5, and 17 at four interchange stations."
     },
     {
       "id": "line-19",

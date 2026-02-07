@@ -10,11 +10,11 @@
   "website": "https://www.bjsubway.com",
   "overview": "The Beijing Subway is a rapid transit system serving Beijing, China. It is the world's busiest and one of the longest metro systems, having surpassed Shanghai in total length in 2023. Originally opened in 1969 as China's first subway, it has undergone massive expansion, particularly after Beijing won the 2008 Olympics bid.",
   "stats": {
-    "totalStations": 522,
-    "totalLines": 27,
-    "annualRidership": "3.62 billion",
-    "dailyRidership": "9.9 million",
-    "trackLength": 879,
+    "totalStations": 527,
+    "totalLines": 28,
+    "annualRidership": "3.82 billion",
+    "dailyRidership": "10.5 million",
+    "trackLength": 887.5,
     "distanceUnit": "km"
   },
   "colors": {
@@ -100,7 +100,12 @@
     {
       "date": "2024-12-15",
       "title": "Lines 3 and 12 Open",
-      "description": "Lines 3 and 12 open, further expanding the network in central and eastern Beijing."
+      "description": "Lines 3 and 12 open along with the Changping Line southern extension, bringing the network to 879 km."
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Line 18 Opens",
+      "description": "Line 18 opens along with Line 17's central section and Line 6's southern extension, bringing the network to 887.5 km."
     }
   ]
 }
