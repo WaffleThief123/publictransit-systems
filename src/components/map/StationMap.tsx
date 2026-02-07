@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Station, Line } from "@/lib/types";
+import type { Station, Line, Coordinates } from "@/lib/types";
 
 const StationMapClient = dynamic(
   () => import("./StationMapClient").then((mod) => mod.StationMapClient),
@@ -17,8 +17,11 @@ const StationMapClient = dynamic(
   }
 );
 
+// Station with coordinates required for map rendering
+type StationWithCoordinates = Omit<Station, 'coordinates'> & { coordinates: Coordinates };
+
 interface StationMapProps {
-  station: Station;
+  station: StationWithCoordinates;
   stationLines: Line[];
 }
 

@@ -12,10 +12,13 @@ interface PageProps {
 export default async function RailcarDetailPage({ params }: PageProps) {
   const { system: systemId, model: modelId } = await params;
 
+  // Decode model ID if it's URL-encoded
+  const decodedModelId = decodeURIComponent(modelId);
+
   try {
     const [system, railcar] = await Promise.all([
       getSystem(systemId),
-      getRailcar(systemId, modelId),
+      getRailcar(systemId, decodedModelId),
     ]);
 
     if (!railcar) {

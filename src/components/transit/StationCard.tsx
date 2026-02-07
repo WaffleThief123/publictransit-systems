@@ -35,12 +35,18 @@ export function StationCard({ station, systemId, className, compact = false }: S
 
         {!compact && (
           <>
-            <p className="text-sm text-text-secondary mb-3 line-clamp-2">
-              {station.description}
-            </p>
+            {station.description && (
+              <p className="text-sm text-text-secondary mb-3 line-clamp-2">
+                {station.description}
+              </p>
+            )}
 
             <div className="flex items-center justify-between text-xs text-text-muted font-mono pt-3 border-t border-border">
-              <span>Opened: {formatDate(station.opened)}</span>
+              {station.opened ? (
+                <span>Opened: {formatDate(station.opened)}</span>
+              ) : (
+                <span>&nbsp;</span>
+              )}
               {station.features.length > 0 && (
                 <span>{station.features.length} features</span>
               )}

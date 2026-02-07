@@ -3,8 +3,11 @@ import type { EntranceAccessibility } from "@/lib/types";
 
 // Get accessibility color based on entrance features
 export function getAccessibilityColor(
-  accessibility: EntranceAccessibility[]
+  accessibility?: EntranceAccessibility[]
 ): string {
+  if (!accessibility || accessibility.length === 0) {
+    return "#737373"; // Gray - unknown/stairs only
+  }
   if (accessibility.includes("elevator")) {
     return "#00ff9d"; // Green - fully accessible
   }
@@ -36,7 +39,7 @@ export function createStationIcon(lineColor: string): L.DivIcon {
 
 // Create entrance marker icon (diamond shape)
 export function createEntranceIcon(
-  accessibility: EntranceAccessibility[]
+  accessibility?: EntranceAccessibility[]
 ): L.DivIcon {
   const color = getAccessibilityColor(accessibility);
 

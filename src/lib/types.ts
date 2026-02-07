@@ -8,7 +8,8 @@ export interface StationEntrance {
   id: string;
   name: string;
   coordinates: Coordinates;
-  accessibility: EntranceAccessibility[];
+  accessibility?: EntranceAccessibility[];
+  wheelchair?: boolean;
   description?: string;
   street?: string;
 }
@@ -62,14 +63,15 @@ export interface Station {
   id: string;
   systemId: string;
   name: string;
+  localName?: string;
   lines: string[];
-  opened: string;
+  opened?: string;
   status: StationStatus;
   closedDate?: string;
-  coordinates: Coordinates;
-  address: string;
+  coordinates?: Coordinates;
+  address?: string;
   features: string[];
-  description: string;
+  description?: string;
   connections?: string[];
   entrances?: StationEntrance[];
 }

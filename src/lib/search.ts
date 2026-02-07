@@ -38,7 +38,7 @@ export function createSearchIndex(
       name: station.name,
       subtitle: station.lines.join(", "),
       description: station.description,
-      keywords: [station.address, ...station.features],
+      keywords: [station.address, station.localName, ...station.features].filter((k): k is string => !!k),
     })),
     // Lines
     ...lines.map((line) => ({

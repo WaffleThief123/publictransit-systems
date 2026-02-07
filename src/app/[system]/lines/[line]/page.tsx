@@ -13,11 +13,14 @@ interface PageProps {
 export default async function LineDetailPage({ params }: PageProps) {
   const { system: systemId, line: lineId } = await params;
 
+  // Decode line ID if it's URL-encoded
+  const decodedLineId = decodeURIComponent(lineId);
+
   try {
     const [system, line, stations] = await Promise.all([
       getSystem(systemId),
-      getLine(systemId, lineId),
-      getStationsByLine(systemId, lineId),
+      getLine(systemId, decodedLineId),
+      getStationsByLine(systemId, decodedLineId),
     ]);
 
     if (!line) {

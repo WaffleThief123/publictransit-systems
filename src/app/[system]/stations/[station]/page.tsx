@@ -16,12 +16,15 @@ interface PageProps {
 export default async function StationDetailPage({ params }: PageProps) {
   const { system: systemId, station: stationId } = await params;
 
+  // Decode station ID if it's URL-encoded
+  const decodedStationId = decodeURIComponent(stationId);
+
   try {
     const [system, station, lines, outages] = await Promise.all([
       getSystem(systemId),
-      getStation(systemId, stationId),
+      getStation(systemId, decodedStationId),
       getLines(systemId),
-      getStationOutages(systemId, stationId),
+      getStationOutages(systemId, decodedStationId),
     ]);
 
     if (!station) {
@@ -61,10 +64,12 @@ export default async function StationDetailPage({ params }: PageProps) {
                 size="md"
               />
             </div>
-            <p className="text-sm text-text-muted">
-              Opened {formatDate(station.opened)}
-              {station.closedDate && ` • Closed ${formatDate(station.closedDate)}`}
-            </p>
+            {(station.opened || station.closedDate) && (
+              <p className="text-sm text-text-muted">
+                {station.opened && `Opened ${formatDate(station.opened)}`}
+                {station.closedDate && `${station.opened ? ' • ' : ''}Closed ${formatDate(station.closedDate)}`}
+              </p>
+            )}
           </div>
         </div>
 
@@ -75,36 +80,46 @@ export default async function StationDetailPage({ params }: PageProps) {
         <Terminal title={station.name}>
           <TerminalLine>query --station {station.name.toLowerCase().replace(/\s+/g, "-")}</TerminalLine>
           <TerminalOutput>Station ID: {station.id}</TerminalOutput>
-          <TerminalOutput>Coordinates: {station.coordinates.lat}, {station.coordinates.lng}</TerminalOutput>
+          {station.coordinates && (
+            <TerminalOutput>Coordinates: {station.coordinates.lat}, {station.coordinates.lng}</TerminalOutput>
+          )}
           <TerminalOutput>Lines: {station.lines.join(", ")}</TerminalOutput>
           <TerminalLine prompt="✓">Station data loaded</TerminalLine>
         </Terminal>
 
         {/* Stats */}
         <Card>
-          <StatGrid columns={4}>
+          <StatGrid columns={station.coordinates ? 4 : 2}>
             <StatBlock label="Lines Served" value={station.lines.length} />
             <StatBlock label="Features" value={station.features.length} />
-            <StatBlock label="Latitude" value={station.coordinates.lat.toFixed(4)} />
-            <StatBlock label="Longitude" value={station.coordinates.lng.toFixed(4)} />
+            {station.coordinates && (
+              <>
+                <StatBlock label="Latitude" value={station.coordinates.lat.toFixed(4)} />
+                <StatBlock label="Longitude" value={station.coordinates.lng.toFixed(4)} />
+              </>
+            )}
           </StatGrid>
         </Card>
 
         {/* Description */}
-        <Card>
-          <CardHeader>
-            <CardTitle>About</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-text-secondary leading-relaxed">{station.description}</p>
-            {station.address && (
-              <div className="mt-4 pt-4 border-t border-border">
-                <p className="text-sm text-text-muted">Address</p>
-                <p className="text-text-primary font-mono">{station.address}</p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
+        {(station.description || station.address) && (
+          <Card>
+            <CardHeader>
+              <CardTitle>About</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {station.description && (
+                <p className="text-text-secondary leading-relaxed">{station.description}</p>
+              )}
+              {station.address && (
+                <div className={station.description ? "mt-4 pt-4 border-t border-border" : ""}>
+                  <p className="text-sm text-text-muted">Address</p>
+                  <p className="text-text-primary font-mono">{station.address}</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
 
         {/* Lines */}
         <Card>
@@ -158,46 +173,48 @@ export default async function StationDetailPage({ params }: PageProps) {
         )}
 
         {/* Map */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Location</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <StationMap station={station} stationLines={stationLines} />
-            <div className="mt-3 flex items-center justify-between text-sm">
-              <div className="flex items-center gap-4 text-text-muted">
-                <span className="flex items-center gap-1.5">
-                  <span className="inline-block h-3 w-3 rounded-full border-2 border-white" style={{ backgroundColor: stationLines[0]?.colorHex || '#00ff9d' }} />
-                  Station
-                </span>
-                {station.entrances && station.entrances.length > 0 && (
-                  <>
-                    <span className="flex items-center gap-1.5">
-                      <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#00ff9d' }} />
-                      Elevator
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#f59e0b' }} />
-                      Escalator
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#737373' }} />
-                      Stairs
-                    </span>
-                  </>
-                )}
+        {station.coordinates && (
+          <Card>
+            <CardHeader>
+              <CardTitle>Location</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <StationMap station={station as typeof station & { coordinates: NonNullable<typeof station.coordinates> }} stationLines={stationLines} />
+              <div className="mt-3 flex items-center justify-between text-sm">
+                <div className="flex items-center gap-4 text-text-muted">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block h-3 w-3 rounded-full border-2 border-white" style={{ backgroundColor: stationLines[0]?.colorHex || '#00ff9d' }} />
+                    Station
+                  </span>
+                  {station.entrances && station.entrances.length > 0 && (
+                    <>
+                      <span className="flex items-center gap-1.5">
+                        <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#00ff9d' }} />
+                        Elevator
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#f59e0b' }} />
+                        Escalator
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <span className="inline-block h-2.5 w-2.5 rotate-45 border-2 border-white" style={{ backgroundColor: '#737373' }} />
+                        Stairs
+                      </span>
+                    </>
+                  )}
+                </div>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${station.coordinates.lat},${station.coordinates.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent-secondary hover:underline"
+                >
+                  Open in Google Maps →
+                </a>
               </div>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${station.coordinates.lat},${station.coordinates.lng}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent-secondary hover:underline"
-              >
-                Open in Google Maps →
-              </a>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        )}
       </div>
     );
   } catch {

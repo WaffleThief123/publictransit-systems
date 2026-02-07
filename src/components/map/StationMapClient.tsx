@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import type { Station, Line } from "@/lib/types";
+import type { Station, Line, Coordinates } from "@/lib/types";
 import {
   createStationIcon,
   createEntranceIcon,
@@ -12,13 +12,16 @@ import {
   DARK_TILE_ATTRIBUTION,
 } from "./mapStyles";
 
+// Station with coordinates required for map rendering
+type StationWithCoordinates = Omit<Station, 'coordinates'> & { coordinates: Coordinates };
+
 interface StationMapClientProps {
-  station: Station;
+  station: StationWithCoordinates;
   stationLines: Line[];
 }
 
 // Component to fit map bounds to markers
-function FitBounds({ station }: { station: Station }) {
+function FitBounds({ station }: { station: StationWithCoordinates }) {
   const map = useMap();
 
   useEffect(() => {
@@ -86,20 +89,27 @@ export function StationMapClient({
               {entrance.street && (
                 <p className="text-neutral-400">{entrance.street}</p>
               )}
-              <div className="mt-1 flex flex-wrap gap-1">
-                {entrance.accessibility.map((access) => (
-                  <span
-                    key={access}
-                    className="inline-block rounded px-1.5 py-0.5 text-xs"
-                    style={{
-                      backgroundColor: getAccessibilityColor([access]),
-                      color: access === "stairs-only" ? "#fff" : "#000",
-                    }}
-                  >
-                    {access.replace("-", " ")}
-                  </span>
-                ))}
-              </div>
+              {entrance.accessibility && entrance.accessibility.length > 0 && (
+                <div className="mt-1 flex flex-wrap gap-1">
+                  {entrance.accessibility.map((access) => (
+                    <span
+                      key={access}
+                      className="inline-block rounded px-1.5 py-0.5 text-xs"
+                      style={{
+                        backgroundColor: getAccessibilityColor([access]),
+                        color: access === "stairs-only" ? "#fff" : "#000",
+                      }}
+                    >
+                      {access.replace("-", " ")}
+                    </span>
+                  ))}
+                </div>
+              )}
+              {entrance.wheelchair !== undefined && (
+                <p className="mt-1 text-xs text-neutral-400">
+                  {entrance.wheelchair ? "♿ Wheelchair accessible" : "No wheelchair access"}
+                </p>
+              )}
               {entrance.description && (
                 <p className="mt-1 text-neutral-400">{entrance.description}</p>
               )}
