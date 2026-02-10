@@ -1,0 +1,211 @@
+{
+  "id": "nyc-subway",
+  "name": "New York City Subway",
+  "shortName": "NYC Subway",
+  "location": "New York City",
+  "region": "New York Metropolitan Area",
+  "country": "United States",
+  "opened": "1904-10-27",
+  "website": "https://new.mta.info",
+  "overview": "The New York City Subway is the largest rapid transit system in the world by number of stations, operating 472 stations across four boroughs of New York City. Opened in 1904 and serving approximately 3.6 million riders daily, it is one of the few transit systems in the world that operates 24 hours a day, 7 days a week, forming the backbone of transportation in the most densely populated major city in the United States.",
+  "stats": {
+    "totalStations": 472,
+    "totalLines": 25,
+    "annualRidership": "1.65 billion",
+    "trackMiles": 245,
+    "dailyRidership": "3.6 million",
+    "trackLength": 245,
+    "distanceUnit": "mi"
+  },
+  "colors": {
+    "primary": "#0039A6",
+    "secondary": "#FF6319"
+  },
+  "history": [
+    {
+      "date": "1904-10-27",
+      "title": "First Subway Line Opens",
+      "description": "The Interborough Rapid Transit Company (IRT) opens the first underground subway line in New York City, running from City Hall to 145th Street in Manhattan with 28 stations."
+    },
+    {
+      "date": "1905-01-09",
+      "title": "Extension to Brooklyn",
+      "description": "The IRT extends service south from City Hall to the Borough Hall area in Brooklyn, crossing the East River via the existing rail tunnel."
+    },
+    {
+      "date": "1908-01-09",
+      "title": "Joralemon Street Tunnel Opens",
+      "description": "The first subway tunnel under the East River to Brooklyn opens, connecting Bowling Green in Manhattan to Borough Hall in Brooklyn via the Joralemon Street Tunnel."
+    },
+    {
+      "date": "1913-03-19",
+      "title": "Dual Contracts Signed",
+      "description": "The City of New York signs the Dual Contracts with the IRT and Brooklyn Rapid Transit Company (BRT), authorizing a massive expansion of rapid transit lines across all boroughs."
+    },
+    {
+      "date": "1915-06-22",
+      "title": "BMT Lines Begin Service",
+      "description": "The Brooklyn Rapid Transit Company (later reorganized as the Brooklyn-Manhattan Transit Corporation, BMT) opens new subway lines under the Dual Contracts, greatly expanding service in Brooklyn and lower Manhattan."
+    },
+    {
+      "date": "1920-11-01",
+      "title": "BRT Reorganized as BMT",
+      "description": "Following the Malbone Street wreck of 1918 and subsequent bankruptcy, the Brooklyn Rapid Transit Company is reorganized as the Brooklyn-Manhattan Transit Corporation (BMT)."
+    },
+    {
+      "date": "1932-09-10",
+      "title": "IND Opens First Line",
+      "description": "The city-owned Independent Subway System (IND) opens its first line, the Eighth Avenue Line, running from Chambers Street to 207th Street in Manhattan, marking the start of city-operated subway service."
+    },
+    {
+      "date": "1936-12-31",
+      "title": "IND Sixth Avenue Line Opens",
+      "description": "The IND Sixth Avenue Line opens for service, providing a new north-south route through midtown Manhattan and eventually connecting to Brooklyn."
+    },
+    {
+      "date": "1940-06-12",
+      "title": "City Unification",
+      "description": "The City of New York takes over operation of the BMT and IRT lines, unifying all three subway systems under public ownership and operation by the New York City Board of Transportation."
+    },
+    {
+      "date": "1940-07-01",
+      "title": "Universal Fare Introduced",
+      "description": "Following unification, a universal five-cent fare is established across all subway lines, allowing free transfers between the formerly separate IRT, BMT, and IND systems."
+    },
+    {
+      "date": "1948-07-01",
+      "title": "Fare Raised to Ten Cents",
+      "description": "The subway fare doubles from five cents to ten cents for the first time in the system's history, ending 44 years of the nickel fare."
+    },
+    {
+      "date": "1953-06-15",
+      "title": "Transit Authority Created",
+      "description": "The New York City Transit Authority (NYCTA) is created as an independent public authority to operate the subway and bus systems, replacing the Board of Transportation."
+    },
+    {
+      "date": "1956-10-30",
+      "title": "Last Elevated Lines Close",
+      "description": "Several of the remaining original elevated railway lines are closed and demolished, including the Third Avenue El in Manhattan, as the subway system fully replaces the older elevated infrastructure."
+    },
+    {
+      "date": "1961-12-01",
+      "title": "Rockaway Line Opens",
+      "description": "The IND Rockaway Line opens for subway service to the Rockaway Peninsula in Queens, converting the former Long Island Rail Road branch into a subway line."
+    },
+    {
+      "date": "1968-03-01",
+      "title": "MTA Created",
+      "description": "The Metropolitan Transportation Authority (MTA) is established by the New York State Legislature, absorbing the New York City Transit Authority and consolidating regional transportation agencies."
+    },
+    {
+      "date": "1970-11-24",
+      "title": "63rd Street Tunnel Construction Begins",
+      "description": "Construction begins on the 63rd Street Tunnel under the East River, part of a planned expansion that would take over two decades to fully complete."
+    },
+    {
+      "date": "1975-01-01",
+      "title": "Fiscal Crisis Hits Transit",
+      "description": "New York City's severe fiscal crisis leads to drastic cuts in subway maintenance and service. Deferred maintenance causes rapid deterioration of stations, tracks, and rolling stock across the system."
+    },
+    {
+      "date": "1976-09-01",
+      "title": "Graffiti Epidemic Peaks",
+      "description": "Rampant graffiti covers nearly every subway car as the system reaches its nadir, with breakdowns, crime, and filthy conditions driving ridership to historic lows."
+    },
+    {
+      "date": "1982-01-01",
+      "title": "Capital Program Begins",
+      "description": "The MTA launches its first Five-Year Capital Program, committing billions of dollars to rehabilitate the deteriorating subway system, replacing cars, rebuilding stations, and restoring track infrastructure."
+    },
+    {
+      "date": "1984-10-29",
+      "title": "MetroCard Concept Announced",
+      "description": "The MTA begins developing an automated fare collection system to replace tokens, leading to the eventual introduction of the MetroCard."
+    },
+    {
+      "date": "1989-05-12",
+      "title": "Graffiti-Free Fleet Declared",
+      "description": "Under the leadership of David Gunn and his successors, the MTA declares the entire subway fleet graffiti-free, marking a major milestone in the system's physical and symbolic rehabilitation."
+    },
+    {
+      "date": "1993-01-06",
+      "title": "63rd Street Connector Opens",
+      "description": "The 63rd Street Line opens to service, adding a new tunnel crossing under the East River connecting Manhattan and Queens."
+    },
+    {
+      "date": "1997-07-04",
+      "title": "MetroCard Becomes Primary Fare",
+      "description": "The MetroCard magnetic stripe fare card fully replaces the subway token as the primary method of fare payment, introducing unlimited ride passes and free bus-subway transfers."
+    },
+    {
+      "date": "2001-09-11",
+      "title": "September 11 Attacks",
+      "description": "The terrorist attacks on the World Trade Center destroy the Cortlandt Street station on the 1/9 lines and cause catastrophic damage to tunnel infrastructure in Lower Manhattan, disrupting service across multiple lines for months."
+    },
+    {
+      "date": "2004-10-27",
+      "title": "Centennial Celebration",
+      "description": "The New York City Subway celebrates its 100th anniversary with special events and commemorations, marking a century of continuous rapid transit service."
+    },
+    {
+      "date": "2005-12-20",
+      "title": "2005 Transit Strike",
+      "description": "Transport Workers Union Local 100 strikes for three days, shutting down the entire subway and bus system during the holiday season, stranding millions of commuters."
+    },
+    {
+      "date": "2007-08-08",
+      "title": "Severe Flooding Event",
+      "description": "A major rainstorm floods large portions of the subway system, shutting down service across most lines and highlighting the system's vulnerability to extreme weather events."
+    },
+    {
+      "date": "2012-10-29",
+      "title": "Hurricane Sandy",
+      "description": "Hurricane Sandy causes catastrophic flooding throughout the subway system, inundating tunnels with millions of gallons of corrosive saltwater and causing billions of dollars in damage. Multiple tunnels and stations remain closed for extended repairs."
+    },
+    {
+      "date": "2015-01-01",
+      "title": "Second Avenue Subway Construction Advances",
+      "description": "Construction intensifies on the long-awaited Second Avenue Subway, the first major expansion of the system in decades, with tunnel boring and station excavation underway on the Upper East Side."
+    },
+    {
+      "date": "2017-01-01",
+      "title": "Second Avenue Subway Phase 1 Opens",
+      "description": "The first phase of the Second Avenue Subway opens, extending the Q train north along Second Avenue with three new stations at 72nd Street, 86th Street, and 96th Street on the Upper East Side."
+    },
+    {
+      "date": "2017-06-01",
+      "title": "State of Emergency Declared",
+      "description": "Governor Andrew Cuomo declares a state of emergency for the subway system following a series of major service disruptions and derailments, launching the NYC Subway Action Plan to stabilize service."
+    },
+    {
+      "date": "2018-09-08",
+      "title": "WTC Cortlandt Station Reopens",
+      "description": "The rebuilt WTC Cortlandt station on the 1 line reopens 17 years after it was destroyed in the September 11 attacks, restoring full service through Lower Manhattan."
+    },
+    {
+      "date": "2019-04-27",
+      "title": "L Train Tunnel Repair Begins",
+      "description": "The MTA begins repairs to the Canarsie Tube, the L train tunnel under the East River damaged by Hurricane Sandy, using an innovative plan that avoids a full shutdown of the tube."
+    },
+    {
+      "date": "2019-05-31",
+      "title": "OMNY Fare System Launches",
+      "description": "The MTA begins rolling out OMNY (One Metro New York), a contactless fare payment system allowing riders to tap credit cards or phones, beginning the transition away from the MetroCard."
+    },
+    {
+      "date": "2020-03-22",
+      "title": "COVID-19 Pandemic Impact",
+      "description": "The COVID-19 pandemic causes an unprecedented collapse in subway ridership, dropping over 90% from normal levels. For the first time in its history, the subway suspends 24-hour service for nightly cleaning and disinfection."
+    },
+    {
+      "date": "2022-01-01",
+      "title": "Ridership Recovery Begins",
+      "description": "Subway ridership begins a sustained recovery from pandemic lows, though weekday ridership remains well below pre-pandemic levels as remote work reshapes commuting patterns."
+    },
+    {
+      "date": "2024-06-30",
+      "title": "Congestion Pricing Launches",
+      "description": "New York City implements congestion pricing for vehicles entering Manhattan's central business district, with revenue dedicated to funding MTA capital improvements including subway modernization."
+    }
+  ]
+}

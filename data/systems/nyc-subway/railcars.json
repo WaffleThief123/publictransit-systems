@@ -1,0 +1,503 @@
+{
+  "generations": [
+    {
+      "id": "r1-r9",
+      "systemId": "nyc-subway",
+      "name": "R1\u2013R9",
+      "manufacturer": "American Car and Foundry",
+      "introduced": 1930,
+      "retired": 1977,
+      "status": "retired",
+      "count": 1550,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "weight": "81,000 lbs",
+        "traction": "DC"
+      },
+      "description": "The first cars purpose-built for the city-owned IND system, collectively known as the \"Standards.\" These heavyweight steel cars established the 60-foot B Division car profile and served for nearly five decades across the IND and BMT networks."
+    },
+    {
+      "id": "r10",
+      "systemId": "nyc-subway",
+      "name": "R10",
+      "manufacturer": "American Car and Foundry",
+      "introduced": 1948,
+      "retired": 1981,
+      "status": "retired",
+      "count": 400,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "weight": "80,000 lbs",
+        "traction": "DC"
+      },
+      "description": "Post-war continuation of the IND Standards design, incorporating minor refinements from wartime manufacturing advances. These cars were the last of the traditional heavyweight IND fleet."
+    },
+    {
+      "id": "r11-r14",
+      "systemId": "nyc-subway",
+      "name": "R11/R14",
+      "manufacturer": "Budd Company",
+      "introduced": 1949,
+      "retired": 1984,
+      "status": "retired",
+      "count": 310,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "Experimental stainless steel cars that pioneered the use of Budd Company's Shotweld construction in rapid transit. These lightweight cars tested new materials and manufacturing techniques that would influence future subway car designs."
+    },
+    {
+      "id": "r15",
+      "systemId": "nyc-subway",
+      "name": "R15",
+      "manufacturer": "American Car and Foundry",
+      "introduced": 1950,
+      "retired": 1985,
+      "status": "retired",
+      "count": 200,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 40,
+        "maxSpeed": "55 mph"
+      },
+      "description": "Built for the IRT Division's narrower tunnel profile, these cars helped modernize the aging IRT fleet during the postwar era. They were among the first postwar orders for the smaller A Division."
+    },
+    {
+      "id": "r16",
+      "systemId": "nyc-subway",
+      "name": "R16",
+      "manufacturer": "American Car and Foundry",
+      "introduced": 1955,
+      "retired": 1987,
+      "status": "retired",
+      "count": 200,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "The first IND/BMT B Division cars equipped with air spring suspension, providing a noticeably smoother ride. They represented a transitional design between the old Standards and the modern era of subway cars."
+    },
+    {
+      "id": "r17",
+      "systemId": "nyc-subway",
+      "name": "R17",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1955,
+      "retired": 1988,
+      "status": "retired",
+      "count": 400,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 40,
+        "maxSpeed": "55 mph"
+      },
+      "description": "IRT Division cars built by St. Louis Car Company as part of the mid-1950s fleet renewal program. They served the numbered lines for over three decades and were a familiar sight across the A Division."
+    },
+    {
+      "id": "r21-r22",
+      "systemId": "nyc-subway",
+      "name": "R21/R22",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1957,
+      "retired": 1991,
+      "status": "retired",
+      "count": 470,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "IRT Division cars that continued the modernization of the numbered lines with increased seating capacity over earlier models. These workhorses of the A Division served reliably through the system's most challenging fiscal years."
+    },
+    {
+      "id": "r26-r29",
+      "systemId": "nyc-subway",
+      "name": "R26\u2013R29",
+      "manufacturer": "American Car and Foundry",
+      "introduced": 1959,
+      "retired": 1994,
+      "status": "retired",
+      "count": 440,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "The last IRT cars built by American Car and Foundry before the company exited the transit market. These A Division cars served through the graffiti era and into the early 1990s fleet modernization period."
+    },
+    {
+      "id": "r32",
+      "systemId": "nyc-subway",
+      "name": "R32",
+      "manufacturer": "Budd Company",
+      "introduced": 1964,
+      "retired": 2022,
+      "status": "retired",
+      "count": 600,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "weight": "74,500 lbs",
+        "traction": "DC"
+      },
+      "description": "Known as the \"Brightliners\" for their gleaming unpainted stainless steel finish, the R32 became the longest-serving B Division cars in NYC Subway history. Their 58-year career made them beloved icons of the system before final retirement in 2022."
+    },
+    {
+      "id": "r33",
+      "systemId": "nyc-subway",
+      "name": "R33 World's Fair",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1963,
+      "retired": 2015,
+      "status": "retired",
+      "count": 500,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "Originally built to handle crowds for the 1964 World's Fair in Flushing, these IRT cars (along with the closely related R36 variant) became a staple of the numbered lines for over five decades. Some served in their final years as work trains."
+    },
+    {
+      "id": "r38",
+      "systemId": "nyc-subway",
+      "name": "R38",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1966,
+      "retired": 2009,
+      "status": "retired",
+      "count": 200,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "B Division cars that continued the 60-foot design lineage for the IND and BMT lines. They served through the system's decline and recovery periods before being replaced by the R160 fleet."
+    },
+    {
+      "id": "r40",
+      "systemId": "nyc-subway",
+      "name": "R40/R40M",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1968,
+      "retired": 2009,
+      "status": "retired",
+      "count": 400,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph"
+      },
+      "description": "Famous for their distinctive slant-front \"futuristic\" cab design inspired by the Space Age, the R40 was one of the most visually recognizable subway cars ever built. The slant noses were later modified to a conventional flat front (R40M) for operational reasons."
+    },
+    {
+      "id": "r42",
+      "systemId": "nyc-subway",
+      "name": "R42",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1969,
+      "retired": 2020,
+      "status": "retired",
+      "count": 400,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 200,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "traction": "DC"
+      },
+      "description": "The last subway cars built by the St. Louis Car Company before it ceased railcar production. These B Division workhorses served for over 50 years on various lettered lines before retirement in 2020."
+    },
+    {
+      "id": "r44",
+      "systemId": "nyc-subway",
+      "name": "R44",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1971,
+      "retired": 2021,
+      "status": "retired",
+      "count": 352,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft",
+        "capacity": 280,
+        "seatedCapacity": 68,
+        "maxSpeed": "55 mph",
+        "weight": "78,000 lbs"
+      },
+      "description": "The first 75-foot subway cars in the NYC system, introducing a longer car body that became the new B Division standard. Despite chronic reliability issues throughout their service life, they pioneered the larger platform that successor fleets would refine."
+    },
+    {
+      "id": "r46",
+      "systemId": "nyc-subway",
+      "name": "R46",
+      "manufacturer": "Pullman-Standard",
+      "introduced": 1975,
+      "retired": null,
+      "status": "active",
+      "count": 754,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft",
+        "capacity": 280,
+        "seatedCapacity": 68,
+        "maxSpeed": "55 mph",
+        "weight": "78,000 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The oldest cars still in active revenue service on the NYC Subway, these 75-foot B Division cars have been in continuous operation for five decades. They currently serve the A, C, F, G, and R lines and are among the last cars to use DC chopper propulsion."
+    },
+    {
+      "id": "r62",
+      "systemId": "nyc-subway",
+      "name": "R62",
+      "manufacturer": "Kawasaki",
+      "introduced": 1983,
+      "retired": null,
+      "status": "active",
+      "count": 325,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "weight": "65,000 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "The first Japanese-built cars in the NYC Subway fleet, marking the beginning of Kawasaki's long relationship with the MTA. Currently serving the 1, 3, and 6 lines, these IRT cars are slated for replacement by the R262 order."
+    },
+    {
+      "id": "r62a",
+      "systemId": "nyc-subway",
+      "name": "R62A",
+      "manufacturer": "Kawasaki",
+      "introduced": 1984,
+      "retired": null,
+      "status": "active",
+      "count": 825,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 135,
+        "seatedCapacity": 44,
+        "maxSpeed": "55 mph",
+        "weight": "65,500 lbs",
+        "traction": "DC chopper"
+      },
+      "description": "A follow-on order expanding the Kawasaki-built IRT fleet with minor design refinements over the R62. Currently operating on the 1, 4, 5, 6, and 7 lines, they are the most numerous pre-NTT cars still in service."
+    },
+    {
+      "id": "r68",
+      "systemId": "nyc-subway",
+      "name": "R68",
+      "manufacturer": "Kawasaki",
+      "introduced": 1986,
+      "retired": null,
+      "status": "active",
+      "count": 425,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft",
+        "capacity": 280,
+        "seatedCapacity": 68,
+        "maxSpeed": "55 mph",
+        "weight": "82,000 lbs",
+        "traction": "AC propulsion"
+      },
+      "description": "The first B Division cars with AC propulsion, representing a major leap in traction technology for the 75-foot fleet. Currently serving the B, D, N, Q, and W lines, they brought improved acceleration and energy efficiency to the lettered services."
+    },
+    {
+      "id": "r68a",
+      "systemId": "nyc-subway",
+      "name": "R68A",
+      "manufacturer": "Kawasaki",
+      "introduced": 1988,
+      "retired": null,
+      "status": "active",
+      "count": 200,
+      "specs": {
+        "length": "75 ft",
+        "width": "10 ft",
+        "capacity": 280,
+        "seatedCapacity": 68,
+        "maxSpeed": "55 mph",
+        "weight": "82,000 lbs",
+        "traction": "AC propulsion"
+      },
+      "description": "A smaller follow-on order to the R68 with cosmetic and minor mechanical refinements. These 75-foot B Division cars continue to serve alongside their R68 siblings on various lettered lines."
+    },
+    {
+      "id": "r142",
+      "systemId": "nyc-subway",
+      "name": "R142",
+      "manufacturer": "Bombardier",
+      "introduced": 1999,
+      "retired": null,
+      "status": "active",
+      "count": 1030,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 148,
+        "seatedCapacity": 42,
+        "maxSpeed": "55 mph",
+        "weight": "64,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The first of the New Technology Trains (NTT) that transformed the IRT Division, introducing digital LED displays, automated announcements, and modern AC IGBT traction. Currently serving the 2, 4, and 5 lines, they set the standard for 21st-century subway service."
+    },
+    {
+      "id": "r142a",
+      "systemId": "nyc-subway",
+      "name": "R142A",
+      "manufacturer": "Kawasaki",
+      "introduced": 2000,
+      "retired": null,
+      "status": "active",
+      "count": 600,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 148,
+        "seatedCapacity": 42,
+        "maxSpeed": "55 mph",
+        "weight": "64,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "Kawasaki's variant of the NTT platform for the IRT Division, built concurrently with Bombardier's R142. Currently assigned to the 4 and 6 lines, they share the same modern passenger amenities and IGBT traction technology."
+    },
+    {
+      "id": "r143",
+      "systemId": "nyc-subway",
+      "name": "R143",
+      "manufacturer": "Kawasaki",
+      "introduced": 2001,
+      "retired": null,
+      "status": "active",
+      "count": 212,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 210,
+        "seatedCapacity": 50,
+        "maxSpeed": "55 mph",
+        "weight": "72,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The first NTT cars built for the B Division, exclusively serving the L line with modern amenities and CBTC signaling compatibility. Their dedicated assignment to the Canarsie Line made the L the first fully NTT-equipped service in the system."
+    },
+    {
+      "id": "r160",
+      "systemId": "nyc-subway",
+      "name": "R160",
+      "manufacturer": "Alstom/Kawasaki",
+      "introduced": 2006,
+      "retired": null,
+      "status": "active",
+      "count": 1662,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 210,
+        "seatedCapacity": 50,
+        "maxSpeed": "55 mph",
+        "weight": "72,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The largest single railcar order in NYC Subway history, split between Alstom (R160A) and Kawasaki (R160B). These B Division NTT cars serve the E, F, J, L, M, N, Q, R, and W lines, forming the backbone of the modern lettered-line fleet."
+    },
+    {
+      "id": "r179",
+      "systemId": "nyc-subway",
+      "name": "R179",
+      "manufacturer": "Bombardier",
+      "introduced": 2017,
+      "retired": null,
+      "status": "active",
+      "count": 318,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 210,
+        "seatedCapacity": 50,
+        "maxSpeed": "55 mph",
+        "weight": "73,500 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "B Division cars that replaced the aging R32 Brightliners on the A, C, J, and Z lines. Their delivery was plagued by manufacturing quality issues and delays, leading to contractual disputes between the MTA and Bombardier."
+    },
+    {
+      "id": "r211",
+      "systemId": "nyc-subway",
+      "name": "R211",
+      "manufacturer": "Kawasaki",
+      "introduced": 2023,
+      "retired": null,
+      "status": "active",
+      "count": 535,
+      "specs": {
+        "length": "60 ft 3 in",
+        "width": "10 ft",
+        "capacity": 210,
+        "seatedCapacity": 50,
+        "maxSpeed": "55 mph",
+        "weight": "74,000 lbs",
+        "traction": "AC IGBT"
+      },
+      "description": "The next generation of B Division cars featuring wider door openings for faster boarding and an open gangway variant (R211T) that allows passengers to walk between cars. Currently being delivered for the A and C lines, they represent the future direction of the NYC Subway fleet."
+    },
+    {
+      "id": "r262",
+      "systemId": "nyc-subway",
+      "name": "R262",
+      "manufacturer": "Kawasaki",
+      "introduced": 2027,
+      "retired": null,
+      "status": "testing",
+      "count": 640,
+      "specs": {
+        "length": "51 ft 4 in",
+        "width": "8 ft 9 in",
+        "capacity": 148,
+        "seatedCapacity": 42,
+        "maxSpeed": "55 mph",
+        "traction": "AC IGBT"
+      },
+      "description": "The long-awaited next generation IRT replacement designed to retire the aging R62 and R62A fleets on the numbered lines. Under contract with Kawasaki, these A Division cars will bring the IRT into the modern era with updated technology and open gangway options."
+    }
+  ]
+}
