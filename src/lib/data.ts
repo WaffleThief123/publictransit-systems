@@ -147,6 +147,10 @@ const BART_API_BASE = "https://api.bart.gov/api";
 // Sound Transit GTFS-RT alerts feed (public, no auth required)
 const SOUND_TRANSIT_ALERTS_URL = "https://s3.amazonaws.com/st-service-alerts-prod/alerts_pb.json";
 
+// MTA NYC Subway endpoints (public, no auth required)
+const NYC_SUBWAY_ALERTS_URL = "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fall-alerts.json";
+const NYC_SUBWAY_ENE_URL = "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fnyct_ene.json";
+
 // Simple in-memory cache for incident data (5 minute TTL)
 const incidentCache: Map<string, { data: IncidentData; fetchedAt: number }> = new Map();
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
@@ -249,6 +253,98 @@ interface SoundTransitAlertsResponse {
     timestamp: number;
   };
   entity: SoundTransitAlert[];
+}
+
+// MTA NYC Subway alert response types
+interface NycSubwayMtaAlert {
+  id: string;
+  alert: {
+    active_period: Array<{ start: number; end?: number }>;
+    informed_entity: Array<{
+      agency_id?: string;
+      route_id?: string;
+      stop_id?: string;
+    }>;
+    header_text?: { translation: Array<{ text: string; language: string }> };
+    description_text?: { translation: Array<{ text: string; language: string }> };
+    transit_realtime_mercury_alert?: {
+      alert_type?: string;
+      human_readable_active_period?: {
+        translation: Array<{ text: string; language: string }>;
+      };
+    };
+  };
+}
+
+interface NycSubwayAlertsResponse {
+  header: { gtfs_realtime_version: string; timestamp: number };
+  entity: NycSubwayMtaAlert[];
+}
+
+interface NycSubwayEneOutage {
+  borough: string;
+  trainno: string;
+  equipmentno: string;
+  equipmenttype: "EL" | "ES";
+  serving: string;
+  ADA: "Y" | "N";
+  isupcomingoutage: "Y" | "N";
+  ismaintenanceoutage: "Y" | "N";
+  station: string;
+  outagedate: string;
+  estimatedreturntoservice: string;
+  reason: string;
+  linesimpacted?: string;
+}
+
+// MTA route ID to our line ID mapping
+const NYC_SUBWAY_ROUTE_MAP: Record<string, string> = {
+  GS: "S-42",
+  FS: "S-franklin",
+  H: "S-rockaway",
+};
+
+// Lazy-loaded station name index for NYC Subway
+let nycStationIndex: Map<string, Array<{ id: string; lines: string[] }>> | null = null;
+
+function normalizeStationName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[–—-]/g, " ")
+    .replace(/[\/\\]/g, " ")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function getNycStationIndex(): Promise<Map<string, Array<{ id: string; lines: string[] }>>> {
+  if (nycStationIndex) return nycStationIndex;
+
+  const stations = await getStations("nyc-subway");
+  nycStationIndex = new Map();
+
+  for (const station of stations) {
+    if (station.status !== "active") continue;
+    const normalized = normalizeStationName(station.name);
+    const existing = nycStationIndex.get(normalized) || [];
+    existing.push({ id: station.id, lines: station.lines });
+    nycStationIndex.set(normalized, existing);
+  }
+
+  return nycStationIndex;
+}
+
+function mapNycRouteId(routeId: string): string | null {
+  if (routeId === "SI") return null; // Staten Island Railway not in our data
+  return NYC_SUBWAY_ROUTE_MAP[routeId] || routeId;
+}
+
+function mapNycAlertType(alertType: string | undefined): "delay" | "emergency" | "advisory" {
+  if (!alertType) return "advisory";
+  const lower = alertType.toLowerCase();
+  if (lower === "delays") return "delay";
+  if (lower === "suspended" || lower === "part suspended") return "emergency";
+  return "advisory";
 }
 
 // Sound Transit route ID to line ID mapping
@@ -532,6 +628,144 @@ async function fetchSoundTransitIncidents(): Promise<IncidentData | null> {
   }
 }
 
+async function fetchNycSubwayIncidents(): Promise<IncidentData | null> {
+  try {
+    const [alertsResponse, eneResponse] = await Promise.all([
+      fetch(NYC_SUBWAY_ALERTS_URL, { next: { revalidate: 300 } }),
+      fetch(NYC_SUBWAY_ENE_URL, { next: { revalidate: 300 } }),
+    ]);
+
+    const alerts: ServiceAlert[] = [];
+    const outagesByStation: Record<string, UnitOutage[]> = {};
+    let elevatorOutages = 0;
+    let escalatorOutages = 0;
+
+    // Process service alerts
+    if (alertsResponse.ok) {
+      const alertsData = (await alertsResponse.json()) as NycSubwayAlertsResponse;
+
+      for (const entity of alertsData.entity || []) {
+        const alert = entity.alert;
+
+        // Filter to subway alerts only (agency_id === "MTASBWY")
+        const isSubway = alert.informed_entity?.some(
+          (ie) => ie.agency_id === "MTASBWY"
+        );
+        if (!isSubway) continue;
+
+        const headerText =
+          alert.header_text?.translation?.[0]?.text || "Service Alert";
+        const descriptionText =
+          alert.description_text?.translation?.[0]?.text || "";
+        const alertType = mapNycAlertType(
+          alert.transit_realtime_mercury_alert?.alert_type
+        );
+
+        // Extract affected lines from informed_entity route_ids
+        const affectedLines: string[] = [];
+        for (const ie of alert.informed_entity || []) {
+          if (ie.route_id) {
+            const lineId = mapNycRouteId(ie.route_id);
+            if (lineId && !affectedLines.includes(lineId)) {
+              affectedLines.push(lineId);
+            }
+          }
+        }
+
+        const startTime = alert.active_period?.[0]?.start;
+        const endTime = alert.active_period?.[0]?.end;
+        const postedAt = startTime
+          ? new Date(startTime * 1000).toISOString()
+          : new Date().toISOString();
+        const expiresAt = endTime
+          ? new Date(endTime * 1000).toISOString()
+          : null;
+
+        alerts.push({
+          id: entity.id,
+          type: alertType,
+          title: headerText,
+          description: descriptionText.trim(),
+          affectedLines: affectedLines.length > 0 ? affectedLines : undefined,
+          postedAt,
+          expiresAt,
+        });
+      }
+    }
+
+    // Process elevator/escalator outages
+    if (eneResponse.ok) {
+      const eneData = (await eneResponse.json()) as NycSubwayEneOutage[];
+      const stationIndex = await getNycStationIndex();
+
+      for (const outage of eneData || []) {
+        // Skip upcoming outages — only show current
+        if (outage.isupcomingoutage === "Y") continue;
+
+        const normalizedName = normalizeStationName(outage.station);
+        const candidates = stationIndex.get(normalizedName);
+        if (!candidates || candidates.length === 0) continue;
+
+        // Disambiguate by line overlap if multiple stations share name
+        let matchedStation = candidates[0];
+        if (candidates.length > 1 && outage.trainno) {
+          const outageLines = outage.trainno
+            .split("/")
+            .map((t) => t.trim())
+            .map(mapNycRouteId)
+            .filter((id): id is string => id !== null);
+
+          const scored = candidates.map((c) => ({
+            ...c,
+            overlap: c.lines.filter((l) => outageLines.includes(l)).length,
+          }));
+          const best = scored.reduce((a, b) =>
+            b.overlap > a.overlap ? b : a
+          );
+          if (best.overlap > 0) matchedStation = best;
+        }
+
+        const unitType = outage.equipmenttype === "EL" ? "elevator" : "escalator";
+
+        if (!outagesByStation[matchedStation.id]) {
+          outagesByStation[matchedStation.id] = [];
+        }
+
+        outagesByStation[matchedStation.id].push({
+          unitName: `${outage.equipmenttype === "EL" ? "Elevator" : "Escalator"} ${outage.equipmentno}`,
+          unitType,
+          location: outage.serving || outage.station,
+          symptom: outage.reason || "Out of service",
+          outOfServiceSince: outage.outagedate || new Date().toISOString(),
+          estimatedReturn: outage.estimatedreturntoservice || null,
+          updatedAt: outage.outagedate || new Date().toISOString(),
+        });
+
+        if (unitType === "elevator") elevatorOutages++;
+        else escalatorOutages++;
+      }
+    }
+
+    const stationsAffected = Object.keys(outagesByStation).length;
+
+    return {
+      fetchedAt: new Date().toISOString(),
+      systemId: "nyc-subway",
+      summary: {
+        totalOutages: elevatorOutages + escalatorOutages,
+        elevatorOutages,
+        escalatorOutages,
+        stationsAffected,
+        activeAlerts: alerts.length,
+      },
+      alerts,
+      outagesByStation,
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function fetchWmataIncidents(): Promise<IncidentData | null> {
   // Try fetching from worker if URL is configured
   if (INCIDENTS_WORKER_URL) {
@@ -559,7 +793,7 @@ async function fetchWmataIncidents(): Promise<IncidentData | null> {
 
 export async function getIncidents(systemId: string): Promise<IncidentData | null> {
   // Check supported systems
-  const supportedSystems = ["wmata", "bart", "sound-transit"];
+  const supportedSystems = ["wmata", "bart", "sound-transit", "nyc-subway"];
   if (!supportedSystems.includes(systemId)) return null;
 
   // Check cache first
@@ -576,6 +810,8 @@ export async function getIncidents(systemId: string): Promise<IncidentData | nul
     data = await fetchWmataIncidents();
   } else if (systemId === "sound-transit") {
     data = await fetchSoundTransitIncidents();
+  } else if (systemId === "nyc-subway") {
+    data = await fetchNycSubwayIncidents();
   }
 
   if (data) {
