@@ -989,6 +989,30 @@ async function fetchBaltimoreLightRailIncidents(): Promise<IncidentData | null> 
   );
 }
 
+async function fetchTokyoMetroIncidents(): Promise<IncidentData | null> {
+  if (INCIDENTS_WORKER_URL) {
+    try {
+      const response = await fetch(
+        `${INCIDENTS_WORKER_URL}/incidents/tokyo-metro`,
+        { next: { revalidate: 300 } },
+      );
+      if (response.ok) {
+        return (await response.json()) as IncidentData;
+      }
+    } catch {
+      // Fall through to local file
+    }
+  }
+
+  try {
+    const filePath = path.join(INCIDENTS_DIR, "tokyo-metro.json");
+    const content = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(content) as IncidentData;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchWmataIncidents(): Promise<IncidentData | null> {
   // Try fetching from worker if URL is configured
   if (INCIDENTS_WORKER_URL) {
@@ -1016,7 +1040,7 @@ async function fetchWmataIncidents(): Promise<IncidentData | null> {
 
 export async function getIncidents(systemId: string): Promise<IncidentData | null> {
   // Check supported systems
-  const supportedSystems = ["wmata", "bart", "sound-transit", "nyc-subway", "baltimore-metro", "baltimore-light-rail"];
+  const supportedSystems = ["wmata", "bart", "sound-transit", "nyc-subway", "baltimore-metro", "baltimore-light-rail", "tokyo-metro"];
   if (!supportedSystems.includes(systemId)) return null;
 
   // Check cache first
@@ -1039,6 +1063,8 @@ export async function getIncidents(systemId: string): Promise<IncidentData | nul
     data = await fetchBaltimoreMetroIncidents();
   } else if (systemId === "baltimore-light-rail") {
     data = await fetchBaltimoreLightRailIncidents();
+  } else if (systemId === "tokyo-metro") {
+    data = await fetchTokyoMetroIncidents();
   }
 
   if (data) {
