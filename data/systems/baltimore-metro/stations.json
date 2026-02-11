@@ -1,0 +1,201 @@
+{
+  "stations": [
+    {
+      "id": "owings-mills",
+      "systemId": "baltimore-metro",
+      "name": "Owings Mills",
+      "lines": ["metro"],
+      "opened": "1987-07-20",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.4074,
+        "lng": -76.7799
+      },
+      "features": ["park-and-ride", "bus-connection", "fare-vending"],
+      "description": "Western terminus of the Metro SubwayLink. Surface station with approximately 3,500 parking spaces, the largest park-and-ride facility in the system."
+    },
+    {
+      "id": "old-court",
+      "systemId": "baltimore-metro",
+      "name": "Old Court",
+      "lines": ["metro"],
+      "opened": "1987-07-20",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3713,
+        "lng": -76.7441
+      },
+      "features": ["park-and-ride", "bus-connection", "fare-vending"],
+      "description": "Surface station serving the Old Court Road area of Baltimore County. Opened as part of the 1987 Owings Mills extension."
+    },
+    {
+      "id": "milford-mill",
+      "systemId": "baltimore-metro",
+      "name": "Milford Mill",
+      "lines": ["metro"],
+      "opened": "1987-07-20",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3596,
+        "lng": -76.7206
+      },
+      "features": ["park-and-ride", "bus-connection", "fare-vending"],
+      "description": "Surface station serving the Milford Mill area. The easternmost station added in the 1987 Owings Mills extension."
+    },
+    {
+      "id": "reisterstown-plaza",
+      "systemId": "baltimore-metro",
+      "name": "Reisterstown Plaza",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3519,
+        "lng": -76.7047
+      },
+      "features": ["park-and-ride", "bus-connection", "fare-vending"],
+      "description": "Surface station adjacent to the Reisterstown Road Plaza shopping center. Original western terminus when the system opened in 1983."
+    },
+    {
+      "id": "rogers-avenue",
+      "systemId": "baltimore-metro",
+      "name": "Rogers Avenue",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3448,
+        "lng": -76.6919
+      },
+      "features": ["bus-connection", "fare-vending"],
+      "description": "Surface station in the Park Heights neighborhood of northwest Baltimore."
+    },
+    {
+      "id": "west-cold-spring",
+      "systemId": "baltimore-metro",
+      "name": "West Cold Spring",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3363,
+        "lng": -76.6724
+      },
+      "features": ["bus-connection", "fare-vending"],
+      "description": "Surface station near the intersection of Wabash Avenue and Cold Spring Lane in northwest Baltimore."
+    },
+    {
+      "id": "mondawmin",
+      "systemId": "baltimore-metro",
+      "name": "Mondawmin",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3179,
+        "lng": -76.6528
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Located near the Mondawmin Mall, this station marks the transition from surface running to the deep-bore tunnel section. Major bus transfer point."
+    },
+    {
+      "id": "penn-north",
+      "systemId": "baltimore-metro",
+      "name": "Penn North",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3103,
+        "lng": -76.6423
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Deep underground station approximately 120 feet below street level, serving the Penn North neighborhood along Pennsylvania Avenue."
+    },
+    {
+      "id": "upton",
+      "systemId": "baltimore-metro",
+      "name": "Upton",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.304,
+        "lng": -76.6358
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Underground station in the Upton neighborhood. Features Romare Bearden's jazz-themed mosaic artwork. Formerly known as Upton/Avenue Market."
+    },
+    {
+      "id": "state-center",
+      "systemId": "baltimore-metro",
+      "name": "State Center",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.3018,
+        "lng": -76.6229
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Underground station near the Maryland State Center office complex. Walking distance to the Light RailLink Cultural Center stop for transfers."
+    },
+    {
+      "id": "lexington-market",
+      "systemId": "baltimore-metro",
+      "name": "Lexington Market",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.2917,
+        "lng": -76.6208
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "connections": ["baltimore-light-rail:lexington-market"],
+      "description": "Underground station adjacent to the historic Lexington Market. Transfer point to the Light RailLink system via a short walk to the Lexington Market light rail stop on Howard Street."
+    },
+    {
+      "id": "charles-center",
+      "systemId": "baltimore-metro",
+      "name": "Charles Center",
+      "lines": ["metro"],
+      "opened": "1983-11-21",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.2894,
+        "lng": -76.6161
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Underground station in the heart of downtown Baltimore's Charles Center business district. Original eastern terminus when the system opened in 1983."
+    },
+    {
+      "id": "shot-tower",
+      "systemId": "baltimore-metro",
+      "name": "Shot Tower",
+      "lines": ["metro"],
+      "opened": "1995-05-31",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.2896,
+        "lng": -76.6061
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Underground station near the historic Phoenix Shot Tower. Opened in 1995 as part of the Johns Hopkins extension. Formerly known as Shot Tower/Market Place."
+    },
+    {
+      "id": "johns-hopkins-hospital",
+      "systemId": "baltimore-metro",
+      "name": "Johns Hopkins Hospital",
+      "lines": ["metro"],
+      "opened": "1995-05-31",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.2986,
+        "lng": -76.5946
+      },
+      "features": ["elevator", "escalator", "bus-connection", "fare-vending"],
+      "description": "Eastern terminus of the Metro SubwayLink, serving the Johns Hopkins Hospital campus and East Baltimore. Opened in 1995, completing the 14-station line."
+    }
+  ]
+}
