@@ -138,7 +138,6 @@ export function getRailcarUrl(systemId: string, railcarId: string): string {
 }
 
 // Incident/Outage data
-const INCIDENTS_DIR = path.join(process.cwd(), "data", "incidents");
 const INCIDENTS_WORKER_URL = process.env.INCIDENTS_WORKER_URL;
 
 // BART API configuration (public demo key)
@@ -990,52 +989,34 @@ async function fetchBaltimoreLightRailIncidents(): Promise<IncidentData | null> 
 }
 
 async function fetchTokyoMetroIncidents(): Promise<IncidentData | null> {
-  if (INCIDENTS_WORKER_URL) {
-    try {
-      const response = await fetch(
-        `${INCIDENTS_WORKER_URL}/incidents/tokyo-metro`,
-        { next: { revalidate: 300 } },
-      );
-      if (response.ok) {
-        return (await response.json()) as IncidentData;
-      }
-    } catch {
-      // Fall through to local file
-    }
-  }
-
+  if (!INCIDENTS_WORKER_URL) return null;
   try {
-    const filePath = path.join(INCIDENTS_DIR, "tokyo-metro.json");
-    const content = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(content) as IncidentData;
+    const response = await fetch(
+      `${INCIDENTS_WORKER_URL}/incidents/tokyo-metro`,
+      { next: { revalidate: 300 } },
+    );
+    if (response.ok) {
+      return (await response.json()) as IncidentData;
+    }
   } catch {
-    return null;
+    // Worker unavailable
   }
+  return null;
 }
 
 async function fetchWmataIncidents(): Promise<IncidentData | null> {
-  // Try fetching from worker if URL is configured
-  if (INCIDENTS_WORKER_URL) {
-    try {
-      const response = await fetch(`${INCIDENTS_WORKER_URL}/incidents/wmata`, {
-        next: { revalidate: 300 },
-      });
-      if (response.ok) {
-        return (await response.json()) as IncidentData;
-      }
-    } catch {
-      // Fall through to local file
-    }
-  }
-
-  // Fall back to local file
+  if (!INCIDENTS_WORKER_URL) return null;
   try {
-    const filePath = path.join(INCIDENTS_DIR, "wmata.json");
-    const content = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(content) as IncidentData;
+    const response = await fetch(`${INCIDENTS_WORKER_URL}/incidents/wmata`, {
+      next: { revalidate: 300 },
+    });
+    if (response.ok) {
+      return (await response.json()) as IncidentData;
+    }
   } catch {
-    return null;
+    // Worker unavailable
   }
+  return null;
 }
 
 export async function getIncidents(systemId: string): Promise<IncidentData | null> {
