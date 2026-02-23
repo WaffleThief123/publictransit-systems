@@ -14,3 +14,18 @@ id = "59f9eb02730d43528e63fb15ca2e151c"
 
 [vars]
 CORS_ORIGIN = "*"
+
+[observability]
+enabled = true 
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
