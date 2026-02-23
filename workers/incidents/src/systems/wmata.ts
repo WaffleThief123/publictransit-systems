@@ -1,20 +1,9 @@
 /**
- * WMATA Incidents Worker
+ * WMATA incident fetching and processing
  *
- * Fetches elevator/escalator incidents from WMATA API on a schedule
- * and stores them in KV for the frontend to consume.
- *
- * Endpoints:
- *   GET /incidents/wmata - Returns current incident data
- *   GET /incidents/wmata/:stationId - Returns incidents for a specific station
- *   POST /refresh - Manually trigger a refresh (requires auth)
+ * Fetches elevator/escalator incidents from the WMATA API
+ * and maps them to our station IDs.
  */
-
-export interface Env {
-  INCIDENTS_KV: KVNamespace;
-  WMATA_API_KEY: string;
-  CORS_ORIGIN: string;
-}
 
 // WMATA station code to our station ID mapping
 const STATION_CODE_MAP: Record<string, string> = {
@@ -143,7 +132,7 @@ interface UnitOutage {
   updatedAt: string;
 }
 
-interface IncidentData {
+export interface WmataIncidentData {
   fetchedAt: string;
   systemId: string;
   summary: {
@@ -168,7 +157,7 @@ async function fetchWMATAIncidents(apiKey: string): Promise<WMATAIncident[]> {
   return data.ElevatorIncidents || [];
 }
 
-function processIncidents(incidents: WMATAIncident[]): IncidentData {
+function processIncidents(incidents: WMATAIncident[]): WmataIncidentData {
   const outagesByStation: Record<string, UnitOutage[]> = {};
 
   for (const incident of incidents) {
@@ -178,11 +167,6 @@ function processIncidents(incidents: WMATAIncident[]): IncidentData {
     if (!outagesByStation[stationId]) {
       outagesByStation[stationId] = [];
     }
-
-    // Determine accessibility from name/description
-    const name = (incident.UnitName || '').toLowerCase();
-    const desc = (incident.LocationDescription || '').toLowerCase();
-    const hasElevator = name.includes('elev') || desc.includes('elevator');
 
     outagesByStation[stationId].push({
       unitName: incident.UnitName,
@@ -217,90 +201,14 @@ function processIncidents(incidents: WMATAIncident[]): IncidentData {
   };
 }
 
-function corsHeaders(origin: string): HeadersInit {
-  return {
-    'Access-Control-Allow-Origin': origin,
-    'Access-Control-Allow-Methods': 'GET, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Content-Type': 'application/json',
-  };
+export async function refreshWmata(kv: KVNamespace, apiKey: string): Promise<WmataIncidentData> {
+  const incidents = await fetchWMATAIncidents(apiKey);
+  const data = processIncidents(incidents);
+  await kv.put('wmata', JSON.stringify(data));
+  console.log(
+    `WMATA: ${data.summary.totalOutages} incidents ` +
+    `(${data.summary.elevatorOutages} elevators, ${data.summary.escalatorOutages} escalators) ` +
+    `at ${data.summary.stationsAffected} stations`
+  );
+  return data;
 }
-
-export default {
-  // HTTP request handler
-  async fetch(request: Request, env: Env): Promise<Response> {
-    const url = new URL(request.url);
-    const headers = corsHeaders(env.CORS_ORIGIN);
-
-    // Handle CORS preflight
-    if (request.method === 'OPTIONS') {
-      return new Response(null, { headers });
-    }
-
-    // GET /incidents/wmata - Get all incidents
-    if (url.pathname === '/incidents/wmata' && request.method === 'GET') {
-      const data = await env.INCIDENTS_KV.get('wmata', 'json');
-      if (!data) {
-        return new Response(
-          JSON.stringify({ error: 'No incident data available' }),
-          { status: 404, headers }
-        );
-      }
-      return new Response(JSON.stringify(data), { headers });
-    }
-
-    // GET /incidents/wmata/:stationId - Get incidents for a station
-    const stationMatch = url.pathname.match(/^\/incidents\/wmata\/([a-z0-9-]+)$/);
-    if (stationMatch && request.method === 'GET') {
-      const stationId = stationMatch[1];
-      const data = await env.INCIDENTS_KV.get('wmata', 'json') as IncidentData | null;
-      if (!data) {
-        return new Response(JSON.stringify([]), { headers });
-      }
-      const outages = data.outagesByStation[stationId] || [];
-      return new Response(JSON.stringify(outages), { headers });
-    }
-
-    // POST /refresh - Manually trigger refresh
-    if (url.pathname === '/refresh' && request.method === 'POST') {
-      try {
-        const incidents = await fetchWMATAIncidents(env.WMATA_API_KEY);
-        const data = processIncidents(incidents);
-        await env.INCIDENTS_KV.put('wmata', JSON.stringify(data));
-        return new Response(
-          JSON.stringify({ success: true, summary: data.summary }),
-          { headers }
-        );
-      } catch (error) {
-        return new Response(
-          JSON.stringify({ error: (error as Error).message }),
-          { status: 500, headers }
-        );
-      }
-    }
-
-    return new Response(
-      JSON.stringify({ error: 'Not found' }),
-      { status: 404, headers }
-    );
-  },
-
-  // Scheduled (cron) handler
-  async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext): Promise<void> {
-    console.log('Running scheduled WMATA incident fetch...');
-
-    try {
-      const incidents = await fetchWMATAIncidents(env.WMATA_API_KEY);
-      const data = processIncidents(incidents);
-      await env.INCIDENTS_KV.put('wmata', JSON.stringify(data));
-
-      console.log(
-        `Fetched ${data.summary.totalOutages} incidents ` +
-        `(${data.summary.elevatorOutages} elevators, ${data.summary.escalatorOutages} escalators) ` +
-        `at ${data.summary.stationsAffected} stations`
-      );
-    } catch (error) {
-      console.error('Failed to fetch WMATA incidents:', error);
-    }
-  },
-};

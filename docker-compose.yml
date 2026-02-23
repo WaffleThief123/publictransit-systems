@@ -5,7 +5,7 @@ services:
     image: ghcr.io/wafflethief123/publictransit-systems:main
     container_name: publictransit-app
     environment:
-      - INCIDENTS_WORKER_URL=https://wmata-incidents.capitolhostingsolutions.workers.dev
+      - INCIDENTS_WORKER_URL=https://transit-incidents.capitolhostingsolutions.workers.dev
     restart: unless-stopped
 
 networks:
