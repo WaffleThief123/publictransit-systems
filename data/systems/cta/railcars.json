@@ -1,0 +1,193 @@
+{
+  "generations": [
+    {
+      "id": "4000-series",
+      "systemId": "cta",
+      "name": "4000 Series",
+      "manufacturer": "Cincinnati Car Company",
+      "introduced": 1914,
+      "retired": 1973,
+      "status": "retired",
+      "count": 455,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 100,
+        "seatedCapacity": 48,
+        "maxSpeed": "45 mph",
+        "traction": "DC, air brakes"
+      },
+      "description": "The 4000 Series were the first all-steel cars on the L system, built in multiple orders from 1914 to 1924. They came in two variants: 'Baldies' with metal roofs and six doors per car, and 'Plushies' with wooden roofs and green plush seats. They were the last CTA cars with air brakes."
+    },
+    {
+      "id": "6000-series",
+      "systemId": "cta",
+      "name": "6000 Series",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1950,
+      "retired": 1992,
+      "status": "retired",
+      "count": 720,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 120,
+        "seatedCapacity": 47,
+        "maxSpeed": "55 mph",
+        "traction": "DC, PCC technology"
+      },
+      "description": "The 6000 Series was the largest single order in CTA history, with 720 cars built using PCC streetcar technology. They were the first L cars designed as permanently coupled married pairs and incorporated components salvaged from Chicago's retired PCC streetcar fleet."
+    },
+    {
+      "id": "1-50-series",
+      "systemId": "cta",
+      "name": "1-50 Series",
+      "manufacturer": "St. Louis Car Company",
+      "introduced": 1959,
+      "retired": 1998,
+      "status": "retired",
+      "count": 50,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 120,
+        "seatedCapacity": 47,
+        "maxSpeed": "55 mph",
+        "traction": "DC, PCC equipment"
+      },
+      "description": "The 1-50 Series were similar to the 6000 Series but built as double-ended single cars rather than married pairs. Some were equipped with trolley poles for overhead wire operation on the Evanston and Skokie lines. Ten cars were later converted to married-pair sets for Skokie Swift service."
+    },
+    {
+      "id": "2000-series",
+      "systemId": "cta",
+      "name": "2000 Series",
+      "manufacturer": "Pullman-Standard",
+      "introduced": 1964,
+      "retired": 1993,
+      "status": "retired",
+      "count": 180,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 140,
+        "seatedCapacity": 47,
+        "maxSpeed": "55 mph",
+        "traction": "DC"
+      },
+      "description": "The 2000 Series were the first of the 'High Performance Family' of L cars. They introduced air conditioning, fluorescent lighting, large picture windows, and sculpted fiberglass front ends to the L system. Built with aluminum car bodies by Pullman-Standard."
+    },
+    {
+      "id": "2200-series",
+      "systemId": "cta",
+      "name": "2200 Series",
+      "manufacturer": "Budd Company",
+      "introduced": 1969,
+      "retired": 2013,
+      "status": "retired",
+      "count": 150,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 140,
+        "seatedCapacity": 47,
+        "maxSpeed": "55 mph",
+        "traction": "DC"
+      },
+      "description": "The 2200 Series were the first stainless steel L cars, featuring unpainted fluted sides. They were the last cars with the blinker door configuration, which could not accommodate wheelchairs, requiring them to be paired with 2600-series cars on ADA-compliant lines."
+    },
+    {
+      "id": "2400-series",
+      "systemId": "cta",
+      "name": "2400 Series",
+      "manufacturer": "Boeing-Vertol",
+      "introduced": 1976,
+      "retired": 2014,
+      "status": "retired",
+      "count": 200,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 140,
+        "seatedCapacity": 47,
+        "maxSpeed": "55 mph",
+        "traction": "DC"
+      },
+      "description": "The 2400 Series were the first L cars with sliding doors, replacing the blinker door design. Originally delivered in a red, white, and blue bicentennial color scheme. They were the last cars to operate on the Orange Line before retirement."
+    },
+    {
+      "id": "2600-series",
+      "systemId": "cta",
+      "name": "2600 Series",
+      "manufacturer": "Budd Company",
+      "introduced": 1981,
+      "status": "active",
+      "count": 600,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 140,
+        "seatedCapacity": 46,
+        "maxSpeed": "55 mph",
+        "weight": "54,300 lbs",
+        "traction": "DC, GE 1262A1 motors"
+      },
+      "description": "The 2600 Series were built for the O'Hare extension of the Blue Line. With 600 cars, they are the largest active fleet on the L. Car 3200 was the final railcar ever built by the Budd Company. They are being replaced by the 7000-series."
+    },
+    {
+      "id": "3200-series",
+      "systemId": "cta",
+      "name": "3200 Series",
+      "manufacturer": "Morrison-Knudsen",
+      "introduced": 1992,
+      "status": "active",
+      "count": 257,
+      "specs": {
+        "length": "48 ft 3 in",
+        "width": "9 ft 4 in",
+        "capacity": 140,
+        "seatedCapacity": 39,
+        "maxSpeed": "55 mph",
+        "traction": "DC, GE 1262A4 motors"
+      },
+      "description": "The 3200 Series introduced computer-controlled cab functions and fluted steel siding to reduce graffiti. They were built for the opening of the Orange Line in 1993. A mid-life overhaul was completed in 2018, adding LED destination signs and rebuilt propulsion systems."
+    },
+    {
+      "id": "5000-series",
+      "systemId": "cta",
+      "name": "5000 Series",
+      "manufacturer": "Bombardier Transportation",
+      "introduced": 2011,
+      "status": "active",
+      "count": 714,
+      "specs": {
+        "length": "48 ft",
+        "width": "9 ft 4 in",
+        "capacity": 170,
+        "seatedCapacity": 40,
+        "maxSpeed": "55 mph",
+        "weight": "57,000 lbs",
+        "traction": "AC, IGBT-VVVF (Bombardier MITRAC)"
+      },
+      "description": "The 5000 Series were the first AC-motor cars on the L system. Built by Bombardier, they feature LED destination signs, security cameras, aisle-facing longitudinal seating, and interior LED information displays. They make up the entire Pink, Green, Yellow, Purple, and Red Line fleets."
+    },
+    {
+      "id": "7000-series",
+      "systemId": "cta",
+      "name": "7000 Series",
+      "manufacturer": "CRRC Sifang America",
+      "introduced": 2022,
+      "status": "active",
+      "count": 400,
+      "specs": {
+        "length": "48 ft",
+        "width": "9 ft 4 in",
+        "capacity": 170,
+        "seatedCapacity": 37,
+        "maxSpeed": "55 mph",
+        "weight": "56,600 lbs",
+        "traction": "AC, IGBT-VVVF (Siemens), regenerative braking"
+      },
+      "description": "The 7000 Series are the newest L cars, built by CRRC Sifang America at a factory in Chicago's Hegewisch neighborhood. They feature a hybrid seating configuration mixing forward-facing and aisle-facing seats, and are configured as semi-permanently coupled married pairs. Currently assigned to the Blue Line."
+    }
+  ]
+}

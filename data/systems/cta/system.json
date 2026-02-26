@@ -1,0 +1,120 @@
+{
+  "id": "cta",
+  "name": "Chicago Transit Authority",
+  "shortName": "CTA",
+  "location": "Chicago, Illinois",
+  "region": "Chicago Metropolitan Area",
+  "country": "United States",
+  "opened": "1947-10-01",
+  "website": "https://www.transitchicago.com",
+  "overview": "The Chicago 'L' is the rapid transit system serving the city of Chicago and some of its surrounding suburbs. Operated by the CTA, it is the fourth-largest rapid transit system in the United States by ridership. The system's name comes from the elevated railways that make up much of the network, though portions also run in subway tunnels, at grade, and in highway medians.",
+  "stats": {
+    "totalStations": 146,
+    "totalLines": 8,
+    "annualRidership": "193.4 million",
+    "trackLength": 224.1,
+    "dailyRidership": "594,000",
+    "distanceUnit": "mi"
+  },
+  "colors": {
+    "primary": "#00A1DE",
+    "secondary": "#C60C30"
+  },
+  "history": [
+    {
+      "date": "1892-06-06",
+      "title": "First L Line Opens",
+      "description": "The Chicago and South Side Rapid Transit Railroad opens the first L line, running from Congress Street to 39th Street (now Pershing Road)."
+    },
+    {
+      "date": "1895-05-06",
+      "title": "Metropolitan West Side Elevated Opens",
+      "description": "The Metropolitan West Side Elevated Railroad begins service, becoming the second L company in Chicago."
+    },
+    {
+      "date": "1897-10-03",
+      "title": "Union Loop Opens",
+      "description": "The Union Elevated Railroad opens the Loop, the iconic downtown circuit connecting all L lines."
+    },
+    {
+      "date": "1900-05-12",
+      "title": "Northwestern Elevated Opens",
+      "description": "The Northwestern Elevated Railroad begins service on the north side, later becoming part of the Brown and Purple lines."
+    },
+    {
+      "date": "1943-10-17",
+      "title": "State Street Subway Opens",
+      "description": "The State Street subway opens as Chicago's first subway tunnel, carrying what would become Red Line service through downtown."
+    },
+    {
+      "date": "1947-10-01",
+      "title": "CTA Formed",
+      "description": "The Chicago Transit Authority is created by the Illinois state legislature, unifying the city's private transit companies under public operation."
+    },
+    {
+      "date": "1951-06-22",
+      "title": "Dearborn Street Subway Opens",
+      "description": "The Dearborn Street subway opens, carrying Blue Line service through the Loop. The Milwaukee-Dearborn-Congress corridor is completed."
+    },
+    {
+      "date": "1958-06-22",
+      "title": "Congress Expressway Line Opens",
+      "description": "The Congress Expressway median line opens, the first rapid transit line built in a highway median in the United States."
+    },
+    {
+      "date": "1969-12-01",
+      "title": "Dan Ryan Line Opens",
+      "description": "The Dan Ryan branch opens in the median of the Dan Ryan Expressway, extending South Side service to 95th Street."
+    },
+    {
+      "date": "1970-09-28",
+      "title": "Kennedy Expressway Line Opens",
+      "description": "Rapid transit service begins in the Kennedy Expressway median, connecting the Northwest Side to the Loop."
+    },
+    {
+      "date": "1984-09-03",
+      "title": "O'Hare Extension Opens",
+      "description": "The Blue Line extension to O'Hare International Airport opens, providing direct rail access to the airport."
+    },
+    {
+      "date": "1993-10-31",
+      "title": "Orange Line Opens",
+      "description": "The Orange Line opens, connecting Midway Airport to the Loop via the Southwest Side."
+    },
+    {
+      "date": "1994-02-21",
+      "title": "Lines Receive Color Names",
+      "description": "CTA adopts a color-based naming system for all L lines, replacing the legacy route names with Red, Blue, Green, Brown, Orange, Purple, and Yellow."
+    },
+    {
+      "date": "2006-06-25",
+      "title": "Pink Line Opens",
+      "description": "The Pink Line begins full-time service to the 54th/Cermak branch, previously a branch of the Blue Line with limited service."
+    },
+    {
+      "date": "2012-10-06",
+      "title": "Brown Line Capacity Expansion",
+      "description": "The $530 million Brown Line Capacity Expansion Project is completed, lengthening all 18 Brown Line stations to accommodate eight-car trains."
+    },
+    {
+      "date": "2015-12-01",
+      "title": "5000-Series Fleet Complete",
+      "description": "The final 5000-series railcar is delivered, completing the order of 714 cars built by Bombardier. They replace the entire 2200-series and 2400-series fleets."
+    },
+    {
+      "date": "2019-11-02",
+      "title": "Wilson Station Rebuilt",
+      "description": "The new $280 million Wilson station opens with a transfer between the Red and Purple lines, replacing the century-old structure."
+    },
+    {
+      "date": "2022-08-31",
+      "title": "7000-Series Enters Revenue Service",
+      "description": "The first CRRC Sifang America-built 7000-series railcars enter revenue service on the Blue Line, beginning the replacement of the 2600-series fleet."
+    },
+    {
+      "date": "2024-03-14",
+      "title": "Red Line Extension Groundbreaking",
+      "description": "Construction begins on the Red Line Extension, which will extend the line 5.6 miles south from 95th/Dan Ryan to 130th Street with four new stations."
+    }
+  ]
+}
