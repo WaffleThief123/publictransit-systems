@@ -210,6 +210,265 @@ const BART_STATION_CODES: Record<string, string> = {
   "WOAK": "west-oakland",
 };
 
+// CTA Customer Alerts API (public, no auth required)
+const CTA_ALERTS_URL = "http://lapi.transitchicago.com/api/1.0/alerts.aspx?outputType=JSON";
+
+// CTA route service IDs to our line IDs
+const CTA_ROUTE_TO_LINE: Record<string, string> = {
+  Red: "red",
+  Blue: "blue",
+  Brn: "brown",
+  G: "green",
+  Org: "orange",
+  Pink: "pink",
+  P: "purple",
+  Y: "yellow",
+};
+
+interface CtaAlertService {
+  ServiceType: string;
+  ServiceId: string;
+  ServiceName: string;
+  ServiceBackColor?: string;
+  ServiceTextColor?: string;
+}
+
+interface CtaAlertsResponse {
+  CTAAlerts: {
+    TimeStamp: string;
+    ErrorCode: string;
+    ErrorMessage: string | null;
+    Alert: Array<{
+      AlertId: string;
+      Headline: string;
+      ShortDescription: string;
+      FullDescription?: string;
+      SeverityScore: string;
+      SeverityCSS: string;
+      Impact: string;
+      EventStart: string;
+      EventEnd: string | null;
+      TBD: string;
+      MajorAlert: string;
+      AlertURL?: string;
+      ImpactedService: {
+        Service: CtaAlertService | CtaAlertService[];
+      };
+    }>;
+  };
+}
+
+// CTA station name patterns for text-based matching in alert text
+// Ordered from most specific to least specific
+const CTA_STATION_PATTERNS: Array<{ pattern: RegExp; stationId: string }> = [
+  // Multi-word / compound stations (most specific first)
+  { pattern: /\bHarold Washington Library\b/i, stationId: "harold-washington-library-state-van-buren" },
+  { pattern: /\bState\/Van Buren\b/i, stationId: "harold-washington-library-state-van-buren" },
+  { pattern: /\bConservatory.Central Park Drive\b/i, stationId: "conservatory-central-park-drive" },
+  { pattern: /\bJefferson Park\b/i, stationId: "jefferson-park-transit-center" },
+  { pattern: /\bIllinois Medical District\b/i, stationId: "illinois-medical-district" },
+  { pattern: /\bMerchandise Mart\b/i, stationId: "merchandise-mart-brown-purple" },
+  { pattern: /\bCermak.McCormick Place\b/i, stationId: "cermak-mccormick-place" },
+  { pattern: /\bCermak.Chinatown\b/i, stationId: "cermak-chinatown" },
+  { pattern: /\b35th.Bronzeville.IIT\b/i, stationId: "35th-bronzeville-iit" },
+  { pattern: /\b35th\/Archer\b/i, stationId: "35th-archer" },
+  { pattern: /\b95th\/Dan Ryan\b/i, stationId: "95th-dan-ryan" },
+  { pattern: /\b95th\b/i, stationId: "95th-dan-ryan" },
+  { pattern: /\b54th\/Cermak\b/i, stationId: "54th-cermak" },
+  { pattern: /\bAshland\/63rd\b/i, stationId: "ashland-63rd" },
+  { pattern: /\bDempster.Skokie\b/i, stationId: "dempster-skokie" },
+  { pattern: /\bOakton.Skokie\b/i, stationId: "oakton-skokie" },
+  { pattern: /\bSox.35th\b/i, stationId: "sox-35th" },
+  { pattern: /\bNorth\/Clybourn\b/i, stationId: "north-clybourn" },
+  { pattern: /\bClark\/Division\b/i, stationId: "clark-division" },
+  { pattern: /\bClark\/Lake\b/i, stationId: "clark-lake" },
+  { pattern: /\bKedzie.Homan\b/i, stationId: "kedzie-homan" },
+  { pattern: /\bLaSalle\/Van Buren\b/i, stationId: "lasalle-van-buren" },
+  { pattern: /\bAdams\/Wabash\b/i, stationId: "adams-wabash" },
+  { pattern: /\bWashington\/Wabash\b/i, stationId: "washington-wabash" },
+  { pattern: /\bWashington\/Wells\b/i, stationId: "washington-wells" },
+  { pattern: /\bBryn Mawr\b/i, stationId: "bryn-mawr" },
+  { pattern: /\bCentral Park\b/i, stationId: "central-park" },
+  { pattern: /\bCottage Grove\b/i, stationId: "cottage-grove" },
+  { pattern: /\bKing Drive\b/i, stationId: "king-drive" },
+  { pattern: /\bLogan Square\b/i, stationId: "logan-square" },
+  { pattern: /\bForest Park\b/i, stationId: "forest-park" },
+  { pattern: /\bSouth Boulevard\b/i, stationId: "south-boulevard" },
+  { pattern: /\bLake\b.*\bSubway\b/i, stationId: "lake-subway" },
+  { pattern: /\bO'Hare\b/i, stationId: "ohare" },
+  { pattern: /\bHarlem\/Lake\b/i, stationId: "harlem-lake" },
+  { pattern: /\bUIC.Halsted\b/i, stationId: "uic-halsted" },
+
+  // Disambiguated stations: line-specific patterns (more specific first)
+  // Harlem (3 variants)
+  { pattern: /\bHarlem\b.*\bForest Park\b/i, stationId: "harlem-blue-forest-park" },
+  { pattern: /\bHarlem\b.*\bO'Hare\b/i, stationId: "harlem-blue-ohare" },
+
+  // Western (5 variants)
+  { pattern: /\bWestern\b.*\bForest Park\b/i, stationId: "western-blue-forest-park" },
+  { pattern: /\bWestern\b.*\bO'Hare\b/i, stationId: "western-blue-ohare" },
+  { pattern: /\bWestern\b.*\bBrown\b/i, stationId: "western-brown" },
+  { pattern: /\bWestern\b.*\bOrange\b/i, stationId: "western-orange" },
+  { pattern: /\bWestern\b.*\bPink\b/i, stationId: "western-pink" },
+
+  // Addison (3 variants)
+  { pattern: /\bAddison\b.*\bBlue\b/i, stationId: "addison-blue" },
+  { pattern: /\bAddison\b.*\bBrown\b/i, stationId: "addison-brown" },
+  { pattern: /\bAddison\b.*\bRed\b/i, stationId: "addison-red" },
+
+  // Belmont (2 variants)
+  { pattern: /\bBelmont\b.*\bBlue\b/i, stationId: "belmont-blue" },
+  { pattern: /\bBelmont\b.*\b(?:Red|Brown|Purple)\b/i, stationId: "belmont-red-brown-purple" },
+
+  // Austin (2 variants)
+  { pattern: /\bAustin\b.*\bBlue\b/i, stationId: "austin-blue" },
+  { pattern: /\bAustin\b.*\bGreen\b/i, stationId: "austin-green" },
+
+  // California (3 variants)
+  { pattern: /\bCalifornia\b.*\bBlue\b/i, stationId: "california-blue" },
+  { pattern: /\bCalifornia\b.*\bGreen\b/i, stationId: "california-green" },
+  { pattern: /\bCalifornia\b.*\bPink\b/i, stationId: "california-pink" },
+
+  // Central (2 variants)
+  { pattern: /\bCentral\b.*\bGreen\b/i, stationId: "central-green" },
+  { pattern: /\bCentral\b.*\bPurple\b/i, stationId: "central-purple" },
+
+  // Chicago (3 variants)
+  { pattern: /\bChicago\b.*\bBlue\b/i, stationId: "chicago-blue" },
+  { pattern: /\bChicago\b.*\b(?:Brown|Purple)\b/i, stationId: "chicago-brown-purple" },
+  { pattern: /\bChicago\b.*\bRed\b/i, stationId: "chicago-red" },
+
+  // Cicero (3 variants)
+  { pattern: /\bCicero\b.*\bBlue\b/i, stationId: "cicero-blue" },
+  { pattern: /\bCicero\b.*\bGreen\b/i, stationId: "cicero-green" },
+  { pattern: /\bCicero\b.*\bPink\b/i, stationId: "cicero-pink" },
+
+  // Clinton (2 variants)
+  { pattern: /\bClinton\b.*\bBlue\b/i, stationId: "clinton-blue" },
+  { pattern: /\bClinton\b.*\b(?:Green|Pink)\b/i, stationId: "clinton-green-pink" },
+
+  // Damen (4 variants)
+  { pattern: /\bDamen\b.*\bBlue\b/i, stationId: "damen-blue" },
+  { pattern: /\bDamen\b.*\bBrown\b/i, stationId: "damen-brown" },
+  { pattern: /\bDamen\b.*\bGreen\b/i, stationId: "damen-green" },
+  { pattern: /\bDamen\b.*\bPink\b/i, stationId: "damen-pink" },
+
+  // Garfield (2 variants)
+  { pattern: /\bGarfield\b.*\bGreen\b/i, stationId: "garfield-green" },
+  { pattern: /\bGarfield\b.*\bRed\b/i, stationId: "garfield-red" },
+
+  // Grand (2 variants)
+  { pattern: /\bGrand\b.*\bBlue\b/i, stationId: "grand-blue" },
+  { pattern: /\bGrand\b.*\bRed\b/i, stationId: "grand-red" },
+
+  // Halsted (2 variants - not UIC-Halsted, matched above)
+  { pattern: /\bHalsted\b.*\bGreen\b/i, stationId: "halsted-green" },
+  { pattern: /\bHalsted\b.*\bOrange\b/i, stationId: "halsted-orange" },
+
+  // Irving Park (2 variants)
+  { pattern: /\bIrving Park\b.*\bBlue\b/i, stationId: "irving-park-blue" },
+  { pattern: /\bIrving Park\b.*\bBrown\b/i, stationId: "irving-park-brown" },
+
+  // Jackson (2 variants)
+  { pattern: /\bJackson\b.*\bBlue\b/i, stationId: "jackson-blue" },
+  { pattern: /\bJackson\b.*\bRed\b/i, stationId: "jackson-red" },
+
+  // Kedzie (4 variants - not Kedzie-Homan, matched above)
+  { pattern: /\bKedzie\b.*\bBrown\b/i, stationId: "kedzie-brown" },
+  { pattern: /\bKedzie\b.*\bGreen\b/i, stationId: "kedzie-green" },
+  { pattern: /\bKedzie\b.*\bOrange\b/i, stationId: "kedzie-orange" },
+  { pattern: /\bKedzie\b.*\bPink\b/i, stationId: "kedzie-pink" },
+
+  // Monroe (2 variants)
+  { pattern: /\bMonroe\b.*\bBlue\b/i, stationId: "monroe-blue" },
+  { pattern: /\bMonroe\b.*\bRed\b/i, stationId: "monroe-red" },
+
+  // Montrose (2 variants)
+  { pattern: /\bMontrose\b.*\bBlue\b/i, stationId: "montrose-blue" },
+  { pattern: /\bMontrose\b.*\bBrown\b/i, stationId: "montrose-brown" },
+
+  // Oak Park (2 variants)
+  { pattern: /\bOak Park\b.*\bBlue\b/i, stationId: "oak-park-blue" },
+  { pattern: /\bOak Park\b.*\bGreen\b/i, stationId: "oak-park-green" },
+
+  // Pulaski (4 variants)
+  { pattern: /\bPulaski\b.*\bBlue\b/i, stationId: "pulaski-blue" },
+  { pattern: /\bPulaski\b.*\bGreen\b/i, stationId: "pulaski-green" },
+  { pattern: /\bPulaski\b.*\bOrange\b/i, stationId: "pulaski-orange" },
+  { pattern: /\bPulaski\b.*\bPink\b/i, stationId: "pulaski-pink" },
+
+  // 47th (2 variants)
+  { pattern: /\b47th\b.*\bGreen\b/i, stationId: "47th-green" },
+  { pattern: /\b47th\b.*\bRed\b/i, stationId: "47th-red" },
+
+  // Ashland (2 variants - not Ashland/63rd, matched above)
+  { pattern: /\bAshland\b.*\b(?:Green|Pink)\b/i, stationId: "ashland-green-pink" },
+  { pattern: /\bAshland\b.*\bOrange\b/i, stationId: "ashland-orange" },
+
+  // Armitage (Brown/Purple)
+  { pattern: /\bArmitage\b/i, stationId: "armitage-brown-purple" },
+
+  // Diversey (Brown/Purple)
+  { pattern: /\bDiversey\b/i, stationId: "diversey-brown-purple" },
+
+  // Morgan (Green/Pink)
+  { pattern: /\bMorgan\b.*\b(?:Green|Pink)\b/i, stationId: "morgan-green-pink" },
+
+  // Sedgwick (Brown/Purple)
+  { pattern: /\bSedgwick\b/i, stationId: "sedgwick-brown-purple" },
+
+  // Wellington (Brown/Purple)
+  { pattern: /\bWellington\b/i, stationId: "wellington-brown-purple" },
+
+  // Unique station names (simple word-boundary patterns)
+  { pattern: /\b18th\b/i, stationId: "18th" },
+  { pattern: /\b43rd\b/i, stationId: "43rd" },
+  { pattern: /\b51st\b/i, stationId: "51st" },
+  { pattern: /\b63rd\b/i, stationId: "63rd" },
+  { pattern: /\b69th\b/i, stationId: "69th" },
+  { pattern: /\b79th\b/i, stationId: "79th" },
+  { pattern: /\b87th\b/i, stationId: "87th" },
+  { pattern: /\bArgyle\b/i, stationId: "argyle" },
+  { pattern: /\bBerwyn\b/i, stationId: "berwyn" },
+  { pattern: /\bCumberland\b/i, stationId: "cumberland" },
+  { pattern: /\bDavis\b/i, stationId: "davis" },
+  { pattern: /\bDempster\b/i, stationId: "dempster" },
+  { pattern: /\bDivision\b/i, stationId: "division" },
+  { pattern: /\bFoster\b/i, stationId: "foster" },
+  { pattern: /\bFrancisco\b/i, stationId: "francisco" },
+  { pattern: /\bFullerton\b/i, stationId: "fullerton" },
+  { pattern: /\bGranville\b/i, stationId: "granville" },
+  { pattern: /\bHarrison\b/i, stationId: "harrison" },
+  { pattern: /\bHoward\b/i, stationId: "howard" },
+  { pattern: /\bIndiana\b/i, stationId: "indiana" },
+  { pattern: /\bJarvis\b/i, stationId: "jarvis" },
+  { pattern: /\bKimball\b/i, stationId: "kimball" },
+  { pattern: /\bKostner\b/i, stationId: "kostner" },
+  { pattern: /\bLaSalle\b/i, stationId: "lasalle" },
+  { pattern: /\bLaramie\b/i, stationId: "laramie" },
+  { pattern: /\bLawrence\b/i, stationId: "lawrence" },
+  { pattern: /\bLinden\b/i, stationId: "linden" },
+  { pattern: /\bLoyola\b/i, stationId: "loyola" },
+  { pattern: /\bMain\b/i, stationId: "main" },
+  { pattern: /\bMidway\b/i, stationId: "midway" },
+  { pattern: /\bMorse\b/i, stationId: "morse" },
+  { pattern: /\bNoyes\b/i, stationId: "noyes" },
+  { pattern: /\bPaulina\b/i, stationId: "paulina" },
+  { pattern: /\bPolk\b/i, stationId: "polk" },
+  { pattern: /\bQuincy\b/i, stationId: "quincy" },
+  { pattern: /\bRacine\b/i, stationId: "racine" },
+  { pattern: /\bRidgeland\b/i, stationId: "ridgeland" },
+  { pattern: /\bRockwell\b/i, stationId: "rockwell" },
+  { pattern: /\bRoosevelt\b/i, stationId: "roosevelt" },
+  { pattern: /\bRosemont\b/i, stationId: "rosemont" },
+  { pattern: /\bSheridan\b/i, stationId: "sheridan" },
+  { pattern: /\bSouthport\b/i, stationId: "southport" },
+  { pattern: /\bThorndale\b/i, stationId: "thorndale" },
+  { pattern: /\bWashington\b/i, stationId: "washington" },
+  { pattern: /\bWilson\b/i, stationId: "wilson" },
+  { pattern: /\bMorgan\b/i, stationId: "morgan-green-pink" },
+];
+
 interface BartApiResponse {
   root: {
     date: string;
@@ -988,6 +1247,97 @@ async function fetchBaltimoreLightRailIncidents(): Promise<IncidentData | null> 
   );
 }
 
+async function fetchCtaIncidents(): Promise<IncidentData | null> {
+  try {
+    const response = await fetch(CTA_ALERTS_URL, { next: { revalidate: 300 } });
+    if (!response.ok) return null;
+
+    const data = (await response.json()) as CtaAlertsResponse;
+    const alerts: ServiceAlert[] = [];
+    const outagesByStation: Record<string, UnitOutage[]> = {};
+    let elevatorOutages = 0;
+    let escalatorOutages = 0;
+
+    for (const alert of data.CTAAlerts.Alert || []) {
+      // Normalize Service to always be an array
+      const services = Array.isArray(alert.ImpactedService.Service)
+        ? alert.ImpactedService.Service
+        : [alert.ImpactedService.Service];
+
+      // Only process rail alerts
+      const railServices = services.filter((s) => s.ServiceType === "R");
+      if (railServices.length === 0) continue;
+
+      // Map CTA route IDs to our line IDs
+      const affectedLines = railServices
+        .map((s) => CTA_ROUTE_TO_LINE[s.ServiceId])
+        .filter(Boolean);
+
+      // Determine alert type
+      let alertType: "delay" | "emergency" | "advisory" = "advisory";
+      if (alert.MajorAlert === "1") {
+        alertType = "emergency";
+      } else if (
+        alert.SeverityCSS !== "planned" &&
+        alert.SeverityCSS !== "special-note" &&
+        parseInt(alert.SeverityScore) >= 50
+      ) {
+        alertType = "delay";
+      }
+
+      const fullText = `${alert.Headline} ${alert.ShortDescription}`;
+
+      // Find affected stations from alert text
+      const affectedStations = findStationsInTextByPattern(
+        fullText,
+        CTA_STATION_PATTERNS,
+      );
+
+      // Detect elevator/escalator outages
+      const equipment = detectEquipmentOutages(
+        fullText,
+        affectedStations,
+        outagesByStation,
+        alert.Headline,
+        alert.EventStart,
+        alert.EventEnd,
+      );
+      elevatorOutages += equipment.elevatorOutages;
+      escalatorOutages += equipment.escalatorOutages;
+
+      alerts.push({
+        id: alert.AlertId,
+        type: alertType,
+        title: alert.Headline,
+        description: alert.ShortDescription,
+        affectedLines: affectedLines.length > 0 ? affectedLines : undefined,
+        affectedStations:
+          affectedStations.length > 0 ? affectedStations : undefined,
+        postedAt: alert.EventStart,
+        expiresAt: alert.EventEnd,
+      });
+    }
+
+    const stationsAffected = Object.keys(outagesByStation).length;
+
+    return {
+      fetchedAt: new Date().toISOString(),
+      systemId: "cta",
+      summary: {
+        totalOutages: elevatorOutages + escalatorOutages,
+        elevatorOutages,
+        escalatorOutages,
+        stationsAffected,
+        activeAlerts: alerts.length,
+      },
+      alerts,
+      outagesByStation,
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function fetchTokyoMetroIncidents(): Promise<IncidentData | null> {
   if (!INCIDENTS_WORKER_URL) return null;
   try {
@@ -1021,7 +1371,7 @@ async function fetchWmataIncidents(): Promise<IncidentData | null> {
 
 export async function getIncidents(systemId: string): Promise<IncidentData | null> {
   // Check supported systems
-  const supportedSystems = ["wmata", "bart", "sound-transit", "nyc-subway", "baltimore-metro", "baltimore-light-rail", "tokyo-metro"];
+  const supportedSystems = ["wmata", "bart", "sound-transit", "nyc-subway", "baltimore-metro", "baltimore-light-rail", "tokyo-metro", "cta"];
   if (!supportedSystems.includes(systemId)) return null;
 
   // Check cache first
@@ -1046,6 +1396,8 @@ export async function getIncidents(systemId: string): Promise<IncidentData | nul
     data = await fetchBaltimoreLightRailIncidents();
   } else if (systemId === "tokyo-metro") {
     data = await fetchTokyoMetroIncidents();
+  } else if (systemId === "cta") {
+    data = await fetchCtaIncidents();
   }
 
   if (data) {
