@@ -9,12 +9,12 @@
   "website": "https://www.soundtransit.org",
   "overview": "Sound Transit operates regional express bus, light rail, and commuter rail services in the central Puget Sound region of Washington state. The Link light rail system connects Seattle, Bellevue, and surrounding communities.",
   "stats": {
-    "totalStations": 45,
+    "totalStations": 50,
     "totalLines": 3,
     "annualRidership": "48.2 million",
-    "trackMiles": 51,
+    "trackMiles": 59,
     "dailyRidership": "142,000",
-    "trackLength": 51,
+    "trackLength": 59,
     "distanceUnit": "mi"
   },
   "colors": {
@@ -43,6 +43,11 @@
       "description": "University Link extension opens, connecting downtown Seattle to the University of Washington."
     },
     {
+      "date": "2016-09-24",
+      "title": "Angle Lake Extension",
+      "description": "1 Line extends south from SeaTac/Airport to Angle Lake station, adding a park-and-ride serving the south King County community."
+    },
+    {
       "date": "2021-10-02",
       "title": "Northgate Link Extension",
       "description": "Northgate Link extension opens, extending service to Northgate and Roosevelt neighborhoods."
@@ -61,6 +66,11 @@
       "date": "2025-05-10",
       "title": "Downtown Redmond Link Extension",
       "description": "2 Line extends east from Redmond Technology to Downtown Redmond, adding Marymoor Village and Downtown Redmond stations."
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Federal Way Link Extension",
+      "description": "1 Line extends south from Angle Lake to Federal Way Downtown, adding Kent Des Moines, Star Lake, and Federal Way Downtown stations."
     },
     {
       "date": "2026-03-28",
