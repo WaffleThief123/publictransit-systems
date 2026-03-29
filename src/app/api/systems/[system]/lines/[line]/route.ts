@@ -1,13 +1,24 @@
 import { NextResponse } from "next/server";
-import { getLine, getStationsByLine } from "@/lib/data";
+import { getLine, getStationsByLine, getSystem } from "@/lib/data";
 
 interface RouteParams {
   params: Promise<{ system: string; line: string }>;
 }
 
 export async function GET(request: Request, { params }: RouteParams) {
+  const { system: systemId, line: lineId } = await params;
+
+  let system;
   try {
-    const { system: systemId, line: lineId } = await params;
+    system = await getSystem(systemId);
+  } catch {
+    return NextResponse.json(
+      { error: "System not found" },
+      { status: 404 }
+    );
+  }
+
+  try {
     const line = await getLine(systemId, lineId);
 
     if (!line) {
@@ -28,6 +39,7 @@ export async function GET(request: Request, { params }: RouteParams) {
           status: s.status,
         })),
       },
+      distanceUnit: system.stats.distanceUnit,
     });
   } catch {
     return NextResponse.json(
