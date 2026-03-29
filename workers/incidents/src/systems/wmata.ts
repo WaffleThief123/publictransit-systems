@@ -202,9 +202,28 @@ function processIncidents(incidents: WMATAIncident[]): WmataIncidentData {
 }
 
 export async function refreshWmata(kv: KVNamespace, apiKey: string): Promise<WmataIncidentData> {
-  const incidents = await fetchWMATAIncidents(apiKey);
+  const start = Date.now();
+  let incidents: WMATAIncident[];
+  try {
+    incidents = await fetchWMATAIncidents(apiKey);
+  } catch (error) {
+    await kv.put('_health:wmata', JSON.stringify({
+      lastPullAt: new Date().toISOString(),
+      lastPullDurationMs: Date.now() - start,
+      lastPullSuccess: false,
+      lastError: (error as Error).message,
+    }));
+    throw error;
+  }
+
   const data = processIncidents(incidents);
   await kv.put('wmata', JSON.stringify(data));
+  await kv.put('_health:wmata', JSON.stringify({
+    lastPullAt: new Date().toISOString(),
+    lastPullDurationMs: Date.now() - start,
+    lastPullSuccess: true,
+    lastError: null,
+  }));
   console.log(
     `WMATA: ${data.summary.totalOutages} incidents ` +
     `(${data.summary.elevatorOutages} elevators, ${data.summary.escalatorOutages} escalators) ` +

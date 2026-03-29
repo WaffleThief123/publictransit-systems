@@ -156,6 +156,19 @@ const NYC_SUBWAY_ENE_URL = "https://api-endpoint.mta.info/Dataservice/mtagtfsfee
 const incidentCache: Map<string, { data: IncidentData; fetchedAt: number }> = new Map();
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
+export function getIncidentCacheStatus(): Record<string, { ageSeconds: number; stale: boolean }> {
+  const now = Date.now();
+  const status: Record<string, { ageSeconds: number; stale: boolean }> = {};
+  for (const [systemId, entry] of incidentCache.entries()) {
+    const ageMs = now - entry.fetchedAt;
+    status[systemId] = {
+      ageSeconds: Math.round(ageMs / 1000),
+      stale: ageMs > CACHE_TTL,
+    };
+  }
+  return status;
+}
+
 // BART station code to station ID mapping
 const BART_STATION_CODES: Record<string, string> = {
   "12TH": "12th-street-oakland",

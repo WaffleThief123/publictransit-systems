@@ -120,9 +120,28 @@ function processTrainInfo(entries: ODPTTrainInformation[]): TokyoMetroIncidentDa
 }
 
 export async function refreshTokyoMetro(kv: KVNamespace, consumerKey: string): Promise<TokyoMetroIncidentData> {
-  const entries = await fetchODPTTrainInfo(consumerKey);
+  const start = Date.now();
+  let entries: ODPTTrainInformation[];
+  try {
+    entries = await fetchODPTTrainInfo(consumerKey);
+  } catch (error) {
+    await kv.put("_health:tokyo-metro", JSON.stringify({
+      lastPullAt: new Date().toISOString(),
+      lastPullDurationMs: Date.now() - start,
+      lastPullSuccess: false,
+      lastError: (error as Error).message,
+    }));
+    throw error;
+  }
+
   const data = processTrainInfo(entries);
   await kv.put("tokyo-metro", JSON.stringify(data));
+  await kv.put("_health:tokyo-metro", JSON.stringify({
+    lastPullAt: new Date().toISOString(),
+    lastPullDurationMs: Date.now() - start,
+    lastPullSuccess: true,
+    lastError: null,
+  }));
   console.log(`Tokyo Metro: ${data.summary.activeAlerts} active alerts`);
   return data;
 }

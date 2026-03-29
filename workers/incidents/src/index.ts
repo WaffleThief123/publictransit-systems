@@ -45,6 +45,42 @@ export default {
       return new Response(null, { headers });
     }
 
+    // GET /health
+    if (url.pathname === '/health' && request.method === 'GET') {
+      const list = await env.INCIDENTS_KV.list({ prefix: '_health:' });
+      const systems: Record<string, unknown> = {};
+      const STALE_THRESHOLD_MS = 2 * 60 * 60 * 1000; // 2x cron interval (1h)
+
+      let allOk = true;
+      for (const key of list.keys) {
+        const systemId = key.name.replace('_health:', '');
+        const data = await env.INCIDENTS_KV.get(key.name, 'json') as {
+          lastPullAt: string;
+          lastPullDurationMs: number;
+          lastPullSuccess: boolean;
+          lastError: string | null;
+        } | null;
+
+        if (data) {
+          systems[systemId] = data;
+          const age = Date.now() - new Date(data.lastPullAt).getTime();
+          if (!data.lastPullSuccess || age > STALE_THRESHOLD_MS) {
+            allOk = false;
+          }
+        }
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: allOk ? 'ok' : 'degraded',
+          timestamp: new Date().toISOString(),
+          cronSchedule: '0 * * * *',
+          systems,
+        }),
+        { headers }
+      );
+    }
+
     // GET /incidents/wmata
     if (url.pathname === '/incidents/wmata' && request.method === 'GET') {
       const data = await env.INCIDENTS_KV.get('wmata', 'json');
