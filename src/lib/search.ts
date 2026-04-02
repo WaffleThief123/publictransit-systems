@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
 import type { TransitSystem, Station, Line, RailcarGeneration, SearchResult } from "./types";
+import { formatTermini } from "./utils";
 
 export type { SearchResult };
 
@@ -46,7 +47,7 @@ export function createSearchIndex(
       id: line.id,
       systemId: line.systemId,
       name: line.name,
-      subtitle: `${line.termini[0]} - ${line.termini[1]}`,
+      subtitle: formatTermini(line),
       description: line.description,
       keywords: [line.color],
     })),

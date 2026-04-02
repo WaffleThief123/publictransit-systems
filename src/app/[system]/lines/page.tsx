@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { LineIndicator } from "@/components/transit/LineIndicator";
 import { StatusBadge } from "@/components/ui/Badge";
 import { LineLength } from "@/components/transit/LineLength";
+import { formatTermini } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ system: string }>;
@@ -55,7 +56,7 @@ export default async function LinesPage({ params }: PageProps) {
                       <StatusBadge status={line.status} />
                     </div>
                     <p className="text-sm text-text-muted">
-                      {line.termini[0]} ↔ {line.termini[1]}
+                      {formatTermini(line)}
                     </p>
                   </div>
                   <div className="hidden sm:flex items-center gap-6 text-sm font-mono">

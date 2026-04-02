@@ -10,6 +10,7 @@
       "opened": "1969-10-01",
       "status": "active",
       "termini": ["Pingguoyuan", "Sihuidong"],
+      "topology": { "type": "linear" },
       "length": 31.04,
       "stationCount": 23,
       "description": "Line 1 is the oldest line in the Beijing Subway, running east-west through central Beijing along Chang'an Avenue. It connects major landmarks including Tiananmen Square and the Forbidden City."
@@ -23,10 +24,10 @@
       "colorHex": "#004B87",
       "opened": "1984-09-20",
       "status": "active",
-      "termini": ["Xizhimen", "Xizhimen"],
+      "termini": ["Xizhimen"],
+      "topology": { "type": "loop", "referenceStation": "Beijing Railway Station" },
       "length": 23.1,
       "stationCount": 18,
-      "isLoop": true,
       "description": "Line 2 is a loop line following the path of the old Beijing city walls. It connects Beijing Railway Station and Beijing North Railway Station, serving as a key interchange line."
     },
     {
@@ -39,6 +40,7 @@
       "opened": "2024-12-15",
       "status": "active",
       "termini": ["Dongsi Shitiao", "Dongbabei"],
+      "topology": { "type": "linear" },
       "length": 15.7,
       "stationCount": 10,
       "description": "Line 3 is one of Beijing's newest lines, serving the eastern districts and providing connections to Lines 2 and 6."
@@ -53,6 +55,7 @@
       "opened": "2009-09-28",
       "status": "active",
       "termini": ["Anheqiao Bei", "Gongyixiqiao"],
+      "topology": { "type": "linear" },
       "length": 28.2,
       "stationCount": 24,
       "description": "Line 4 is the first line operated by Beijing MTR Corporation. It serves major attractions including the Summer Palace, Old Summer Palace, and Beijing South Railway Station."
@@ -67,6 +70,7 @@
       "opened": "2007-10-07",
       "status": "active",
       "termini": ["Tiantongyuanbei", "Songjiazhuang"],
+      "topology": { "type": "linear" },
       "length": 27.6,
       "stationCount": 23,
       "description": "Line 5 was the first north-south line through central Beijing, significantly improving transit connectivity between the northern suburbs and southern districts."
@@ -81,6 +85,7 @@
       "opened": "2012-12-30",
       "status": "active",
       "termini": ["Jin'anqiao", "Luyang"],
+      "topology": { "type": "linear" },
       "length": 55.0,
       "stationCount": 36,
       "description": "Line 6 is one of the longest lines in the system, running east-west across northern Beijing and serving as a parallel route to Line 1. Extended to Luyang in December 2025."
@@ -95,6 +100,7 @@
       "opened": "2014-12-28",
       "status": "active",
       "termini": ["Beijing West Railway Station", "Universal Resort"],
+      "topology": { "type": "linear" },
       "length": 40.0,
       "stationCount": 30,
       "description": "Line 7 connects Beijing West Railway Station to Universal Beijing Resort in the east, providing direct access to the theme park."
@@ -109,6 +115,7 @@
       "opened": "2008-07-19",
       "status": "active",
       "termini": ["Zhuxinzhuang", "Yinghai"],
+      "topology": { "type": "linear" },
       "length": 51.6,
       "stationCount": 35,
       "description": "Line 8 was built for the 2008 Olympics to serve the Olympic Green area. It has since been extended to become one of the longest north-south lines in the system."
@@ -123,6 +130,7 @@
       "opened": "2011-12-31",
       "status": "active",
       "termini": ["Guogongzhuang", "National Library"],
+      "topology": { "type": "linear" },
       "length": 16.5,
       "stationCount": 13,
       "description": "Line 9 provides an important north-south connection in western Beijing, linking Beijing West Railway Station to the western suburbs."
@@ -136,10 +144,10 @@
       "colorHex": "#009AC8",
       "opened": "2008-07-19",
       "status": "active",
-      "termini": ["Bagou", "Bagou"],
+      "termini": ["Bagou"],
+      "topology": { "type": "loop", "referenceStation": "Guomao" },
       "length": 57.1,
       "stationCount": 45,
-      "isLoop": true,
       "description": "Line 10 is the second loop line and was once the world's longest single metro loop. It serves as a major interchange line connecting to most other lines in the system."
     },
     {
@@ -152,6 +160,7 @@
       "opened": "2021-12-31",
       "status": "active",
       "termini": ["Moshikou", "Xinshougang"],
+      "topology": { "type": "linear" },
       "length": 4.2,
       "stationCount": 4,
       "description": "Line 11 is currently a short line in western Beijing serving the Shougang industrial area, with plans for future extension."
@@ -166,6 +175,7 @@
       "opened": "2024-12-15",
       "status": "active",
       "termini": ["Sijiqing Qiao", "Dongbabei"],
+      "topology": { "type": "linear" },
       "length": 27.5,
       "stationCount": 20,
       "description": "Line 12 is a new east-west line running through northern Beijing, parallel to Line 10's northern section and connecting to Line 3 at Dongbabei."
@@ -180,6 +190,7 @@
       "opened": "2002-09-28",
       "status": "active",
       "termini": ["Xizhimen", "Dongzhimen"],
+      "topology": { "type": "linear" },
       "length": 40.5,
       "stationCount": 16,
       "description": "Line 13 is a U-shaped suburban line connecting major transit hubs Xizhimen and Dongzhimen through the northern suburbs."
@@ -194,6 +205,7 @@
       "opened": "2013-05-05",
       "status": "active",
       "termini": ["Zhangguozhuang", "Shanggezhuang"],
+      "topology": { "type": "linear" },
       "length": 50.8,
       "stationCount": 34,
       "description": "Line 14 runs in a C-shape around southern and eastern Beijing, connecting Beijing South Railway Station to the eastern suburbs."
@@ -208,6 +220,7 @@
       "opened": "2010-12-30",
       "status": "active",
       "termini": ["Qinghua Donglu Xikou", "Fengbo"],
+      "topology": { "type": "linear" },
       "length": 41.4,
       "stationCount": 20,
       "description": "Line 15 serves the northeastern suburbs, connecting to the Olympic Park area and the Shunyi district."
@@ -222,6 +235,7 @@
       "opened": "2016-12-31",
       "status": "active",
       "termini": ["Bei'anhe", "Wanpingcheng"],
+      "topology": { "type": "linear" },
       "length": 49.8,
       "stationCount": 30,
       "description": "Line 16 is a major north-south line in western Beijing, operated by Beijing MTR and serving Haidian and Fengtai districts."
@@ -236,6 +250,7 @@
       "opened": "2021-12-31",
       "status": "active",
       "termini": ["Weilaikexuechengbei", "Jiahuihu"],
+      "topology": { "type": "linear" },
       "length": 58.2,
       "stationCount": 25,
       "description": "Line 17 is a high-capacity north-south express line. The central section opened in December 2025, connecting Workers' Stadium to Shilihe and completing the full line."
@@ -250,6 +265,7 @@
       "opened": "2025-12-27",
       "status": "active",
       "termini": ["Malianwa", "Tiantongyuandong"],
+      "topology": { "type": "linear" },
       "length": 19.8,
       "stationCount": 11,
       "description": "Line 18 serves northern Beijing through Haidian and Changping districts, part of the Line 13 capacity expansion project. It connects to Lines 16, 8, 5, and 17 at four interchange stations."
@@ -264,6 +280,7 @@
       "opened": "2021-12-31",
       "status": "active",
       "termini": ["Mudanyuan", "Xingong"],
+      "topology": { "type": "linear" },
       "length": 20.9,
       "stationCount": 10,
       "description": "Line 19 is a north-south express line designed for faster travel between northern and southern Beijing."
@@ -278,6 +295,7 @@
       "opened": "2003-12-27",
       "status": "active",
       "termini": ["Sihui", "Tuqiao"],
+      "topology": { "type": "linear" },
       "length": 18.9,
       "stationCount": 13,
       "description": "The Batong Line is an eastern extension of Line 1, serving the Tongzhou district. It shares the same color as Line 1."
@@ -292,6 +310,7 @@
       "opened": "2010-12-30",
       "status": "active",
       "termini": ["Changping Xishankou", "Jimenqiao"],
+      "topology": { "type": "linear" },
       "length": 43.1,
       "stationCount": 20,
       "description": "The Changping Line serves the northern Changping district, connecting to the Ming Tombs area and northern suburbs."
@@ -306,6 +325,7 @@
       "opened": "2010-12-30",
       "status": "active",
       "termini": ["Gongyixiqiao", "Tiangongyuan"],
+      "topology": { "type": "linear" },
       "length": 21.7,
       "stationCount": 12,
       "description": "The Daxing Line is a southern extension of Line 4, serving the Daxing district. It is operated by Beijing MTR."
@@ -320,6 +340,7 @@
       "opened": "2010-12-30",
       "status": "active",
       "termini": ["Dongguantou Nan", "Yancun Dong"],
+      "topology": { "type": "linear" },
       "length": 32.0,
       "stationCount": 16,
       "description": "The Fangshan Line serves the southwestern Fangshan district, with the Yanfang extension providing fully automated service."
@@ -334,6 +355,7 @@
       "opened": "2010-12-30",
       "status": "active",
       "termini": ["Songjiazhuang", "Yizhuang Railway Station"],
+      "topology": { "type": "linear" },
       "length": 23.3,
       "stationCount": 13,
       "description": "The Yizhuang Line serves the Yizhuang Economic Development Zone in southeastern Beijing."
@@ -348,6 +370,7 @@
       "opened": "2008-07-19",
       "status": "active",
       "termini": ["Beixinqiao", "Terminal 3"],
+      "topology": { "type": "linear" },
       "length": 28.1,
       "stationCount": 5,
       "description": "The Capital Airport Express is a premium express service connecting central Beijing to Beijing Capital International Airport terminals."
@@ -362,6 +385,7 @@
       "opened": "2019-09-26",
       "status": "active",
       "termini": ["Caoqiao", "Daxing Airport"],
+      "topology": { "type": "linear" },
       "length": 41.36,
       "stationCount": 3,
       "description": "The Daxing Airport Express is a high-speed express line connecting to Beijing Daxing International Airport, operating at 160 km/h."
@@ -376,6 +400,7 @@
       "opened": "2017-12-30",
       "status": "active",
       "termini": ["Pingguoyuan", "Shichang"],
+      "topology": { "type": "linear" },
       "length": 10.236,
       "stationCount": 8,
       "description": "The S1 Line is Beijing's medium-low speed maglev line, connecting to Line 1 at Pingguoyuan and serving western Beijing."
@@ -390,6 +415,7 @@
       "opened": "2017-12-30",
       "status": "active",
       "termini": ["Bagou", "Xiangshan"],
+      "topology": { "type": "linear" },
       "length": 8.8,
       "stationCount": 6,
       "description": "The Xijiao Line is a modern tram line connecting to Line 10 at Bagou and serving the Fragrant Hills scenic area."

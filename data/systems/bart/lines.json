@@ -9,6 +9,7 @@
       "opened": "1972-09-11",
       "status": "active",
       "termini": ["Richmond", "Millbrae"],
+      "topology": { "type": "linear" },
       "length": 42.0,
       "stationCount": 22,
       "description": "The Red Line connects Richmond in the East Bay to Millbrae on the Peninsula, passing through downtown Oakland and San Francisco via the Transbay Tube."
@@ -22,6 +23,7 @@
       "opened": "1972-09-11",
       "status": "active",
       "termini": ["Antioch", "SFO Airport/Millbrae"],
+      "topology": { "type": "linear" },
       "length": 51.0,
       "stationCount": 26,
       "description": "The Yellow Line provides service from Antioch in eastern Contra Costa County to San Francisco International Airport and Millbrae, serving the East Bay hills communities."
@@ -35,6 +37,7 @@
       "opened": "1972-09-11",
       "status": "active",
       "termini": ["Dublin/Pleasanton", "Daly City"],
+      "topology": { "type": "linear" },
       "length": 37.0,
       "stationCount": 19,
       "description": "The Blue Line connects the Tri-Valley area in the East Bay to Daly City on the Peninsula, serving downtown Oakland and San Francisco."
@@ -48,6 +51,7 @@
       "opened": "2020-06-13",
       "status": "active",
       "termini": ["Berryessa/North San Jose", "Daly City"],
+      "topology": { "type": "linear" },
       "length": 44.0,
       "stationCount": 22,
       "description": "The Green Line extends BART service to Silicon Valley, connecting Berryessa/North San Jose to Daly City through the Fremont corridor."
@@ -61,6 +65,7 @@
       "opened": "2020-06-13",
       "status": "active",
       "termini": ["Richmond", "Berryessa/North San Jose"],
+      "topology": { "type": "linear" },
       "length": 46.0,
       "stationCount": 19,
       "description": "The Orange Line provides a direct connection between Richmond and Silicon Valley, running through downtown Oakland and the Fremont corridor."
@@ -74,6 +79,7 @@
       "opened": "2014-11-22",
       "status": "active",
       "termini": ["Coliseum", "Oakland Airport"],
+      "topology": { "type": "linear" },
       "length": 3.2,
       "stationCount": 2,
       "description": "The Oakland Airport Connector is an automated people mover connecting the Coliseum BART station to Oakland International Airport."

@@ -8,6 +8,7 @@ import { LineIndicatorGroup } from "@/components/transit/LineIndicator";
 import { Terminal, TerminalLine, TerminalOutput } from "@/components/ui/Terminal";
 import { StationMap } from "@/components/map";
 import { OutageAlert } from "@/components/transit/OutageAlert";
+import { formatTermini } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ system: string; station: string }>;
@@ -145,7 +146,7 @@ export default async function StationDetailPage({ params }: PageProps) {
                       {line.name}
                     </p>
                     <p className="text-xs text-text-muted">
-                      {line.termini[0]} ↔ {line.termini[1]}
+                      {formatTermini(line)}
                     </p>
                   </div>
                 </Link>

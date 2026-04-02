@@ -9,6 +9,7 @@
       "opened": "1969-09-28",
       "status": "active",
       "termini": ["Howard", "95th/Dan Ryan"],
+      "topology": { "type": "linear" },
       "length": 23.4,
       "stationCount": 33,
       "description": "The Red Line is the busiest L line, running north-south through the city from Howard on the far North Side to 95th/Dan Ryan on the South Side. It uses the State Street subway through downtown and is the backbone of the CTA rail system."
@@ -22,6 +23,7 @@
       "opened": "1895-05-06",
       "status": "active",
       "termini": ["O'Hare", "Forest Park"],
+      "topology": { "type": "linear" },
       "length": 33.5,
       "stationCount": 33,
       "description": "The Blue Line is the longest L line, connecting O'Hare International Airport on the Northwest Side to Forest Park on the West Side. It uses the Dearborn Street subway through the Loop and runs in the Kennedy and Eisenhower expressway medians."
@@ -35,6 +37,7 @@
       "opened": "1907-05-18",
       "status": "active",
       "termini": ["Kimball", "Loop"],
+      "topology": { "type": "lollipop", "loopStation": "Clark/Lake" },
       "length": 11.4,
       "stationCount": 27,
       "description": "The Brown Line serves the North Side, running from Kimball in Albany Park to the Loop elevated. It is one of the most heavily used lines and underwent a major capacity expansion completed in 2012."
@@ -47,7 +50,28 @@
       "colorHex": "#009B3A",
       "opened": "1892-06-06",
       "status": "active",
-      "termini": ["Harlem/Lake", "Ashland/63rd & Cottage Grove"],
+      "termini": ["Harlem/Lake", "Ashland/63rd", "Cottage Grove"],
+      "topology": {
+        "type": "linear",
+        "branches": [
+          {
+            "id": "ashland",
+            "name": "Ashland Branch",
+            "termini": ["Ashland/63rd"],
+            "branchStation": "Roosevelt",
+            "servicePattern": "alternating",
+            "description": "Alternating trains on the South Side"
+          },
+          {
+            "id": "cottage-grove",
+            "name": "Cottage Grove Branch",
+            "termini": ["Cottage Grove"],
+            "branchStation": "Roosevelt",
+            "servicePattern": "alternating",
+            "description": "Alternating trains on the South Side"
+          }
+        ]
+      },
       "length": 21.8,
       "stationCount": 28,
       "description": "The Green Line is the oldest line in the system, tracing its origins to the first L line that opened in 1892. It runs east-west on the West Side via Lake Street and splits into two branches on the South Side at Ashland/63rd and Cottage Grove."
@@ -61,6 +85,7 @@
       "opened": "1993-10-31",
       "status": "active",
       "termini": ["Midway", "Loop"],
+      "topology": { "type": "lollipop", "loopStation": "Clark/Lake" },
       "length": 11.1,
       "stationCount": 17,
       "description": "The Orange Line connects Midway International Airport to the Loop elevated, serving the Southwest Side. It was the first new L line built since the 1970s when it opened in 1993."
@@ -74,6 +99,7 @@
       "opened": "2006-06-25",
       "status": "active",
       "termini": ["54th/Cermak", "Loop"],
+      "topology": { "type": "lollipop", "loopStation": "Clark/Lake" },
       "length": 10.2,
       "stationCount": 22,
       "description": "The Pink Line serves the near West and Southwest sides, running from 54th/Cermak to the Loop elevated. The branch formerly had limited Blue Line service before becoming the full-time Pink Line in 2006."
@@ -86,7 +112,20 @@
       "colorHex": "#522398",
       "opened": "1908-05-16",
       "status": "active",
-      "termini": ["Linden", "Howard"],
+      "termini": ["Linden", "Howard", "Loop"],
+      "topology": {
+        "type": "linear",
+        "branches": [
+          {
+            "id": "loop-express",
+            "name": "Loop Express",
+            "termini": ["Loop"],
+            "branchStation": "Howard",
+            "servicePattern": "rush-hour",
+            "description": "Weekday rush-hour express service to the Loop"
+          }
+        ]
+      },
       "length": 14.6,
       "stationCount": 17,
       "description": "The Purple Line serves Evanston and Wilmette on the North Shore, running from Linden to Howard with weekday rush-hour express service to the Loop. It is one of the oldest segments of the L system."
@@ -100,6 +139,7 @@
       "opened": "1964-04-20",
       "status": "active",
       "termini": ["Dempster-Skokie", "Howard"],
+      "topology": { "type": "linear" },
       "length": 4.3,
       "stationCount": 3,
       "description": "The Yellow Line, also known as the Skokie Swift, is the shortest L line. It provides a non-stop shuttle between Dempster-Skokie in Skokie and Howard, where it connects to the Red and Purple lines."

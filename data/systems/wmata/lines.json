@@ -9,6 +9,7 @@
       "opened": "1976-03-27",
       "status": "active",
       "termini": ["Shady Grove", "Glenmont"],
+      "topology": { "type": "linear" },
       "length": 31.85,
       "stationCount": 27,
       "description": "The Red Line is the oldest and busiest line in the Metrorail system, connecting Shady Grove in Montgomery County, Maryland to Glenmont via downtown Washington, D.C."
@@ -22,6 +23,7 @@
       "opened": "1977-07-01",
       "status": "active",
       "termini": ["Franconia-Springfield", "Largo Town Center"],
+      "topology": { "type": "linear" },
       "length": 30.0,
       "stationCount": 27,
       "description": "The Blue Line serves Fairfax County, Arlington County, and Prince George's County, passing through downtown D.C. and connecting to Reagan National Airport."
@@ -35,6 +37,7 @@
       "opened": "1978-02-06",
       "status": "active",
       "termini": ["Vienna/Fairfax-GMU", "New Carrollton"],
+      "topology": { "type": "linear" },
       "length": 26.45,
       "stationCount": 26,
       "description": "The Orange Line connects Fairfax County, Virginia to Prince George's County, Maryland, serving Vienna, Falls Church, Arlington, and downtown D.C."
@@ -48,6 +51,7 @@
       "opened": "1991-12-28",
       "status": "active",
       "termini": ["Greenbelt", "Branch Avenue"],
+      "topology": { "type": "linear" },
       "length": 22.95,
       "stationCount": 21,
       "description": "The Green Line runs from Greenbelt in Prince George's County to Branch Avenue, serving the U Street corridor and Anacostia neighborhoods."
@@ -61,6 +65,7 @@
       "opened": "1983-04-30",
       "status": "active",
       "termini": ["Huntington", "Mt Vernon Sq"],
+      "topology": { "type": "linear" },
       "length": 10.5,
       "stationCount": 17,
       "description": "The Yellow Line is the shortest line in the system, connecting Huntington in Fairfax County to Mt Vernon Square in D.C., serving Pentagon and Reagan National Airport."
@@ -73,7 +78,28 @@
       "colorHex": "#A2A4A3",
       "opened": "2014-07-26",
       "status": "active",
-      "termini": ["Ashburn", "Largo Town Center"],
+      "termini": ["Ashburn", "New Carrollton", "Largo Town Center"],
+      "topology": {
+        "type": "linear",
+        "branches": [
+          {
+            "id": "new-carrollton",
+            "name": "New Carrollton Branch",
+            "termini": ["New Carrollton"],
+            "branchStation": "Stadium-Armory",
+            "servicePattern": "alternating",
+            "description": "Every other eastbound train"
+          },
+          {
+            "id": "largo",
+            "name": "Largo Branch",
+            "termini": ["Largo Town Center"],
+            "branchStation": "Stadium-Armory",
+            "servicePattern": "alternating",
+            "description": "Every other eastbound train"
+          }
+        ]
+      },
       "length": 34.0,
       "stationCount": 34,
       "description": "The Silver Line is the newest line in the system, connecting Loudoun County and Dulles International Airport to downtown D.C. and Prince George's County."
