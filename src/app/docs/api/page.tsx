@@ -322,6 +322,7 @@ export default async function APIDocumentationPage() {
   "opened": "1976-03-27",
   "status": "active",
   "termini": ["Shady Grove", "Glenmont"],
+  "topology": { "type": "linear" },
   "length": 31.8,
   "description": "..."
 }`}

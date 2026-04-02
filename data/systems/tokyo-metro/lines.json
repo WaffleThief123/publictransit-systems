@@ -11,6 +11,7 @@
       "opened": "1927-12-30",
       "status": "active",
       "termini": ["Shibuya", "Asakusa"],
+      "topology": { "type": "linear" },
       "length": 14.3,
       "stationCount": 19,
       "gauge": 1435,
@@ -27,11 +28,19 @@
       "colorHex": "#E60012",
       "opened": "1954-01-20",
       "status": "active",
-      "termini": ["Ogikubo", "Ikebukuro"],
-      "branch": {
-        "name": "Honancho Branch",
-        "termini": ["Nakano-Sakaue", "Honancho"],
-        "stationCount": 3
+      "termini": ["Ogikubo", "Ikebukuro", "Honancho"],
+      "topology": {
+        "type": "linear",
+        "branches": [
+          {
+            "id": "honancho",
+            "name": "Honancho Branch",
+            "termini": ["Honancho"],
+            "branchStation": "Nakano-Sakaue",
+            "servicePattern": "full-time",
+            "description": "Branch line diverging at Nakano-Sakaue"
+          }
+        ]
       },
       "length": 27.4,
       "stationCount": 28,
@@ -50,6 +59,7 @@
       "opened": "1962-05-31",
       "status": "active",
       "termini": ["Naka-Meguro", "Kita-Senju"],
+      "topology": { "type": "linear" },
       "length": 20.3,
       "stationCount": 21,
       "gauge": 1067,
@@ -67,6 +77,7 @@
       "opened": "1964-12-23",
       "status": "active",
       "termini": ["Nakano", "Nishi-Funabashi"],
+      "topology": { "type": "linear" },
       "length": 30.8,
       "stationCount": 23,
       "gauge": 1067,
@@ -84,6 +95,7 @@
       "opened": "1969-12-20",
       "status": "active",
       "termini": ["Yoyogi-Uehara", "Kita-Ayase"],
+      "topology": { "type": "linear" },
       "length": 24.0,
       "stationCount": 20,
       "gauge": 1067,
@@ -101,6 +113,7 @@
       "opened": "1974-10-30",
       "status": "active",
       "termini": ["Wakoshi", "Shin-Kiba"],
+      "topology": { "type": "linear" },
       "length": 28.3,
       "stationCount": 24,
       "gauge": 1067,
@@ -118,6 +131,7 @@
       "opened": "1978-08-01",
       "status": "active",
       "termini": ["Shibuya", "Oshiage"],
+      "topology": { "type": "linear" },
       "length": 16.8,
       "stationCount": 14,
       "gauge": 1067,
@@ -135,6 +149,7 @@
       "opened": "1991-11-29",
       "status": "active",
       "termini": ["Meguro", "Akabane-Iwabuchi"],
+      "topology": { "type": "linear" },
       "length": 21.3,
       "stationCount": 19,
       "gauge": 1067,
@@ -152,6 +167,7 @@
       "opened": "2008-06-14",
       "status": "active",
       "termini": ["Wakoshi", "Shibuya"],
+      "topology": { "type": "linear" },
       "length": 20.2,
       "stationCount": 16,
       "gauge": 1067,

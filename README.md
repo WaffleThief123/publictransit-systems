@@ -67,7 +67,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the app.
 1. Create a directory under `data/systems/{system-id}/`
 2. Add four JSON files:
    - `system.json` - System overview and stats
-   - `lines.json` - Lines with colors, termini, lengths
+   - `lines.json` - Lines with colors, termini, route topology, lengths
    - `stations.json` - Stations with coordinates and features
    - `railcars.json` - Railcar specifications
 3. The system will automatically appear on the home page

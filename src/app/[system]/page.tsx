@@ -9,6 +9,7 @@ import { StationCard } from "@/components/transit/StationCard";
 import { RailcarCard } from "@/components/transit/RailcarCard";
 import { SystemStats } from "@/components/transit/SystemStats";
 import { LineLength } from "@/components/transit/LineLength";
+import { formatTermini } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ system: string }>;
@@ -192,7 +193,7 @@ export default async function SystemPage({ params }: PageProps) {
                       {line.name}
                     </p>
                     <p className="text-xs text-text-muted truncate">
-                      {line.termini[0]} ↔ {line.termini[1]}
+                      {formatTermini(line)}
                     </p>
                   </div>
                   <span className="text-xs font-mono text-text-muted shrink-0">
