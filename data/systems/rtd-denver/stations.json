@@ -1,0 +1,52 @@
+{
+    "stations": [
+        {
+            "id": "denver-union",
+            "systemId": "rtd-denver",
+            "name": "Union Station",
+            "lines": [
+                "a-line",
+                "b-line",
+                "e-line",
+                "g-line",
+                "n-line",
+                "w-line"
+            ],
+            "opened": "1881-05",
+            "status": "active",
+            "coordinates": {
+                "lat": 39.753056,
+                "lng": -105
+            },
+            "address": "1701 Wynkoop St, Denver, CO 80202",
+            "features": [
+                "elevator",
+                "escalator",
+                "fare-vending",
+                "bus-connection"
+            ],
+            "description": "Union Station is the historical intercity rail station serving Denver. It was renovated in 1914 and 2014. The majority of RTD rail lines connect to Union Station."
+        },
+        {
+            "id": "38th-blake",
+            "systemId": "rtd-denver",
+            "name": "38th & Blake Station",
+            "lines": [
+                "a-line"
+            ],
+            "opened": "2016-04-22",
+            "status": "active",
+            "coordinates": {
+                "lat": 39.770694,
+                "lng": -104.973778
+            },
+            "address": "3737 Blake St, Denver, CO 80205",
+            "features": [
+                "elevator",
+                "bus-connection",
+                "park-and-ride",
+                "accessible"
+            ]
+        }
+    ]
+}
