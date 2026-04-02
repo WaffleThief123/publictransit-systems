@@ -1,0 +1,54 @@
+{
+  "lines": [
+    {
+      "id": "a-line",
+      "systemId": "rtd-denver",
+      "name": "A Line",
+      "color": "Sky Blue",
+      "colorHex": "#54C0E8",
+      "opened": "2016-04-22",
+      "status": "active",
+      "termini": ["Union Station", "Denver Airport Station"],
+      "length": 23.5,
+      "stationCount": 8,
+      "description": "The A Line is a commuter rail line that connects Downtown Denver to Denver Airport through Aurora."
+    },
+    {
+      "id": "b-line",
+      "systemId": "rtd-denver",
+      "name": "B Line",
+      "color": "Green",
+      "colorHex": "#4C9C2E",
+      "opened": "2016-07-25",
+      "status": "active",
+      "termini": ["Union Station", "Westminster Station"],
+      "length": 6.2,
+      "stationCount": 4,
+      "description": "The B line is a commuter rail line that connects Union Station to Westminster Station. It is not fully complete, with the full journey taking only about 15 minutes, with an additional 6 stations planned to serve Broomfield, Louisville, Boulder, and Longmont."
+    },
+    {
+      "id": "d-line",
+      "systemId": "rtd-denver",
+      "name": "D Line",
+      "color": "Dark Green",
+      "colorHex": "#047835",
+      "opened": "1994-10-07",
+      "status": "active",
+      "termini": ["18th & California", "18th & Stout", "Littleton-Mineral"],
+      "stationCount": 12,
+      "description": "The D Line, formerly known as Route 101, was the first and only station in the RTD rail system until 2002. It previously served from Five Points to Mineral Avenue Station, but its northern terminus has since been moved to 18th Street, either at 18th & California or 18th & Stout, depending on the direction."
+    },
+    {
+      "id": "e-line",
+      "systemId": "rtd-denver",
+      "name": "E Line",
+      "color": "Dark Purple",
+      "colorHex": "#691F74",
+      "opened": "2006-11-17",
+      "status": "active",
+      "temini": ["Union Station", "RidgeGate Parkway"],
+      "stationCount": 21,
+      "description": ""
+    }
+  ]
+}
