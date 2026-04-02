@@ -1,52 +1,124 @@
 {
-    "stations": [
-        {
-            "id": "denver-union",
-            "systemId": "rtd-denver",
-            "name": "Union Station",
-            "lines": [
-                "a-line",
-                "b-line",
-                "e-line",
-                "g-line",
-                "n-line",
-                "w-line"
-            ],
-            "opened": "1881-05",
-            "status": "active",
-            "coordinates": {
-                "lat": 39.753056,
-                "lng": -105
-            },
-            "address": "1701 Wynkoop St, Denver, CO 80202",
-            "features": [
-                "elevator",
-                "escalator",
-                "fare-vending",
-                "bus-connection"
-            ],
-            "description": "Union Station is the historical intercity rail station serving Denver. It was renovated in 1914 and 2014. The majority of RTD rail lines connect to Union Station."
-        },
-        {
-            "id": "38th-blake",
-            "systemId": "rtd-denver",
-            "name": "38th & Blake Station",
-            "lines": [
-                "a-line"
-            ],
-            "opened": "2016-04-22",
-            "status": "active",
-            "coordinates": {
-                "lat": 39.770694,
-                "lng": -104.973778
-            },
-            "address": "3737 Blake St, Denver, CO 80205",
-            "features": [
-                "elevator",
-                "bus-connection",
-                "park-and-ride",
-                "accessible"
-            ]
-        }
-    ]
+  "stations": [
+    {
+      "id": "denver-union",
+      "systemId": "rtd-denver",
+      "name": "Union Station",
+      "lines": ["a-line", "b-line", "e-line", "g-line", "n-line", "w-line"],
+      "opened": "1881-05",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.753056,
+        "lng": -105
+      },
+      "address": "1701 Wynkoop St, Denver, CO 80202",
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "bus-connection",
+        "amtrak-connection"
+      ],
+      "description": "Union Station is the historical intercity rail station serving Denver. It was renovated in 1914 and 2014. The majority of RTD rail lines connect to Union Station."
+    },
+    {
+      "id": "38th-blake",
+      "systemId": "rtd-denver",
+      "name": "38th & Blake Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.770694,
+        "lng": -104.973778
+      },
+      "address": "3737 Blake St, Denver, CO 80205",
+      "features": ["elevator", "bus-connection", "park-and-ride", "accessible"],
+      "description": "The 38th & Blake Station serves the Five Points neighborhood of Denver, including RiNo. It has an art installation named Conflux/Redox by Kelton Osborn."
+    },
+    {
+      "id": "40th-colorado",
+      "systemId": "rtd-denver",
+      "name": "40th & Colorado Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.776056,
+        "lng": -104.942583
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "The 40th & Colorado Station serves the Elyria-Swansea neighborhood of Denver. It features an art installation named Hands On created by Erik Carlson."
+    },
+    {
+      "id": "central-park-denver",
+      "systemId": "rtd-denver",
+      "name": "Central Park Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.770361,
+        "lng": -104.891639
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Denver's Central Park Station serves the Park Hill and Central Park neighborhoods of Denver. It is near the former location of Stapleton International Airport. It has an art installation named Balloon Man Running created by Sean O'Meallie."
+    },
+    {
+      "id": "peoria",
+      "systemId": "rtd-denver",
+      "name": "Peoria Station",
+      "lines": ["a-line", "r-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.767556,
+        "lng": -104.850417
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Peoria Station is a junction along the A Line and serving as the northern terminus of the R Line. It is the first A Line connection to Aurora. It has an art installation named Biota created by Blessing Hancock."
+    },
+    {
+      "id": "48th-airport-gateway-park",
+      "systemId": "rtd-denver",
+      "name": "48th Ave & Airport Blvd-Gateway Park Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.769889,
+        "lng": -104.787694
+      },
+      "features": ["accessible", "bus-connection", "park-and-ride"],
+      "description": "The 48th Ave & Airport Blvd-Gateway Park Station is a station serving Aurora. It has a massive park and ride with 1,079 spaces. It has an art installation named Time Present by Molly Dilworth."
+    },
+    {
+      "id": "61st-pena",
+      "systemId": "rtd-denver",
+      "name": "61st & Peña Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.807028,
+        "lng": -104.784
+      },
+      "features": ["accessible", "park-and-ride"],
+      "description": "The 61st & Peña Station is the final station before Denver Airport Station and the final station in the local fare zone. It has parking that is paid with management by Denver International Airport."
+    },
+    {
+      "id": "denver-airport",
+      "systemId":"rtd-denver",
+      "name": "Denver Airport Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.846111, 
+        "lng": -104.673889
+      },
+      "features": ["accessible", "escalator", "elevator", "airport-connection", "fare-vending", "bus-connection"],
+      "description": "The Denver Airport Station allows travelers to get to Denver Airport via transit. It has a special, higher fare zone specifically for travelers to and from the station. It has three art installations: Shadow Array by Patrick Marold, L’eau dans tous ses états by Yann Kersalé, and an informal installation of railroad ties in an unused area."
+    }
+  ]
 }
