@@ -9,6 +9,7 @@
  *   - Tokyo Metro (service alerts via ODPT)
  *
  * Endpoints:
+ *   GET /healthz                      - Worker health check
  *   GET /incidents/wmata              - All WMATA incidents
  *   GET /incidents/wmata/:stationId   - WMATA incidents for a station
  *   GET /incidents/tokyo-metro        - Tokyo Metro service alerts
@@ -45,16 +46,15 @@ export default {
       return new Response(null, { headers });
     }
 
-    // GET /health
-    if (url.pathname === '/health' && request.method === 'GET') {
-      const list = await env.INCIDENTS_KV.list({ prefix: '_health:' });
+    // GET /healthz
+    if (url.pathname === '/healthz' && request.method === 'GET') {
+      const SYSTEM_IDS = ['wmata', 'tokyo-metro'];
       const systems: Record<string, unknown> = {};
       const STALE_THRESHOLD_MS = 2 * 60 * 60 * 1000; // 2x cron interval (1h)
 
       let allOk = true;
-      for (const key of list.keys) {
-        const systemId = key.name.replace('_health:', '');
-        const data = await env.INCIDENTS_KV.get(key.name, 'json') as {
+      for (const systemId of SYSTEM_IDS) {
+        const data = await env.INCIDENTS_KV.get(`_health:${systemId}`, 'json') as {
           lastPullAt: string;
           lastPullDurationMs: number;
           lastPullSuccess: boolean;

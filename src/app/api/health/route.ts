@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getIncidentCacheStatus } from "@/lib/data";
+import { getAllSystems, getIncidentCacheStatus } from "@/lib/data";
 
 const INCIDENTS_WORKER_URL = process.env.INCIDENTS_WORKER_URL;
 
@@ -22,6 +22,20 @@ export async function GET() {
   const timestamp = new Date().toISOString();
   const cacheEntries = getIncidentCacheStatus();
 
+  // Check app health: can we load system data?
+  let appStatus: "ok" | "error" = "ok";
+  let systemCount = 0;
+  try {
+    const systems = await getAllSystems();
+    systemCount = systems.length;
+    if (systemCount === 0) {
+      appStatus = "error";
+    }
+  } catch {
+    appStatus = "error";
+  }
+
+  // Check worker health independently
   let workerStatus: "ok" | "degraded" | "unreachable" = "unreachable";
   let workerLatencyMs: number | null = null;
   let workerSystems: WorkerHealthResponse["systems"] | null = null;
@@ -30,7 +44,7 @@ export async function GET() {
   if (INCIDENTS_WORKER_URL) {
     const start = performance.now();
     try {
-      const res = await fetch(`${INCIDENTS_WORKER_URL}/health`, {
+      const res = await fetch(`${INCIDENTS_WORKER_URL}/healthz`, {
         cache: "no-store",
       });
       workerLatencyMs = Math.round(performance.now() - start);
@@ -46,26 +60,24 @@ export async function GET() {
     }
   }
 
-  let status: "ok" | "degraded" | "error";
-  if (workerStatus === "ok") {
-    status = "ok";
-  } else if (workerStatus === "degraded") {
-    status = "degraded";
-  } else {
-    status = "error";
-  }
+  const status = appStatus === "error" ? "error" : workerStatus !== "ok" ? "degraded" : "ok";
 
-  return NextResponse.json({
-    status,
-    timestamp,
-    app: {
-      cacheEntries,
+  return NextResponse.json(
+    {
+      status,
+      timestamp,
+      app: {
+        status: appStatus,
+        systemCount,
+        cacheEntries,
+      },
+      worker: {
+        status: workerStatus,
+        latencyMs: workerLatencyMs,
+        cronSchedule: workerCronSchedule,
+        systems: workerSystems,
+      },
     },
-    worker: {
-      status: workerStatus,
-      latencyMs: workerLatencyMs,
-      cronSchedule: workerCronSchedule,
-      systems: workerSystems,
-    },
-  });
+    { status: appStatus === "error" ? 503 : 200 },
+  );
 }
