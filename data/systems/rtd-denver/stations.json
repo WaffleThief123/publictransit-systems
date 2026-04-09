@@ -1,0 +1,299 @@
+{
+  "stations": [
+    {
+      "id": "denver-union",
+      "systemId": "rtd-denver",
+      "name": "Union Station",
+      "lines": ["a-line", "b-line", "e-line", "g-line", "n-line", "w-line"],
+      "opened": "1881-05",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.753056,
+        "lng": -105
+      },
+      "address": "1701 Wynkoop St, Denver, CO 80202",
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "bus-connection",
+        "amtrak-connection"
+      ],
+      "description": "Union Station is the historical intercity rail station serving Denver. It was renovated in 1914 and 2014. The majority of RTD rail lines connect to Union Station."
+    },
+    {
+      "id": "38th-blake",
+      "systemId": "rtd-denver",
+      "name": "38th & Blake Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.770694,
+        "lng": -104.973778
+      },
+      "address": "3737 Blake St, Denver, CO 80205",
+      "features": ["elevator", "bus-connection", "park-and-ride", "accessible"],
+      "description": "38th & Blake Station serves the Five Points neighborhood of Denver, including RiNo. It has an art installation named Conflux/Redox by Kelton Osborn."
+    },
+    {
+      "id": "40th-colorado",
+      "systemId": "rtd-denver",
+      "name": "40th & Colorado Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.776056,
+        "lng": -104.942583
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "40th & Colorado Station serves the Elyria-Swansea neighborhood of Denver. It features an art installation named Hands On created by Erik Carlson."
+    },
+    {
+      "id": "central-park-denver",
+      "systemId": "rtd-denver",
+      "name": "Central Park Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.770361,
+        "lng": -104.891639
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Denver's Central Park Station serves the Park Hill and Central Park neighborhoods of Denver. It is near the former location of Stapleton International Airport. It has an art installation named Balloon Man Running created by Sean O'Meallie."
+    },
+    {
+      "id": "peoria",
+      "systemId": "rtd-denver",
+      "name": "Peoria Station",
+      "lines": ["a-line", "r-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.767556,
+        "lng": -104.850417
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Peoria Station is a junction along the A Line and serving as the northern terminus of the R Line. It is the first A Line connection to Aurora. It has an art installation named Biota created by Blessing Hancock."
+    },
+    {
+      "id": "48th-airport-gateway-park",
+      "systemId": "rtd-denver",
+      "name": "48th Ave & Airport Blvd-Gateway Park Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.769889,
+        "lng": -104.787694
+      },
+      "features": ["accessible", "bus-connection", "park-and-ride"],
+      "description": "48th Ave & Airport Blvd-Gateway Park Station is a station serving Aurora. It has a massive park and ride with 1,079 spaces. It has an art installation named Time Present by Molly Dilworth."
+    },
+    {
+      "id": "61st-pena",
+      "systemId": "rtd-denver",
+      "name": "61st & Peña Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.807028,
+        "lng": -104.784
+      },
+      "features": ["accessible", "park-and-ride"],
+      "description": "61st & Peña Station is the final station before Denver Airport Station and the final station in the local fare zone. It has parking that is paid with management by Denver International Airport."
+    },
+    {
+      "id": "denver-airport",
+      "systemId": "rtd-denver",
+      "name": "Denver Airport Station",
+      "lines": ["a-line"],
+      "opened": "2016-04-22",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.846111,
+        "lng": -104.673889
+      },
+      "features": [
+        "accessible",
+        "escalator",
+        "elevator",
+        "airport-connection",
+        "fare-vending",
+        "bus-connection"
+      ],
+      "description": "Denver Airport Station allows travelers to get to Denver Airport via transit. It has a special, higher fare zone specifically for travelers to and from the station. It has three art installations: Shadow Array by Patrick Marold, L’eau dans tous ses états by Yann Kersalé, and an informal installation of railroad ties in an unused area."
+    },
+    {
+      "id": "41st-fox",
+      "systemId": "rtd-denver",
+      "name": "41st & Fox Station",
+      "lines": ["b-line", "g-line"],
+      "opened": "2019-04-26",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.773056,
+        "lng": -104.996667
+      },
+      "features": ["accessible", "park-and-ride"],
+      "description": "41st & Fox Station serves the Globeville and Sunnyside neighborhoods of Denver."
+    },
+    {
+      "id": "pecos-junction",
+      "systemId": "rtd-denver",
+      "name": "Pecos Junction Station",
+      "lines": ["b-line", "g-line"],
+      "opened": "2019-04-26",
+      "status": "active",
+      "coordinates": {
+        "lat": 9.8051,
+        "lng": -105.0051
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Pecos Junction Station is the last station that the B and G Lines share and it is one of the least used stations in the RTD network."
+    },
+    {
+      "id": "westminster",
+      "systemId": "rtd-denver",
+      "name": "Westminster Station",
+      "lines": ["b-line"],
+      "opened": "2016-07-25",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.822778,
+        "lng": -105.029167
+      },
+      "features": ["accessible", "park-and-ride", "bus-connection"],
+      "description": "Westminster Station serves Westminster and is the northern terminus of the B Line, though there are plans to extend the B Line to Boulder and Longmont. It has an art installation called Grotto by Brian W. Brush."
+    },
+    {
+      "id": "18th-california",
+      "systemId": "rtd-denver",
+      "name": "18th & California Station",
+      "lines": ["d-line", "h-line", "l-line"],
+      "opened": "1994-10-08",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.747369,
+        "lng": -104.990208
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "18th & California Station is one of two stations along 18th St. It is the terminus for northbound D and H Line trains."
+    },
+    {
+      "id": "18th-stout",
+      "systemId": "rtd-denver",
+      "name": "18th & California Station",
+      "lines": ["d-line", "h-line", "l-line"],
+      "opened": "1994-10-08",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.747369,
+        "lng": -104.990208
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "18th & Stout Station is one of two stations along 18th St. It is the terminus for southbound D and H Line trains."
+    },
+    {
+      "id": "16th-california",
+      "systemId": "rtd-denver",
+      "name": "16th & California Station",
+      "lines": ["d-line", "h-line", "l-line"],
+      "opened": "1994-10-08",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.747369,
+        "lng": -104.990208
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "16th & California Station is one of two stations along 16th St. It serves only northbound trains."
+    },
+    {
+      "id": "16th-stout",
+      "systemId": "rtd-denver",
+      "name": "16th & California Station",
+      "lines": ["d-line", "h-line", "l-line"],
+      "opened": "1994-10-08",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.745511,
+        "lng": -104.992572
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "16th & Stout Station is one of two stations along 16th St. It serves only southbound trains."
+    },
+    {
+      "id": "theatre-district-convention-center",
+      "systemId": "rtd-denver",
+      "name": "Theatre District-Convention Center Station",
+      "lines": ["d-line", "h-line"],
+      "opened": "2004-11-28",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.743727,
+        "lng": -104.996341
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "Theatre District-Convention Center Station serves the Colorado Convention Center and the Denver Performing Arts Complex. It replaced the 14th & California and 14th & Stout stations."
+    },
+    {
+      "id": "colfax-auraria",
+      "systemId": "rtd-denver",
+      "name": "Colfax at Auraria Station",
+      "lines": ["d-line", "h-line"],
+      "opened": "1994-10-08",
+      "status": "active",
+      "coordinates": {
+        "lat": 39.740319,
+        "lng": -105.001918
+      },
+      "features": ["accessible", "bus-connection"],
+      "description": "Colfax at Auraria Station serves the east end of the Aruaria campus."
+    },
+    {
+      "id": "10th-osage",
+      "systemId": "rtd-denver",
+      "name": "10th & Osage Station",
+      "lines": ["d-line", "e-line", "h-line"],
+      "opened": "1994-10-08",
+      "status":"active",
+      "coordinates": {
+        "lat": 39.731924, 
+        "lng": -105.005605
+      },
+      "features": ["accessible"],
+      "description": "10th & Osage Station serves a residential area of Denver with the exception of the Buckhorn Exchange. It is the norhternmost station of the Central Corridor."
+    },
+    {
+      "id": "alameda",
+      "systemId":"rtd-denver",
+      "name": "Alameda Station",
+      "lines": ["d-line","e-line","h-line"],
+      "opened": "1994-10-08",
+      "status":"active",
+      "coordinates": {
+        "lat": 39.708511, 
+        "lng":-104.993028
+      },
+      "features": ["accessible","park-and-ride","bus-connection"],
+      "description": "Alameda Station is near the Denver Design District and shops on Broadway St. It primarily serves a residential area."
+    },
+    {
+      "id": "i25-broadway",
+      "systemId":"rtd-denver",
+      "name": "I-25 & Broadway Station",
+      "lines": ["d-line","e-line","h-line"],
+      "opened": "1994-10-08",
+      "status":"active",
+      "coordinates": {
+        "lat": 39.701698, 
+        "lng": -104.990072
+      },
+      "features": ["accessible", "park-and-ride","bus-connection"],
+      "description": "I-25 & Broadway Station was originally the southern terminus of the RTD rail network. Following the T-REX project, it became a large transfer point between the D, E, and H Lines, propelling it to the 3rd most used RTD station. It has three sculptures collectively titled The Welcoming Committee, which is an art installation created by Elaine Calzolari. It has a planned pedestrian bridge west from the station that would have the longest unsupported truss in the state."
+    }
+  ]
+}
