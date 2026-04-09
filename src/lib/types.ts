@@ -5,6 +5,7 @@ export type RailcarStatus = "active" | "retired" | "testing";
 export type EntranceAccessibility = "elevator" | "escalator" | "stairs-only";
 export type DistanceUnit = "km" | "mi";
 export type TopologyType = "linear" | "loop" | "lollipop";
+export type LineIndicatorShape = "circle" | "square";
 export type ServicePattern = "full-time" | "alternating" | "peak-only" | "weekend-only" | "rush-hour";
 
 export interface StationEntrance {
@@ -37,6 +38,7 @@ export interface TransitSystem {
     primary: string;
     secondary: string;
   };
+  lineIndicatorShape?: LineIndicatorShape;
 }
 
 export interface SystemStats {

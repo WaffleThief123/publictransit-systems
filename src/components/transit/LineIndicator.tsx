@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import type { Line } from "@/lib/types";
+import type { Line, LineIndicatorShape } from "@/lib/types";
 
 interface LineIndicatorProps {
   line: Line | string;
   systemId?: string;
   size?: "sm" | "md" | "lg";
+  shape?: LineIndicatorShape;
   showName?: boolean;
   linkable?: boolean;
   glow?: boolean;
@@ -50,6 +51,7 @@ export function LineIndicator({
   line,
   systemId,
   size = "md",
+  shape = "circle",
   showName = false,
   linkable = true,
   glow = true,
@@ -64,7 +66,8 @@ export function LineIndicator({
   const badge = (
     <div
       className={cn(
-        "rounded-full flex items-center justify-center font-mono font-bold transition-all",
+        "flex items-center justify-center font-mono font-bold transition-all",
+        shape === "square" ? "rounded-sm" : "rounded-full",
         sizeClasses[size],
         "border-2 border-opacity-30"
       )}
@@ -106,6 +109,7 @@ interface LineIndicatorGroupProps {
   lines: (Line | string)[];
   systemId?: string;
   size?: "sm" | "md" | "lg";
+  shape?: LineIndicatorShape;
   linkable?: boolean;
   glow?: boolean;
   className?: string;
@@ -115,6 +119,7 @@ export function LineIndicatorGroup({
   lines,
   systemId,
   size = "sm",
+  shape = "circle",
   linkable = true,
   glow = true,
   className,
@@ -129,6 +134,7 @@ export function LineIndicatorGroup({
             line={line}
             systemId={systemId}
             size={size}
+            shape={shape}
             linkable={linkable}
             glow={glow}
           />

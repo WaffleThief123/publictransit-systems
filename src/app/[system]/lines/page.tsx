@@ -47,7 +47,7 @@ export default async function LinesPage({ params }: PageProps) {
             <Link key={line.id} href={`/${systemId}/lines/${line.id}`}>
               <Card hover>
                 <div className="flex items-center gap-4">
-                  <LineIndicator line={line} size="lg" linkable={false} />
+                  <LineIndicator line={line} size="lg" shape={system.lineIndicatorShape} linkable={false} />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <h2 className="font-mono font-semibold text-text-primary">

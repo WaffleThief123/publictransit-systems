@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { StatusBadge } from "@/components/ui/Badge";
 import { LineIndicatorGroup } from "./LineIndicator";
-import type { Station, Line } from "@/lib/types";
+import type { Station, Line, LineIndicatorShape } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { formatDate } from "@/lib/data";
 
@@ -10,11 +10,12 @@ interface StationCardProps {
   station: Station;
   systemId: string;
   lines?: Line[];
+  lineIndicatorShape?: LineIndicatorShape;
   className?: string;
   compact?: boolean;
 }
 
-export function StationCard({ station, systemId, lines, className, compact = false }: StationCardProps) {
+export function StationCard({ station, systemId, lines, lineIndicatorShape, className, compact = false }: StationCardProps) {
   return (
     <Link href={`/${systemId}/stations/${station.id}`}>
       <Card hover className={cn("h-full", className)}>
@@ -30,6 +31,7 @@ export function StationCard({ station, systemId, lines, className, compact = fal
             lines={lines ? station.lines.map(id => lines.find(l => l.id === id) || id) : station.lines}
             systemId={systemId}
             size="sm"
+            shape={lineIndicatorShape}
             linkable={false}
           />
         </div>

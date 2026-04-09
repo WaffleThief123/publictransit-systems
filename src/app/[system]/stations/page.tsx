@@ -70,6 +70,7 @@ export default async function StationsPage({ params, searchParams }: PageProps) 
                 station={station}
                 systemId={systemId}
                 lines={lines}
+                lineIndicatorShape={system.lineIndicatorShape}
               />
             ))}
           </div>

@@ -63,6 +63,7 @@ export default async function StationDetailPage({ params }: PageProps) {
                 lines={stationLines}
                 systemId={systemId}
                 size="md"
+                shape={system.lineIndicatorShape}
               />
             </div>
             {(station.opened || station.closedDate) && (

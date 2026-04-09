@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getSystem, getLine, getStationsByLine, formatDate } from "@/lib/data";
+import { getSystem, getLine, getLines, getStationsByLine, formatDate } from "@/lib/data";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { StatusBadge } from "@/components/ui/Badge";
 import { StationCard } from "@/components/transit/StationCard";
@@ -19,9 +19,10 @@ export default async function LineDetailPage({ params }: PageProps) {
   const decodedLineId = decodeURIComponent(lineId);
 
   try {
-    const [system, line, stations] = await Promise.all([
+    const [system, line, allLines, stations] = await Promise.all([
       getSystem(systemId),
       getLine(systemId, decodedLineId),
+      getLines(systemId),
       getStationsByLine(systemId, decodedLineId),
     ]);
 
@@ -143,7 +144,8 @@ export default async function LineDetailPage({ params }: PageProps) {
                 key={station.id}
                 station={station}
                 systemId={systemId}
-                lines={[line]}
+                lines={allLines}
+                lineIndicatorShape={system.lineIndicatorShape}
                 compact
               />
             ))}

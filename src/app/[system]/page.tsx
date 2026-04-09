@@ -187,7 +187,7 @@ export default async function SystemPage({ params }: PageProps) {
             {lines.map((line) => (
               <Link key={line.id} href={`/${systemId}/lines/${line.id}`}>
                 <Card hover className="flex items-center gap-3">
-                  <LineIndicator line={line} size="lg" linkable={false} />
+                  <LineIndicator line={line} size="lg" shape={system.lineIndicatorShape} linkable={false} />
                   <div className="flex-1 min-w-0">
                     <p className="font-mono font-medium text-text-primary truncate">
                       {line.name}
@@ -225,6 +225,7 @@ export default async function SystemPage({ params }: PageProps) {
                 station={station}
                 systemId={systemId}
                 lines={lines}
+                lineIndicatorShape={system.lineIndicatorShape}
                 compact
               />
             ))}
