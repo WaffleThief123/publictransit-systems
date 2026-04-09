@@ -24,9 +24,9 @@ const lineColors: Record<string, string> = {
 };
 
 const sizeClasses = {
-  sm: "w-6 h-6 text-xs",
-  md: "w-8 h-8 text-sm",
-  lg: "w-10 h-10 text-base",
+  sm: "min-w-6 h-6 px-1 text-xs",
+  md: "min-w-8 h-8 px-1.5 text-sm",
+  lg: "min-w-10 h-10 px-2 text-base",
 };
 
 // Helper to determine if text should be light or dark based on background
@@ -61,7 +61,7 @@ export function LineIndicator({
   const lineId = isLineObject ? line.id : line;
   const lineName = isLineObject ? line.name : `${line.charAt(0).toUpperCase()}${line.slice(1)} Line`;
   const colorHex = isLineObject ? line.colorHex : lineColors[line] || "#666";
-  const shortName = lineId.charAt(0).toUpperCase();
+  const shortName = isLineObject && line.abbreviation ? line.abbreviation : lineId.charAt(0).toUpperCase();
 
   const badge = (
     <div

@@ -73,6 +73,7 @@ export interface Line {
   name: string;
   color: string;
   colorHex: string;
+  abbreviation?: string;
   opened?: string;
   status: StationStatus;
   stations?: string[];
