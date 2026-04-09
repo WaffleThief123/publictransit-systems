@@ -1,0 +1,150 @@
+{
+  "id": "stuttgart-light-rail",
+  "name": "Stadtbahn Stuttgart",
+  "shortName": "SSB",
+  "location": "Stuttgart, Baden-Württemberg",
+  "region": "Stuttgart Metropolitan Region",
+  "country": "Germany",
+  "opened": "1985-10-28",
+  "website": "https://www.ssb-ag.de",
+  "overview": "The Stadtbahn Stuttgart is the light rail network operated by Stuttgarter Straßenbahnen AG (SSB) serving the city of Stuttgart and surrounding municipalities in Baden-Württemberg, Germany. The network evolved from the city's historic metre-gauge tram system, with conversion to the standard-gauge (1,435 mm), high-platform Stadtbahn concept beginning on 28 September 1985 when the U3 (Plieningen–Vaihingen) became the first fully converted line. Operating partly underground through dedicated city-centre tunnels and on segregated surface alignments in the suburbs, the 16-line network extends as far west as Gerlingen, northeast to Remseck am Neckar, east to Fellbach, south to the airport (Messe/Flughafen via U6), and south-east to Ostfildern. Lines converge on a network of underground city-centre tunnels, with Hauptbahnhof and Charlottenplatz serving as the principal interchange hubs.",
+  "stats": {
+    "totalStations": 202,
+    "totalLines": 16,
+    "annualRidership": "182 million",
+    "dailyRidership": "600,000",
+    "trackLength": 136,
+    "distanceUnit": "km"
+  },
+  "colors": {
+    "primary": "#FC0",
+    "secondary": "#FFFFFF"
+  },
+  "history": [
+    {
+      "date": "1961-01-01",
+      "title": "Decision to Build Underground Tunnels",
+      "description": "Stuttgart's city council resolves to relocate inner-city rail lines underground, convert the network to a more capable standard-gauge system, and separate tracks from road traffic wherever possible — laying the conceptual foundation for what would become the Stadtbahn."
+    },
+    {
+      "date": "1966-05-10",
+      "title": "Charlottenplatz Tunnel Station Opens",
+      "description": "Stuttgart's first underground rail station opens at Charlottenplatz (lower level) for tram operation, built with a clearance profile already designed for the future standard-gauge Stadtbahn vehicles. The upper level for cross-valley lines follows in May 1967."
+    },
+    {
+      "date": "1976-01-01",
+      "title": "Stadtbahn Concept Adopted",
+      "description": "After years of debate over a full metro (U-Bahn), the city decides to instead convert the existing metre-gauge tramway progressively to a high-platform, standard-gauge Stadtbahn, retaining the existing tunnel infrastructure already built to Stadtbahn clearances."
+    },
+    {
+      "date": "1983-07-25",
+      "title": "DT 8 Prototype Vehicles Enter Trial Service",
+      "description": "Three pre-production DT 8 double railcars — the newly developed Stuttgart-specific vehicle with all-axle drive — begin test runs on the Plieningen–Möhringen section of line 3, validating the new rolling stock before full conversion begins."
+    },
+    {
+      "date": "1985-09-28",
+      "title": "First Stadtbahn Line Opens",
+      "description": "The U3 (Plieningen–Vaihingen Bahnhof) becomes the first line fully converted to standard-gauge Stadtbahn operation, marking the official birth of the Stadtbahn Stuttgart. It runs entirely on the surface and does not serve the city-centre tunnels."
+    },
+    {
+      "date": "1986-04-19",
+      "title": "U1 Converted; Stadtbahn Enters the City Centre",
+      "description": "The U1 is converted to Stadtbahn operation between Vaihingen Bahnhof and Fellbach Lutherkirche, becoming the first line to carry standard-gauge Stadtbahn vehicles through the underground city-centre tunnels."
+    },
+    {
+      "date": "1986-07-12",
+      "title": "U14 Converted",
+      "description": "The U14 is converted to Stadtbahn standard, extending Stadtbahn service to Mühlhausen in the north and adding the Berliner Platz and Österreichischer Platz sections through the city-centre loop."
+    },
+    {
+      "date": "1988-09-24",
+      "title": "Event Line to Cannstatter Wasen Inaugurated",
+      "description": "A special service (then known as the E-line) begins carrying Stadtbahn vehicles to the Cannstatter Wasen festival ground at Mercedesstraße, the predecessor to today's U11 event line."
+    },
+    {
+      "date": "1989-09-30",
+      "title": "U9 Converted",
+      "description": "The U9 between Hedelfingen and Vogelsang (later extended to Botnang at peak hours) is converted to Stadtbahn operation, adding another cross-city link through the underground city-centre."
+    },
+    {
+      "date": "1990-11-03",
+      "title": "U5 and U6 Open Simultaneously",
+      "description": "The first two entirely new Stadtbahn lines open on the same day: the U5 (cross-valley, Pragsattel–Leinfelden Bahnhof) and the U6 (Pragsattel–Möhringen), both traversing the city-centre tunnels and giving Stuttgart its first north–south and east–west Stadtbahn cross-links."
+    },
+    {
+      "date": "1993-04-19",
+      "title": "U7 Opens to Killesberg",
+      "description": "The U7 opens from Killesberg (site of the International Garden Exhibition 1993) south to Degerloch, and makes history as the first Stadtbahn line to operate in double traction — two 40-metre trainsets coupled together — a format that would become standard on the busiest corridors."
+    },
+    {
+      "date": "1994-09-24",
+      "title": "U4 Converted; U11 Established",
+      "description": "The U4 is converted to Stadtbahn operation linking Untertürkheim Bahnhof with Hölderlinplatz. Simultaneously the event service to the Cannstatter Wasen and Neckarstadion is formally designated the U11, Stuttgart's first official special-event line."
+    },
+    {
+      "date": "1999-05-22",
+      "title": "First Network Expansion Beyond Old Tram Footprint",
+      "description": "The U14 is extended from Mühlhausen to Remseck-Neckargröningen, representing the first time the Stadtbahn reaches a destination that was never served by the predecessor metre-gauge tramway — a milestone in genuine network growth."
+    },
+    {
+      "date": "2000-09-09",
+      "title": "U7 and U8 Extended to Ostfildern-Nellingen",
+      "description": "A 6.3-kilometre new-build line opens from Heumaden to Nellingen (Ostfildern), served by both the U7 and the new peak-hours line U8 (Vaihingen Bahnhof–Nellingen). This marks the Stadtbahn's first reach into the neighbouring city of Ostfildern."
+    },
+    {
+      "date": "2002-06-22",
+      "title": "U2 Conversion Begins",
+      "description": "The U2 (Bad Cannstatt Wilhelmsplatz–Hauptfriedhof) is converted to Stadtbahn standard along its first section, covering one of the most complex alignments in the network due to mixed-traffic running and a new extension tunnel under the main cemetery."
+    },
+    {
+      "date": "2005-07-16",
+      "title": "U2 Extended to Neugereut",
+      "description": "A 1.1-kilometre tunnel under the main cemetery opens, extending the U2 to its current northern terminus at Neugereut, completing the full conversion of the line."
+    },
+    {
+      "date": "2007-12-08",
+      "title": "U15 Conversion Begins",
+      "description": "Conversion of Stuttgart's last metre-gauge tram line (Line 15) to standard-gauge Stadtbahn starts. The first section from Olgaeck to Ruhbank and from Löwentor to Stadtbibliothek opens as U15, running the steepest standard-gauge adhesion track in Europe (up to 8.5% gradient) on the southern branch."
+    },
+    {
+      "date": "2011-12-10",
+      "title": "U15 Reaches Stammheim; Metre-Gauge Era Ends",
+      "description": "The new tunnel through Zuffenhausen to Stammheim opens, completing the U15 on its full current route. With this, the last remnant of Stuttgart's historic metre-gauge tramway has been converted to Stadtbahn standard — ending 26 years of conversion work begun in 1985."
+    },
+    {
+      "date": "2013-09-14",
+      "title": "U12 Opens; New Hallschlag Branch Inaugurated",
+      "description": "The first section of the entirely new U12 opens, extending rail service north from the Löwentorkreuzung to the Hallschlag district. Simultaneously the U15 is rerouted directly to Pragsattel, and the U12 takes over the Nordbahnhof corridor."
+    },
+    {
+      "date": "2016-05-13",
+      "title": "U12 Extended to Dürrlewang",
+      "description": "The U12's southern branch opens from Wallgraben to Dürrlewang, giving the southern suburbs a direct connection to the Europaviertel and the city-centre tunnels. The new alignment is built as a triple-rail track to allow future heritage tram operation."
+    },
+    {
+      "date": "2017-12-09",
+      "title": "U12 Completed; Reaches Remseck am Neckar",
+      "description": "The final link in the U12 opens, connecting Hallschlag through a new tunnel into the Neckar valley to join the former U14 route at Mühlhausen and onward to Remseck-Neckargröningen. The U12 now operates as a full double-set line spanning the network from south to northeast."
+    },
+    {
+      "date": "2017-12-10",
+      "title": "Netz 2018: New Staatsgalerie Tunnel Opens",
+      "description": "A relocated underground station and new tunnel section between Charlottenplatz and Staatsgalerie, built to accommodate the Stuttgart 21 mainline rail project underground, opens for Stadtbahn operation — the first major tunnel realignment since the system's founding."
+    },
+    {
+      "date": "2021-12-11",
+      "title": "U6 Extended to Stuttgart Airport and Trade Fair",
+      "description": "After years of planning and construction, the U6 reaches its current southern terminus at Messe/Flughafen, giving Stuttgart Airport its first direct Stadtbahn connection and making the U6 the longest line in the network at over 34 km."
+    },
+    {
+      "date": "2023-12-10",
+      "title": "Netz 2024: Full Network Restored After Stuttgart 21 Works",
+      "description": "With the opening of the new Hauptbahnhof–Staatsgalerie tunnel — the final piece of Stadtbahn realignment required by the Stuttgart 21 high-speed rail project — the network returns to its pre-construction layout. Lines U1 and U14 swap inner-city routing, the supplementary lines U34 and U29 are retired, and the U11 resumes its original counter-clockwise loop direction."
+    },
+    {
+      "date": "2024-10-18",
+      "title": "U5 Extended to Leinfelden Neuer Markt",
+      "description": "A 660-metre surface extension opens south of Leinfelden Bahnhof to the new terminus Leinfelden Neuer Markt, the first Stadtbahn expansion since the U6 airport extension in 2021 and part of ongoing network growth into the Filder plateau south of Stuttgart."
+    }
+  ]
+}

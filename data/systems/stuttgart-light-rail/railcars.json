@@ -1,0 +1,124 @@
+{
+  "generations": [
+    {
+      "id": "dt8-4",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.4",
+      "manufacturer": "Duewag (Düwag)",
+      "introduced": 1985,
+      "retired": 2010,
+      "status": "retired",
+      "count": 40,
+      "specs": {
+        "length": "28.88 m",
+        "width": "2.65 m",
+        "capacity": 172,
+        "seatedCapacity": 72,
+        "maxSpeed": "80 km/h",
+        "traction": "DC chopper control",
+        "weight": "38,500 kg"
+      },
+      "description": "The DT8.4 was the inaugural rolling stock of the Stadtbahn Stuttgart, entering service alongside the opening of the U15 in 1985. Built by Düsseldorf-based Düwag (Düsseldorfer Waggonfabrik), these articulated double-unit vehicles (Doppeltriebwagen) established the standard-gauge, high-floor design that defined the network. The cars operated as permanently coupled two-car sets and were progressively retired as newer low-floor and modernised vehicles entered the fleet."
+    },
+    {
+      "id": "dt8-8",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.8",
+      "manufacturer": "Duewag / Siemens",
+      "introduced": 1993,
+      "retired": null,
+      "status": "active",
+      "count": 50,
+      "specs": {
+        "length": "28.88 m",
+        "width": "2.65 m",
+        "capacity": 180,
+        "seatedCapacity": 74,
+        "maxSpeed": "80 km/h",
+        "traction": "AC IGBT",
+        "weight": "39,000 kg"
+      },
+      "description": "The DT8.8 series was delivered in the early 1990s as the Stadtbahn network expanded with new lines including the U1 and U4. Manufactured by Düwag under the Siemens brand following corporate restructuring, these vehicles introduced improved IGBT traction technology for greater energy efficiency. They remain in active service, having received mid-life refurbishments including updated interiors and improved passenger information systems."
+    },
+    {
+      "id": "dt8-10",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.10",
+      "manufacturer": "Bombardier Transportation",
+      "introduced": 2000,
+      "retired": null,
+      "status": "active",
+      "count": 54,
+      "specs": {
+        "length": "28.88 m",
+        "width": "2.65 m",
+        "capacity": 180,
+        "seatedCapacity": 70,
+        "maxSpeed": "80 km/h",
+        "traction": "AC IGBT",
+        "weight": "39,200 kg"
+      },
+      "description": "Ordered from Bombardier Transportation at the turn of the millennium, the DT8.10 was supplied to cope with ridership growth and expansion to Remseck am Neckar and other outer districts. The series is mechanically similar to the DT8.8 but incorporates refined passenger amenities and improved safety systems, and has served reliably as a core element of the SSB fleet for over two decades."
+    },
+    {
+      "id": "dt8-11",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.11",
+      "manufacturer": "Bombardier Transportation",
+      "introduced": 2003,
+      "retired": null,
+      "status": "active",
+      "count": 22,
+      "specs": {
+        "length": "28.88 m",
+        "width": "2.65 m",
+        "capacity": 182,
+        "seatedCapacity": 72,
+        "maxSpeed": "80 km/h",
+        "traction": "AC IGBT",
+        "weight": "39,400 kg"
+      },
+      "description": "The DT8.11 is a follow-on batch from Bombardier delivered in 2003–2004 to support further network extensions and increased service frequencies. The vehicles share the same platform as the DT8.10 but feature incremental improvements to the HVAC system and interior layout. Like other DT8 generations, they operate as permanently coupled two-car articulated sets."
+    },
+    {
+      "id": "dt8-12",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.12",
+      "manufacturer": "Bombardier Transportation",
+      "introduced": 2007,
+      "retired": null,
+      "status": "active",
+      "count": 40,
+      "specs": {
+        "length": "28.88 m",
+        "width": "2.65 m",
+        "capacity": 186,
+        "seatedCapacity": 74,
+        "maxSpeed": "80 km/h",
+        "traction": "AC IGBT",
+        "weight": "40,000 kg"
+      },
+      "description": "The DT8.12 is the largest single order Bombardier delivered to SSB, arriving in batches between 2007 and 2013 to support the continued growth of the network. The series introduced a partially air-conditioned driver's cab and upgraded passenger information displays with real-time line indicators. These vehicles form a significant proportion of the current active fleet."
+    },
+    {
+      "id": "dt8-s",
+      "systemId": "stuttgart-light-rail",
+      "name": "DT8.S",
+      "manufacturer": "Stadler Rail",
+      "introduced": 2022,
+      "retired": null,
+      "status": "active",
+      "count": 70,
+      "specs": {
+        "length": "36.20 m",
+        "width": "2.65 m",
+        "capacity": 230,
+        "seatedCapacity": 84,
+        "maxSpeed": "80 km/h",
+        "traction": "AC IGBT (regenerative braking)",
+        "weight": "52,000 kg"
+      },
+      "description": "The DT8.S (S for Stuttgart or Serie) is the newest generation of Stadtbahn rolling stock, built by Swiss manufacturer Stadler Rail under a contract awarded in 2019. Longer than previous generations at 36.20 m, the DT8.S offers significantly higher capacity and is fully wheel-chair accessible throughout. It features passenger Wi-Fi, air conditioning in the passenger saloon, USB charging ports, and regenerative braking to reduce energy consumption. Deliveries began in 2022 and the fleet will gradually replace retiring DT8.4 and some DT8.8 units."
+    }
+  ]
+}
