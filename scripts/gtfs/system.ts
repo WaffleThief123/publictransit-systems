@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { parseGtfsBundle, type GtfsRoute } from "./parser";
+import { parseGtfsBundle, type GtfsRoute, type GtfsStopTime } from "./parser";
 import { resolveAuth, resolveUrl, MissingSecretError, type AuthConfig } from "./secrets";
 import { loadIdMap, saveIdMap, mergeIdMap, type IdMap } from "./id-map";
 import { detectTopology, extractTripPatterns } from "./topology";
@@ -118,18 +118,50 @@ export async function processSystem(
     "lines",
   );
 
-  // Determine reachable stops from filtered routes
+  // Build canonical stop_id resolver: platform stops collapse to their parent_station.
+  // Falls back to self when parent_station is missing or points to a non-existent stop.
+  const stopExists = new Set(gtfs.stops.map((s) => s.stop_id));
+  const parentByStopId = new Map<string, string>();
+  for (const stop of gtfs.stops) {
+    const parent = stop.parent_station;
+    if (parent && stopExists.has(parent)) {
+      parentByStopId.set(stop.stop_id, parent);
+    } else {
+      parentByStopId.set(stop.stop_id, stop.stop_id);
+    }
+  }
+  const canonical = (sid: string): string => parentByStopId.get(sid) ?? sid;
+
+  // Build canonical stop_times per trip with consecutive-duplicate compression.
+  // Two consecutive platforms of the same parent station collapse to a single visit
+  // so topology detection doesn't see them as a "loop visiting the same station twice".
+  const canonicalStopTimesByTrip = new Map<string, GtfsStopTime[]>();
+  for (const [tripId, stopTimes] of gtfs.stopTimesByTrip) {
+    const out: GtfsStopTime[] = [];
+    let prevCanonical: string | null = null;
+    for (const st of stopTimes) {
+      const c = canonical(st.stop_id);
+      if (c !== prevCanonical) {
+        out.push({ ...st, stop_id: c });
+        prevCanonical = c;
+      }
+    }
+    canonicalStopTimesByTrip.set(tripId, out);
+  }
+
+  // Determine reachable canonical stops from filtered routes
   const reachableStopIds = new Set<string>();
   const tripsByRoute = new Map<string, string[]>();
   for (const trip of gtfs.trips) {
     if (!routes.some((r) => r.route_id === trip.route_id)) continue;
-    const stopTimes = gtfs.stopTimesByTrip.get(trip.trip_id);
+    const stopTimes = canonicalStopTimesByTrip.get(trip.trip_id);
     if (!stopTimes) continue;
     for (const st of stopTimes) reachableStopIds.add(st.stop_id);
     let arr = tripsByRoute.get(trip.route_id);
     if (!arr) { arr = []; tripsByRoute.set(trip.route_id, arr); }
     arr.push(trip.trip_id);
   }
+  // Final stops array contains only canonical entries (platform-only stops are excluded).
   const stops = gtfs.stops.filter((s) => reachableStopIds.has(s.stop_id));
   idMap = mergeIdMap(
     idMap,
@@ -148,7 +180,7 @@ export async function processSystem(
   for (const route of routes) {
     const lineSlug = idMap.lines[route.route_id];
     const tripIds = tripsByRoute.get(route.route_id) ?? [];
-    const patterns = extractTripPatterns(tripIds, gtfs.stopTimesByTrip);
+    const patterns = extractTripPatterns(tripIds, canonicalStopTimesByTrip);
     const detected = detectTopology(patterns);
     const branchTag = detected.topology.type === "linear" && detected.topology.branches ? "+branches" : "";
     topologyByLine[lineSlug] = detected.topology.type + branchTag;
