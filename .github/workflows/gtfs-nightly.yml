@@ -1,0 +1,73 @@
+name: Nightly GTFS Refresh
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install
+        run: npm ci
+
+      - name: Build GTFS data
+        env:
+          SOUND_TRANSIT_GTFS_URL: ${{ secrets.SOUND_TRANSIT_GTFS_URL }}
+          # Add additional GTFS system secrets here as new systems migrate
+          # WMATA_GTFS_URL: ${{ secrets.WMATA_GTFS_URL }}
+          # WMATA_GTFS_KEY: ${{ secrets.WMATA_GTFS_KEY }}
+        run: npm run build:gtfs
+
+      - name: Configure git for bot
+        if: success()
+        run: |
+          git config user.name "gtfs-bot"
+          git config user.email "gtfs-bot@users.noreply.github.com"
+
+      - name: Commit & push if changes
+        if: success()
+        run: |
+          if [[ -n "$(git status --porcelain data/systems)" ]]; then
+            git add data/systems
+            git commit -m "chore(gtfs): nightly data refresh $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no data changes"
+          fi
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v8
+        env:
+          GTFS_BOT_ASSIGNEES: ${{ vars.GTFS_BOT_ASSIGNEES }}
+        with:
+          script: |
+            const assignees = (process.env.GTFS_BOT_ASSIGNEES || "")
+              .split(",")
+              .map((s) => s.trim())
+              .filter(Boolean);
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[GTFS bot] Nightly run failed (${today})`,
+              body: `Nightly GTFS build workflow failed.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              assignees,
+            });
