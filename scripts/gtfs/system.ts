@@ -1,0 +1,288 @@
+import { promises as fs } from "fs";
+import path from "path";
+import { parseGtfsBundle, type GtfsRoute } from "./parser";
+import { resolveAuth, resolveUrl, MissingSecretError, type AuthConfig } from "./secrets";
+import { loadIdMap, saveIdMap, mergeIdMap, type IdMap } from "./id-map";
+import { detectTopology, extractTripPatterns } from "./topology";
+import { dominantShapeForRoute, shapeToPolyline, polylineLength, simplifyPolyline } from "./geometry";
+import { mergeOverlay } from "./merge";
+import { RAIL_ROUTE_TYPES, WHEELCHAIR_BOARDING } from "./constants";
+
+interface GtfsConfig {
+  static: {
+    url_secret: string;
+    auth: AuthConfig;
+    filters?: {
+      route_types?: number[];
+      agency_ids?: string[] | null;
+      route_ids_include?: string[] | null;
+      route_ids_exclude?: string[];
+    };
+    fields?: {
+      line_name_source?: "route_short_name" | "route_long_name";
+      line_color_fallback?: string;
+    };
+  };
+}
+
+type Plain = Record<string, unknown>;
+
+interface OverlayShape {
+  system?: Plain;
+  lines?: Record<string, Plain>;
+  stations?: Record<string, Plain>;
+  railcars?: unknown[];
+}
+
+export interface ProcessResult {
+  systemId: string;
+  status: "regenerated" | "skipped" | "failed";
+  reason?: string;
+  diagnostics?: {
+    linesDetected: number;
+    stationsDetected: number;
+    topologyByLine: Record<string, string>;
+  };
+}
+
+export async function processSystem(
+  systemDir: string,
+  systemId: string,
+  env: Record<string, string | undefined>,
+): Promise<ProcessResult> {
+  const systemJsonPath = path.join(systemDir, "system.json");
+  let systemRaw: Plain;
+  try {
+    systemRaw = JSON.parse(await fs.readFile(systemJsonPath, "utf-8"));
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      return { systemId, status: "skipped", reason: "no system.json" };
+    }
+    throw err;
+  }
+  if (systemRaw.dataSource !== "gtfs") {
+    return { systemId, status: "skipped", reason: "dataSource is not gtfs" };
+  }
+
+  const gtfsConfigPath = path.join(systemDir, "gtfs.json");
+  let config: GtfsConfig;
+  try {
+    config = JSON.parse(await fs.readFile(gtfsConfigPath, "utf-8"));
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      return { systemId, status: "skipped", reason: "no gtfs.json" };
+    }
+    throw err;
+  }
+
+  // Resolve secrets, fetch
+  let bundleBuffer: Buffer;
+  try {
+    const baseUrl = resolveUrl(config.static.url_secret, env);
+    const { url, headers } = resolveAuth(baseUrl, config.static.auth, env);
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      return { systemId, status: "skipped", reason: `feed HTTP ${response.status}` };
+    }
+    bundleBuffer = Buffer.from(await response.arrayBuffer());
+  } catch (err) {
+    if (err instanceof MissingSecretError) {
+      return { systemId, status: "skipped", reason: `missing secret: ${err.secretName}` };
+    }
+    throw err;
+  }
+
+  // Parse — malformed = fail loud
+  const gtfs = await parseGtfsBundle(bundleBuffer);
+
+  // Filter routes
+  const filters = config.static.filters || {};
+  const routeTypes: readonly number[] = filters.route_types ?? RAIL_ROUTE_TYPES;
+  const agencyIds = filters.agency_ids;
+  const includeIds = filters.route_ids_include;
+  const excludeIds = filters.route_ids_exclude || [];
+
+  let routes = gtfs.routes.filter((r) => routeTypes.includes(r.route_type));
+  if (agencyIds) routes = routes.filter((r) => r.agency_id && agencyIds.includes(r.agency_id));
+  if (includeIds) routes = routes.filter((r) => includeIds.includes(r.route_id));
+  if (excludeIds.length) routes = routes.filter((r) => !excludeIds.includes(r.route_id));
+
+  // Build id_map for lines (must run BEFORE stations so we have line slugs)
+  let idMap: IdMap = await loadIdMap(path.join(systemDir, "id_map.json"));
+  idMap = mergeIdMap(
+    idMap,
+    routes.map((r) => ({
+      gtfs_id: r.route_id,
+      name: pickRouteName(r, config.static.fields?.line_name_source ?? "route_long_name"),
+    })),
+    "lines",
+  );
+
+  // Determine reachable stops from filtered routes
+  const reachableStopIds = new Set<string>();
+  const tripsByRoute = new Map<string, string[]>();
+  for (const trip of gtfs.trips) {
+    if (!routes.some((r) => r.route_id === trip.route_id)) continue;
+    const stopTimes = gtfs.stopTimesByTrip.get(trip.trip_id);
+    if (!stopTimes) continue;
+    for (const st of stopTimes) reachableStopIds.add(st.stop_id);
+    let arr = tripsByRoute.get(trip.route_id);
+    if (!arr) { arr = []; tripsByRoute.set(trip.route_id, arr); }
+    arr.push(trip.trip_id);
+  }
+  const stops = gtfs.stops.filter((s) => reachableStopIds.has(s.stop_id));
+  idMap = mergeIdMap(
+    idMap,
+    stops.map((s) => ({ gtfs_id: s.stop_id, name: s.stop_name })),
+    "stations",
+  );
+
+  // Build topology + per-line records
+  const topologyByLine: Record<string, string> = {};
+  const baseLines: Plain[] = [];
+  const baseStationLines = new Map<string, Set<string>>();
+  const baseGeometry: Record<string, { shapeId: string; coordinates: [number, number][] }> = {};
+  const distanceUnit = (systemRaw.stats as { distanceUnit?: "mi" | "km" } | undefined)?.distanceUnit ?? "mi";
+  const fallbackColor = (config.static.fields?.line_color_fallback || "#888888").replace(/^#/, "");
+
+  for (const route of routes) {
+    const lineSlug = idMap.lines[route.route_id];
+    const tripIds = tripsByRoute.get(route.route_id) ?? [];
+    const patterns = extractTripPatterns(tripIds, gtfs.stopTimesByTrip);
+    const detected = detectTopology(patterns);
+    const branchTag = detected.topology.type === "linear" && detected.topology.branches ? "+branches" : "";
+    topologyByLine[lineSlug] = detected.topology.type + branchTag;
+
+    const stationSlugs = detected.dominantStops
+      .map((sid) => idMap.stations[sid])
+      .filter((slug): slug is string => Boolean(slug));
+    for (const slug of stationSlugs) {
+      let set = baseStationLines.get(slug);
+      if (!set) { set = new Set(); baseStationLines.set(slug, set); }
+      set.add(lineSlug);
+    }
+
+    const termini = detected.termini.map((sid) => {
+      const slug = idMap.stations[sid];
+      const stop = stops.find((s) => s.stop_id === sid);
+      return stop?.stop_name ?? slug ?? sid;
+    });
+
+    let topologyOut: Plain;
+    if (detected.topology.type === "linear" && detected.topology.branches) {
+      topologyOut = {
+        type: "linear",
+        branches: detected.topology.branches.map((b, i) => ({
+          id: `${lineSlug}-branch-${i + 1}`,
+          name: `Branch ${i + 1}`,
+          termini: [stops.find((s) => s.stop_id === b.terminus)?.stop_name ?? idMap.stations[b.terminus] ?? b.terminus],
+          branchStation: idMap.stations[b.branchStation] ?? b.branchStation,
+          servicePattern: "full-time",
+        })),
+      };
+    } else if (detected.topology.type === "loop") {
+      topologyOut = {
+        type: "loop",
+        referenceStation: idMap.stations[detected.topology.referenceStation] ?? detected.topology.referenceStation,
+      };
+    } else if (detected.topology.type === "lollipop") {
+      topologyOut = {
+        type: "lollipop",
+        loopStation: idMap.stations[detected.topology.loopStation] ?? detected.topology.loopStation,
+      };
+    } else {
+      topologyOut = { type: "linear" };
+    }
+
+    // Geometry + length
+    const shapeId = dominantShapeForRoute(route.route_id, gtfs.trips);
+    let length = 0;
+    if (shapeId) {
+      const shape = gtfs.shapesByShapeId.get(shapeId);
+      if (shape) {
+        const polyline = simplifyPolyline(shapeToPolyline(shape), 0.00005); // ~5m
+        length = +polylineLength(polyline, distanceUnit).toFixed(2);
+        baseGeometry[lineSlug] = { shapeId, coordinates: polyline };
+      }
+    }
+
+    const colorHex = `#${(route.route_color || fallbackColor).replace(/^#/, "")}`;
+    const baseLine: Plain = {
+      id: lineSlug,
+      systemId,
+      name: pickRouteName(route, config.static.fields?.line_name_source ?? "route_long_name"),
+      color: route.route_color || fallbackColor,
+      colorHex,
+      status: "active",
+      stations: stationSlugs,
+      stationCount: stationSlugs.length,
+      termini,
+      topology: topologyOut,
+      length,
+      description: "",
+    };
+    baseLines.push(baseLine);
+  }
+
+  // Build base stations
+  const baseStations: Plain[] = stops.map((s) => {
+    const slug = idMap.stations[s.stop_id];
+    const features: string[] = [];
+    if (s.wheelchair_boarding === WHEELCHAIR_BOARDING.ACCESSIBLE) features.push("elevator");
+    return {
+      id: slug,
+      systemId,
+      name: s.stop_name,
+      lines: [...(baseStationLines.get(slug) ?? [])],
+      status: "active",
+      coordinates: { lat: s.stop_lat, lng: s.stop_lon },
+      features,
+    };
+  });
+
+  // Load + apply overlay
+  const overlayPath = path.join(systemDir, "overlay.json");
+  const overlay = await readOverlay(overlayPath);
+
+  const finalLines = baseLines.map((bl) =>
+    mergeOverlay(bl, overlay.lines?.[bl.id as string] as Plain | undefined),
+  );
+  const finalStations = baseStations.map((bs) =>
+    mergeOverlay(bs, overlay.stations?.[bs.id as string] as Plain | undefined),
+  );
+  const finalSystem = mergeOverlay(systemRaw, overlay.system);
+  const finalRailcars = overlay.railcars ?? [];
+
+  // Write artifacts
+  await fs.writeFile(systemJsonPath, JSON.stringify(finalSystem, null, 2) + "\n");
+  await fs.writeFile(path.join(systemDir, "lines.json"), JSON.stringify({ lines: finalLines }, null, 2) + "\n");
+  await fs.writeFile(path.join(systemDir, "stations.json"), JSON.stringify({ stations: finalStations }, null, 2) + "\n");
+  await fs.writeFile(path.join(systemDir, "railcars.json"), JSON.stringify({ generations: finalRailcars }, null, 2) + "\n");
+  await fs.writeFile(path.join(systemDir, "geometry.json"), JSON.stringify(baseGeometry, null, 2) + "\n");
+  await fs.writeFile(path.join(systemDir, "topology_detected.json"), JSON.stringify(topologyByLine, null, 2) + "\n");
+  await saveIdMap(path.join(systemDir, "id_map.json"), idMap);
+
+  return {
+    systemId,
+    status: "regenerated",
+    diagnostics: {
+      linesDetected: baseLines.length,
+      stationsDetected: baseStations.length,
+      topologyByLine,
+    },
+  };
+}
+
+async function readOverlay(filepath: string): Promise<OverlayShape> {
+  try {
+    const raw = await fs.readFile(filepath, "utf-8");
+    return JSON.parse(raw);
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") return {};
+    throw err;
+  }
+}
+
+function pickRouteName(r: GtfsRoute, source: "route_short_name" | "route_long_name"): string {
+  return r[source] || r.route_long_name || r.route_short_name || r.route_id;
+}

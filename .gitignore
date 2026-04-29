@@ -49,3 +49,6 @@ next-env.d.ts
 .worktrees
 data/raw/
 data/.cache/
+
+# GTFS build diagnostic artifacts
+data/systems/*/topology_detected.json
