@@ -1,4 +1,3 @@
-// scripts/gtfs/constants.ts
 // GTFS reference enums centralized for cross-system standardization.
 // Reference: https://gtfs.org/schedule/reference/
 
@@ -15,12 +14,12 @@ export const ROUTE_TYPE = {
   MONORAIL: 12,
 } as const;
 
-export const RAIL_ROUTE_TYPES: number[] = [
+export const RAIL_ROUTE_TYPES = [
   ROUTE_TYPE.TRAM,
   ROUTE_TYPE.SUBWAY,
   ROUTE_TYPE.RAIL,
   ROUTE_TYPE.MONORAIL,
-];
+] as const;
 
 export const WHEELCHAIR_BOARDING = {
   NO_INFO: 0,
