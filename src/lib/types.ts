@@ -7,6 +7,7 @@ export type DistanceUnit = "km" | "mi";
 export type TopologyType = "linear" | "loop" | "lollipop";
 export type LineIndicatorShape = "circle" | "square";
 export type ServicePattern = "full-time" | "alternating" | "peak-only" | "weekend-only" | "rush-hour";
+export type DataSource = "json" | "gtfs";
 
 export interface StationEntrance {
   id: string;
@@ -39,6 +40,7 @@ export interface TransitSystem {
     secondary: string;
   };
   lineIndicatorShape?: LineIndicatorShape;
+  dataSource?: DataSource;
 }
 
 export interface SystemStats {
